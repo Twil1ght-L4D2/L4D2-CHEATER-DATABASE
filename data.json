@@ -248,7 +248,7 @@
     "cheat_type": "Teaming with Cheater, Rage cheater",
     "status": "confirmed",
     "date_reported": "2026-04-05",
-    "evidence_url": ""
+    "evidence_url": "https://youtu.be/QhoxhpX76-g"
   },
   {
     "case_id": "CASE-0026",
@@ -281,7 +281,7 @@
     "cheat_type": "RAGE CHEAT",
     "status": "confirmed",
     "date_reported": "2026-07-04",
-    "evidence_url": ""
+    "evidence_url": "https://youtu.be/QhoxhpX76-g"
   },
   {
     "case_id": "CASE-0029",
@@ -292,7 +292,7 @@
     "cheat_type": "RAGE CHEAT",
     "status": "confirmed",
     "date_reported": "2026-07-04",
-    "evidence_url": ""
+    "evidence_url": "https://youtu.be/QhoxhpX76-g"
   },
   {
     "case_id": "CASE-0030",
@@ -402,6 +402,17 @@
     "cheat_type": "Admited of Cheating",
     "status": "confirmed",
     "date_reported": "2026/07/10",
+    "evidence_url": ""
+  },
+  {
+    "case_id": "CASE-0040",
+    "category": "community",
+    "ign": "DAYANA",
+    "steam_id": "STEAM_0:1:920467409",
+    "profile_url": "http://steamcommunity.com/profiles/76561199801200547",
+    "cheat_type": "RAGE CHEAT",
+    "status": "confirmed",
+    "date_reported": "2026-03-26",
     "evidence_url": ""
   }
 ]
