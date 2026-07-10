@@ -297,6 +297,48 @@
   }
   .evidence-group .evidence-link{ padding:6px 10px; }
 
+  /* CREDITS */
+  .credits{
+    display:flex; flex-direction:column; gap:10px;
+  }
+  .credit-card{
+    background:var(--panel);
+    border:1px solid var(--border);
+    padding:18px 20px;
+    display:flex;
+    align-items:center;
+    gap:16px;
+    opacity:0;
+    animation:fadeInUp 0.45s ease forwards;
+    transition:border-color .2s ease, transform .2s ease;
+  }
+  .credit-card:hover{
+    border-color:var(--border-hover);
+    transform:translateY(-2px);
+  }
+  .credit-heart{
+    font-size:20px;
+    flex-shrink:0;
+  }
+  .credit-info .name{
+    font-family:'Sora', sans-serif;
+    font-weight:600;
+    font-size:17px;
+  }
+  .credit-info .role{
+    font-family:'JetBrains Mono', monospace;
+    font-size:12px;
+    color:var(--muted);
+    margin-top:2px;
+  }
+  .credit-info a{ color:var(--purple); text-decoration:none; }
+  .credit-info a:hover{ text-decoration:underline; }
+  .credits-intro{
+    color:var(--muted);
+    font-size:14px;
+    margin-bottom:18px;
+  }
+
   .empty{
     text-align:center;
     color:var(--muted);
@@ -333,7 +375,7 @@
     <div class="eyebrow">Community Report Board — Left 4 Dead 2</div>
     <h1>Cheater Watch // Case Files</h1>
     <p class="desc">A community-maintained log of reported cheaters, compiled from in-game encounters and reviewed evidence. Entries marked <strong style="color:var(--purple)">Confirmed</strong> have verified evidence attached. Entries marked <strong style="color:var(--amber)">Suspected</strong> are under review — treat these as reports, not proven fact. The "Known Cheaters" tab tracks publicly documented cases involving content creators.</p>
-    <div class="stat-row">
+    <div class="stat-row" id="stat-row">
       <div class="stat"><div class="n" id="stat-total">0</div><div class="l">Total Cases</div></div>
       <div class="stat confirmed"><div class="n" id="stat-confirmed">0</div><div class="l">Confirmed</div></div>
       <div class="stat suspected"><div class="n" id="stat-suspected">0</div><div class="l">Suspected</div></div>
@@ -343,9 +385,10 @@
   <div class="tabs">
     <button class="tab-btn active" data-tab="community">Community Reports</button>
     <button class="tab-btn" data-tab="public_figure">Known Cheaters <span class="tab-sub">(Public Figures)</span></button>
+    <button class="tab-btn" data-tab="credits">Credits</button>
   </div>
 
-  <div class="controls">
+  <div class="controls" id="controls">
     <input type="text" id="search" placeholder="Search by name or ID...">
     <select id="filter-status">
       <option value="all">All statuses</option>
@@ -361,17 +404,39 @@
 
   <div class="cases" id="cases"></div>
 
+  <div class="credits" id="credits" style="display:none;"></div>
+
   <footer>
     Reports are submitted by community members and reviewed where possible. If you believe an entry is inaccurate,
     contact the moderators of the source Discord to request a review. This list is provided for community awareness
     and is not a legal determination of wrongdoing.
   </footer>
 
+
 </div>
 
 <script>
 let allCases = [];
+let allCredits = [];
 let activeTab = 'community';
+
+function renderCredits(){
+  const container = document.getElementById('credits');
+  if(allCredits.length === 0){
+    container.innerHTML = '<div class="empty">No credits added yet.</div>';
+    return;
+  }
+  container.innerHTML = `<p class="credits-intro">This board wouldn't exist without the people who send in reports, evidence, and tips. Thank you.</p>` +
+    allCredits.map((p, i) => `
+      <div class="credit-card" style="animation-delay:${Math.min(i * 40, 400)}ms">
+        <div class="credit-heart">💜</div>
+        <div class="credit-info">
+          <div class="name">${p.link ? `<a href="${escapeAttr(p.link)}" target="_blank" rel="noopener">${escapeHtml(p.name)}</a>` : escapeHtml(p.name)}</div>
+          <div class="role">${escapeHtml(p.role || 'Contributor')}</div>
+        </div>
+      </div>
+    `).join('');
+}
 
 function renderEvidence(c){
   const urls = Array.isArray(c.evidence_urls) && c.evidence_urls.length
@@ -474,6 +539,19 @@ function switchTab(tab){
   document.querySelectorAll('.tab-btn').forEach(btn => {
     btn.classList.toggle('active', btn.dataset.tab === tab);
   });
+
+  const isCredits = tab === 'credits';
+  document.getElementById('stat-row').style.display = isCredits ? 'none' : 'flex';
+  document.getElementById('controls').style.display = isCredits ? 'none' : 'flex';
+  document.getElementById('count-line').style.display = isCredits ? 'none' : 'block';
+  document.getElementById('cases').style.display = isCredits ? 'none' : 'flex';
+  document.getElementById('credits').style.display = isCredits ? 'flex' : 'none';
+
+  if(isCredits){
+    renderCredits();
+    return;
+  }
+
   document.getElementById('search').value = '';
   document.getElementById('filter-status').value = 'all';
   updateStats();
@@ -493,6 +571,11 @@ fetch('data.json')
     document.getElementById('cases').innerHTML = '<div class="empty">Could not load data.json. Make sure it is in the same folder as this page.</div>';
     console.error(err);
   });
+
+fetch('credits.json')
+  .then(r => r.json())
+  .then(data => { allCredits = data; })
+  .catch(err => { console.error('Could not load credits.json', err); });
 
 document.getElementById('search').addEventListener('input', render);
 document.getElementById('filter-status').addEventListener('change', render);
