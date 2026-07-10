@@ -291,6 +291,11 @@
   }
   .evidence-link:hover{ border-color:var(--purple); color:var(--purple); transform:translateX(2px); }
 
+  .evidence-group{
+    display:flex; flex-wrap:wrap; gap:6px; justify-content:flex-end; max-width:220px;
+  }
+  .evidence-group .evidence-link{ padding:6px 10px; }
+
   .empty{
     text-align:center;
     color:var(--muted);
@@ -367,6 +372,22 @@
 let allCases = [];
 let activeTab = 'community';
 
+function renderEvidence(c){
+  const urls = Array.isArray(c.evidence_urls) && c.evidence_urls.length
+    ? c.evidence_urls
+    : (c.evidence_url ? [c.evidence_url] : []);
+
+  if(urls.length === 0){
+    return `<span class="evidence-link" style="opacity:0.5;">No evidence linked</span>`;
+  }
+  if(urls.length === 1){
+    return `<a class="evidence-link" href="${escapeAttr(urls[0])}" target="_blank" rel="noopener">View evidence →</a>`;
+  }
+  return `<div class="evidence-group">${urls.map((u, i) =>
+    `<a class="evidence-link" href="${escapeAttr(u)}" target="_blank" rel="noopener">Evidence ${i+1} →</a>`
+  ).join('')}</div>`;
+}
+
 function stampLabel(status){
   return status === 'confirmed' ? 'Confirmed' : 'Suspected';
 }
@@ -417,7 +438,7 @@ function render(){
       </div>
       <div class="case-right">
         <div class="stamp ${c.status === 'suspected' ? 'suspected' : ''}">${stampLabel(c.status)}</div>
-        ${c.evidence_url ? `<a class="evidence-link" href="${escapeAttr(c.evidence_url)}" target="_blank" rel="noopener">View evidence →</a>` : `<span class="evidence-link" style="opacity:0.5;">No evidence linked</span>`}
+        ${renderEvidence(c)}
       </div>
     </div>
   `).join('');
