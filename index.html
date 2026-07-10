@@ -297,6 +297,50 @@
   }
   .evidence-group .evidence-link{ padding:6px 10px; }
 
+  /* FLOATING ACTION BUTTONS */
+  .fab{
+    position:fixed;
+    bottom:22px;
+    z-index:50;
+    display:flex;
+    align-items:center;
+    gap:8px;
+    background:var(--panel);
+    border:1px solid var(--border);
+    color:var(--ink);
+    text-decoration:none;
+    cursor:pointer;
+    box-shadow:0 6px 20px rgba(0,0,0,0.4);
+    transition:border-color .2s, transform .2s, box-shadow .2s;
+    font-family:'Sora', sans-serif;
+    font-size:13.5px;
+    font-weight:600;
+  }
+  .fab:hover{ transform:translateY(-2px); border-color:var(--purple); box-shadow:0 10px 26px rgba(168,85,247,0.25); }
+
+  .fab-discord{
+    right:22px;
+    padding:12px 18px;
+    border-radius:999px;
+  }
+  .fab-discord svg{ color:var(--purple); flex-shrink:0; }
+
+  .fab-music{
+    left:22px;
+    width:46px; height:46px;
+    border-radius:50%;
+    justify-content:center;
+    padding:0;
+  }
+  .fab-music svg{ color:var(--muted); transition:color .2s; }
+  .fab-music.playing svg{ color:var(--purple); }
+  .fab-music.playing{ animation:cardGlow 2.8s ease-in-out infinite; border-color:var(--purple); }
+
+  @media (max-width:640px){
+    .fab-discord span{ display:none; }
+    .fab-discord{ padding:12px; border-radius:50%; }
+  }
+
   /* CREDITS */
   .credits{
     display:flex; flex-direction:column; gap:10px;
@@ -412,8 +456,23 @@
     and is not a legal determination of wrongdoing.
   </footer>
 
-
 </div>
+
+<a href="https://discord.gg/b9AcspkShQ" target="_blank" rel="noopener" class="fab fab-discord" title="Join our Discord">
+  <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M8 12h.01M16 12h.01M7 8c3-1.2 7-1.2 10 0M6 16c3 1.2 9 1.2 12 0M5 8c-1 3-1 7 0 10 1.5 1 3.5 1.5 5 1.5l1-2M19 8c1 3 1 7 0 10-1.5 1-3.5 1.5-5 1.5l-1-2"/>
+  </svg>
+  <span>Discord</span>
+</a>
+
+<button class="fab fab-music" id="music-toggle" title="Toggle background music">
+  <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" id="music-icon">
+    <path d="M9 18V5l12-2v13"/>
+    <circle cx="6" cy="18" r="3"/>
+    <circle cx="18" cy="16" r="3"/>
+  </svg>
+</button>
+<audio id="bg-music" preload="none"></audio>
 
 <script>
 let allCases = [];
@@ -582,6 +641,47 @@ document.getElementById('filter-status').addEventListener('change', render);
 document.getElementById('filter-type').addEventListener('change', render);
 document.querySelectorAll('.tab-btn').forEach(btn => {
   btn.addEventListener('click', () => switchTab(btn.dataset.tab));
+});
+
+const musicBtn = document.getElementById('music-toggle');
+const bgMusic = document.getElementById('bg-music');
+bgMusic.volume = 0.35;
+let musicPlaylist = [];
+let currentTrackIndex = 0;
+
+function loadTrack(index){
+  if(musicPlaylist.length === 0) return;
+  currentTrackIndex = ((index % musicPlaylist.length) + musicPlaylist.length) % musicPlaylist.length;
+  const track = musicPlaylist[currentTrackIndex];
+  bgMusic.src = track.file;
+  musicBtn.title = `Now playing: ${track.title || track.file}`;
+}
+
+fetch('music.json')
+  .then(r => r.json())
+  .then(data => {
+    musicPlaylist = data;
+    if(musicPlaylist.length > 0) loadTrack(0);
+  })
+  .catch(err => console.error('Could not load music.json:', err));
+
+bgMusic.addEventListener('ended', () => {
+  loadTrack(currentTrackIndex + 1);
+  bgMusic.play().catch(err => console.error('Could not play next track:', err));
+});
+
+musicBtn.addEventListener('click', () => {
+  if(musicPlaylist.length === 0){
+    console.warn('No tracks loaded from music.json yet.');
+    return;
+  }
+  if(bgMusic.paused){
+    bgMusic.play().catch(err => console.error('Could not play music:', err));
+    musicBtn.classList.add('playing');
+  } else {
+    bgMusic.pause();
+    musicBtn.classList.remove('playing');
+  }
 });
 </script>
 </body>
