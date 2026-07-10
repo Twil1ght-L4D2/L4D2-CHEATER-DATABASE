@@ -304,7 +304,7 @@
     "status": "confirmed",
     "date_reported": "2026-07-04",
     "evidence_url": ""
-  }
+  },
   {
     "case_id": "CASE-0031",
     "category": "community",
@@ -318,6 +318,94 @@
       "https://www.youtube.com/watch?v=rIY5k1M4u7k",
       "https://www.youtube.com/watch?v=fyjS7wgf4zA"
     ]
+  },
+  {
+    "case_id": "CASE-0032",
+    "category": "community",
+    "ign": "NIGHTINSIDE",
+    "steam_id": "STEAM_0:1:597042284",
+    "profile_url": "http://steamcommunity.com/profiles/76561199154350297",
+    "cheat_type": "ESP, Aimbot",
+    "status": "confirmed",
+    "date_reported": "Unknown",
+    "evidence_url": "https://www.youtube.com/watch?v=gXHQpjpl6t8"
+  },
+  {
+    "case_id": "CASE-0033",
+    "category": "community",
+    "ign": "fagngamafia",
+    "steam_id": "STEAM_0:0:140507108",
+    "profile_url": "https://steamcommunity.com/profiles/76561198241279944/",
+    "cheat_type": "Rapid Fire",
+    "status": "confirmed",
+    "date_reported": "2026/20/04",
+    "evidence_url": ""
+  },
+  {
+    "case_id": "CASE-0034",
+    "category": "community",
+    "ign": "barcode",
+    "steam_id": "STEAM_0:0:937318917",
+    "profile_url": "https://steamcommunity.com/profiles/76561199834903562/",
+    "cheat_type": "Rapid Fire",
+    "status": "confirmed",
+    "date_reported": "2026/20/04",
+    "evidence_url": ""
+  },
+  {
+    "case_id": "CASE-0035",
+    "category": "community",
+    "ign": "b4ttouxai",
+    "steam_id": "STEAM_0:0:730192307",
+    "profile_url": "http://steamcommunity.com/profiles/76561199420650342",
+    "cheat_type": "Rapid Fire, Speedhack",
+    "status": "confirmed",
+    "date_reported": "2026/07/10",
+    "evidence_url": "https://www.youtube.com/watch?v=IA0HVDtVgTU"
+  },
+  {
+    "case_id": "CASE-0036",
+    "category": "community",
+    "ign": "Meow",
+    "steam_id": "STEAM_0:0:41995631",
+    "profile_url": "https://steamcommunity.com/profiles/76561198044256990",
+    "cheat_type": "No spread, Aimbot, Autobhop, Others",
+    "status": "confirmed",
+    "date_reported": "2026/07/10",
+    "evidence_url": "https://www.youtube.com/watch?v=F4IcpEMi6pw"
+  },
+    {
+    "case_id": "CASE-0037",
+    "category": "community",
+    "ign": "ddd",
+    "steam_id": "STEAM_0:1:860282654",
+    "profile_url": "http://steamcommunity.com/profiles/76561199680831037",
+    "cheat_type": "Rapid Fire, Lag Exploit",
+    "status": "confirmed",
+    "date_reported": "2026/07/10",
+    "evidence_url": "https://www.youtube.com/watch?v=mxKIMNeSAUQ"
+  },
+  {
+    "case_id": "CASE-0038",
+    "category": "community",
+    "ign": "`Lunar",
+    "steam_id": "STEAM_0:1:206448708",
+    "profile_url": "http://steamcommunity.com/profiles/76561198373163145",
+    "cheat_type": "Aimbot Blatant",
+    "status": "confirmed",
+    "date_reported": "2026/07/10",
+    "evidence_url": "https://www.youtube.com/watch?v=o3Vpz-65l7A"
+  },
+  {
+    "case_id": "CASE-0038",
+    "category": "community",
+    "ign": "Valentine Gaming",
+    "steam_id": "STEAM_0:1:48856812",
+    "profile_url": "http://steamcommunity.com/profiles/76561198057979353",
+    "cheat_type": "Admited of Cheating",
+    "status": "confirmed",
+    "date_reported": "2026/07/10",
+    "evidence_url": ""
   }
 ]
 
