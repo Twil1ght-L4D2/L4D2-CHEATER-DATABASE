@@ -6,9 +6,18 @@
     "steam_id": "STEAM_0:0:837520731",
     "profile_url": "https://steamcommunity.com/profiles/76561199635307190/",
     "cheat_type": "Rage Cheat",
-    "status": "Confirmed",
+    "status": "confirmed",
     "date_reported": "2026-03-14",
-    "evidence_url": "PASTE_SCREENSHOT_LINK_HERE"
+    "evidence_url": "",
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/keithpoupouf-creator/L4D2-CHEATER-DATABASE/main/evidence/1.png",
+      "https://raw.githubusercontent.com/keithpoupouf-creator/L4D2-CHEATER-DATABASE/main/evidence/2.png",
+      "https://raw.githubusercontent.com/keithpoupouf-creator/L4D2-CHEATER-DATABASE/main/evidence/3.png",
+      "https://raw.githubusercontent.com/keithpoupouf-creator/L4D2-CHEATER-DATABASE/main/evidence/4.png",
+      "https://raw.githubusercontent.com/keithpoupouf-creator/L4D2-CHEATER-DATABASE/main/evidence/5.png",
+      "https://raw.githubusercontent.com/keithpoupouf-creator/L4D2-CHEATER-DATABASE/main/evidence/6.png",
+      "https://raw.githubusercontent.com/keithpoupouf-creator/L4D2-CHEATER-DATABASE/main/evidence/7.png"
+    ]
   },
   {
     "case_id": "CASE-0005",
