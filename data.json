@@ -314,10 +314,7 @@
     "cheat_type": "Aimbot, Autobhop, ESP, Others",
     "status": "confirmed",
     "date_reported": "Unknown",
-    "evidence_url": [
-      "https://www.youtube.com/watch?v=rIY5k1M4u7k",
-      "https://www.youtube.com/watch?v=fyjS7wgf4zA"
-    ]
+    "evidence_url":"https://www.youtube.com/watch?v=rIY5k1M4u7k"
   },
   {
     "case_id": "CASE-0032",
@@ -408,4 +405,3 @@
     "evidence_url": ""
   }
 ]
-
