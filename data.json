@@ -238,5 +238,72 @@
     "status": "confirmed",
     "date_reported": "2026-04-05",
     "evidence_url": ""
+  },
+  {
+    "case_id": "CASE-0025",
+    "category": "community",
+    "ign": "Dasha (RCE Exploit's friend)",
+    "steam_id": "STEAM_0:1:489366249",
+    "profile_url": "https://steamcommunity.com/profiles/76561198938998227",
+    "cheat_type": "Teaming with Cheater, Rage cheater",
+    "status": "confirmed",
+    "date_reported": "2026-04-05",
+    "evidence_url": ""
+  },
+  {
+    "case_id": "CASE-0026",
+    "category": "community",
+    "ign": "Uchiha Itachi",
+    "steam_id": "STEAM_0:0:62238199",
+    "profile_url": "https://steamcommunity.com/profiles/76561198084742126/",
+    "cheat_type": "Rage cheat Rapid fire",
+    "status": "confirmed",
+    "date_reported": "2026-04-10",
+    "evidence_url": ""
+  },
+  {
+    "case_id": "CASE-0027",
+    "category": "community",
+    "ign": "INVISIBLE NAME",
+    "steam_id": "STEAM_0:1:381362480",
+    "profile_url": "https://steamcommunity.com/profiles/76561198722990689/",
+    "cheat_type": "Rage cheat Rapid fire",
+    "status": "confirmed",
+    "date_reported": "2026-04-10",
+    "evidence_url": ""
+  },
+  {
+    "case_id": "CASE-0028",
+    "category": "community",
+    "ign": "POKY",
+    "steam_id": "STEAM_0:0:538816393",
+    "profile_url": "https://steamcommunity.com/profiles/76561199037898514/",
+    "cheat_type": "RAGE CHEAT",
+    "status": "confirmed",
+    "date_reported": "2026-07-04",
+    "evidence_url": ""
+  },
+  {
+    "case_id": "CASE-0029",
+    "category": "community",
+    "ign": "CWMYHB1 (Poky's Friend)",
+    "steam_id": "STEAM_0:1:70916668",
+    "profile_url": "https://steamcommunity.com/profiles/76561198102099065/",
+    "cheat_type": "RAGE CHEAT",
+    "status": "confirmed",
+    "date_reported": "2026-07-04",
+    "evidence_url": ""
+  },
+  {
+    "case_id": "CASE-0030",
+    "category": "community",
+    "ign": "Uchiha Ghost",
+    "steam_id": "STEAM_0:0:799559716",
+    "profile_url": "https://steamcommunity.com/profiles/76561199559385160/",
+    "cheat_type": "KICK EXPLOIT, NAME STEALER",
+    "status": "confirmed",
+    "date_reported": "2026-07-04",
+    "evidence_url": ""
   }
 ]
+
