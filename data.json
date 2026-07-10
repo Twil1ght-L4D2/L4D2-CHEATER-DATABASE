@@ -1,5 +1,38 @@
 [
   {
+    "case_id": "CASE-0001",
+    "category": "community",
+    "ign": "Novola",
+    "steam_id": "STEAM_0:0:707824400",
+    "profile_url": "http://steamcommunity.com/profiles/76561199375914528",
+    "cheat_type": "Rapid-fire",
+    "status": "confirmed",
+    "date_reported": "Unknown",
+    "evidence_url": ""
+  },
+  {
+    "case_id": "CASE-0002",
+    "category": "community",
+    "ign": "Senseless",
+    "steam_id": "STEAM_0:0:896883950",
+    "profile_url": "http://steamcommunity.com/profiles/76561199754033628",
+    "cheat_type": "Rapid-fire",
+    "status": "confirmed",
+    "date_reported": "Unknown",
+    "evidence_url": ""
+  },
+  {
+    "case_id": "CASE-0003",
+    "category": "community",
+    "ign": "champgnepapi",
+    "steam_id": "STEAM_0:1:601219294",
+    "profile_url": "http://steamcommunity.com/profiles/76561199162704317",
+    "cheat_type": "Rapid-fire",
+    "status": "confirmed",
+    "date_reported": "Unknown",
+    "evidence_url": ""
+  },
+  {
     "case_id": "CASE-0004",
     "category": "public_figure",
     "ign": "Allah_official (V^ alt account)",
