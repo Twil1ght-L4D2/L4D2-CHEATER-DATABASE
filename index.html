@@ -88,6 +88,42 @@
     100%{ left:110%; }
   }
 
+  /* VISIT COUNTER STYLING */
+  .visit-counter {
+    position: absolute;
+    top: 16px;
+    right: 20px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    color: var(--muted);
+    background: rgba(10, 7, 19, 0.6);
+    border: 1px solid var(--border);
+    padding: 4px 10px;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    letter-spacing: 0.5px;
+    z-index: 10;
+  }
+  .visit-counter #v-count {
+    color: var(--purple);
+    font-weight: 500;
+  }
+  .visit-pulse {
+    width: 6px;
+    height: 6px;
+    background-color: #10b981;
+    border-radius: 50%;
+    display: inline-block;
+    box-shadow: 0 0 8px #10b981;
+    animation: pulseGlowGreen 2s infinite;
+  }
+  @keyframes pulseGlowGreen {
+    0%, 100% { transform: scale(1); opacity: 0.6; }
+    50% { transform: scale(1.2); opacity: 1; }
+  }
+
   .eyebrow{
     font-family:'JetBrains Mono', monospace;
     font-size:11px;
@@ -95,6 +131,7 @@
     color:var(--purple);
     text-transform:uppercase;
     margin-bottom:10px;
+    padding-right: 140px; /* Prevent text overlap on small screens */
   }
   h1{
     font-family:'Sora', sans-serif;
@@ -339,6 +376,8 @@
   @media (max-width:640px){
     .fab-discord span{ display:none; }
     .fab-discord{ padding:12px; border-radius:50%; }
+    .visit-counter { position: static; margin-bottom: 15px; display: inline-flex; }
+    .eyebrow { padding-right: 0; }
   }
 
   /* CREDITS */
@@ -416,6 +455,11 @@
 <div class="wrap">
 
   <header>
+    <div class="visit-counter">
+      <span class="visit-pulse"></span>
+      VISITS: <span id="v-count">...</span>
+    </div>
+
     <div class="eyebrow">Community Report Board — Left 4 Dead 2</div>
     <h1>Cheater Watch // Case Files</h1>
     <p class="desc">A community-maintained log of reported cheaters, compiled from in-game encounters and reviewed evidence. Entries marked <strong style="color:var(--purple)">Confirmed</strong> have verified evidence attached. Entries marked <strong style="color:var(--amber)">Suspected</strong> are under review — treat these as reports, not proven fact. The "Known Cheaters" tab tracks publicly documented cases involving content creators.</p>
@@ -478,6 +522,20 @@
 let allCases = [];
 let allCredits = [];
 let activeTab = 'community';
+
+// VISIT COUNTER LOGIC
+// Note: Replace "l4d2-cheater-watch" below with your actual GitHub repository name if desired
+fetch('https://api.counterapi.dev/v1/l4d2-cheater-watch/visits/up')
+  .then(response => response.json())
+  .then(data => {
+    if (data && data.value) {
+      document.getElementById('v-count').textContent = data.value.toLocaleString();
+    }
+  })
+  .catch(err => {
+    document.getElementById('v-count').textContent = 'OFFLINE';
+    console.error('Counter error:', err);
+  });
 
 function renderCredits(){
   const container = document.getElementById('credits');
