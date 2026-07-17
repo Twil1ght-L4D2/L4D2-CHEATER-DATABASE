@@ -447,5 +447,27 @@
     "status": "confirmed",
     "date_reported": "2026-03-26",
     "evidence_url": ""
+  },
+  {
+    "case_id": "CASE-0041",
+    "category": "community",
+    "ign": "Samishi",
+    "steam_id": "STEAM_0:0:405546307",
+    "profile_url": "http://steamcommunity.com/profiles/76561198771358342",
+    "cheat_type": "RAGE CHEAT",
+    "status": "confirmed",
+    "date_reported": "2026-07-15",
+    "evidence_url": ""
+  },
+  {
+    "case_id": "CASE-0042",
+    "category": "community",
+    "ign": "diarrhearfarts",
+    "steam_id": "STEAM_0:0:943693298",
+    "profile_url": "http://steamcommunity.com/profiles/76561199847652324",
+    "cheat_type": "RAPID FIRE",
+    "status": "confirmed",
+    "date_reported": "2026-07-15",
+    "evidence_url": ""
   }
 ]
