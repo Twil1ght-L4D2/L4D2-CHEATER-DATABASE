@@ -469,5 +469,16 @@
     "status": "confirmed",
     "date_reported": "2026-07-15",
     "evidence_url": ""
+  },
+  {
+    "case_id": "CASE-0043",
+    "category": "community",
+    "ign": "Honk Kong",
+    "steam_id": "STEAM_0:1:439422621",
+    "profile_url": "http://steamcommunity.com/profiles/76561198839110971",
+    "cheat_type": "BLATANT CHEAT AIMBOT",
+    "status": "confirmed",
+    "date_reported": "2026-07-15",
+    "evidence_url": "https://youtu.be/CjTwS3KrojY"
   }
 ]
