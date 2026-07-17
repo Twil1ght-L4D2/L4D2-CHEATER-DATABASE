@@ -480,5 +480,16 @@
     "status": "confirmed",
     "date_reported": "2026-07-15",
     "evidence_url": "https://youtu.be/CjTwS3KrojY"
+  },
+  {
+    "case_id": "CASE-0044",
+    "category": "community",
+    "ign": "Ricky",
+    "steam_id": "STEAM_0:1:884775677",
+    "profile_url": "https://steamcommunity.com/profiles/76561199729817083/",
+    "cheat_type": "CHEAT ON STREAM",
+    "status": "confirmed",
+    "date_reported": "2026-07-15",
+    "evidence_url": "https://www.youtube.com/watch?v=Cbg9Myb40so"
   }
 ]
