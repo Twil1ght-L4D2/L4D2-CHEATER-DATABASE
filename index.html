@@ -446,6 +446,76 @@
     animation:fadeIn 0.4s ease both;
   }
 
+  /* LOAD MORE */
+  .load-more-row{ display:flex; justify-content:center; margin-top:18px; }
+  .load-more-btn{
+    font-family:'JetBrains Mono', monospace;
+    font-size:12.5px;
+    letter-spacing:0.5px;
+    color:var(--muted);
+    background:var(--panel);
+    border:1px dashed var(--border);
+    padding:12px 22px;
+    cursor:pointer;
+    border-radius:3px;
+    transition:color .2s, border-color .2s;
+  }
+  .load-more-btn:hover{ color:var(--ink); border-color:var(--purple); border-style:solid; }
+
+  /* SEARCH HIGHLIGHT */
+  mark{
+    background:rgba(168,85,247,0.28);
+    color:var(--ink);
+    border-radius:2px;
+    padding:0 1px;
+  }
+
+  /* COPY ID BUTTON */
+  .copy-id{
+    font-family:'JetBrains Mono', monospace;
+    font-size:11px;
+    color:var(--muted);
+    background:none;
+    border:1px solid var(--border);
+    border-radius:3px;
+    padding:1px 6px;
+    cursor:pointer;
+    transition:color .2s, border-color .2s;
+  }
+  .copy-id:hover{ color:var(--purple); border-color:var(--purple); }
+  .copy-id.copied{ color:var(--purple); border-color:var(--purple); }
+
+  /* SKELETON LOADING */
+  .skeleton-card{
+    background:var(--panel);
+    border:1px solid var(--border);
+    padding:18px 20px;
+    height:64px;
+    border-radius:2px;
+    position:relative;
+    overflow:hidden;
+  }
+  .skeleton-card::after{
+    content:"";
+    position:absolute; inset:0;
+    background:linear-gradient(90deg, transparent, rgba(168,85,247,0.08), transparent);
+    animation:shimmer 1.4s ease-in-out infinite;
+  }
+  @keyframes shimmer{
+    0%{ transform:translateX(-100%); }
+    100%{ transform:translateX(100%); }
+  }
+
+  /* STICKY CONTROLS */
+  .controls-sticky{
+    position:sticky;
+    top:0;
+    z-index:20;
+    background:var(--bg);
+    padding-top:10px;
+    margin-top:-10px;
+  }
+
   footer{
     margin-top:40px;
     padding-top:20px;
@@ -486,7 +556,7 @@
     <button class="tab-btn" data-tab="credits">Credits</button>
   </div>
 
-  <div class="controls" id="controls">
+  <div class="controls controls-sticky" id="controls">
     <input type="text" id="search" placeholder="Search by name or ID...">
     <select id="filter-status">
       <option value="all">All statuses</option>
@@ -496,11 +566,21 @@
     <select id="filter-type">
       <option value="all">All cheat types</option>
     </select>
+    <select id="sort-by">
+      <option value="date-desc">Newest first</option>
+      <option value="date-asc">Oldest first</option>
+      <option value="name-asc">Name A → Z</option>
+      <option value="name-desc">Name Z → A</option>
+    </select>
   </div>
 
   <div class="count-line" id="count-line"></div>
 
   <div class="cases" id="cases"></div>
+
+  <div class="load-more-row" id="load-more-row" style="display:none;">
+    <button class="load-more-btn" id="load-more-btn">Open next 15 case files</button>
+  </div>
 
   <div class="credits" id="credits" style="display:none;"></div>
 
@@ -541,6 +621,17 @@
 let allCases = [];
 let allCredits = [];
 let activeTab = 'community';
+const PAGE_SIZE = 15;
+let visibleCount = PAGE_SIZE;
+
+function escapeRegExp(str){ return str.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'); }
+
+function highlight(text, q){
+  const safe = escapeHtml(text);
+  if(!q) return safe;
+  const re = new RegExp(escapeRegExp(q), 'ig');
+  return escapeHtml(text).replace(re, m => `<mark>${m}</mark>`);
+}
 
 function renderCredits(){
   const container = document.getElementById('credits');
@@ -561,9 +652,12 @@ function renderCredits(){
 }
 
 function renderEvidence(c){
-  const urls = Array.isArray(c.evidence_urls) && c.evidence_urls.length
-    ? c.evidence_urls
-    : (c.evidence_url ? [c.evidence_url] : []);
+  let urls = [];
+  if(Array.isArray(c.evidence_urls) && c.evidence_urls.length){
+    urls = c.evidence_urls;
+  } else if(c.evidence_url){
+    urls = c.evidence_url.split(',').map(u => u.trim()).filter(Boolean);
+  }
 
   if(urls.length === 0){
     return `<span class="evidence-link" style="opacity:0.5;">No evidence linked</span>`;
@@ -591,12 +685,25 @@ function countUp(el, target){
   requestAnimationFrame(tick);
 }
 
+function sortCases(list, mode){
+  const sorted = [...list];
+  const dateVal = c => (c.date_reported && c.date_reported !== 'Unknown') ? new Date(c.date_reported).getTime() : -Infinity;
+  switch(mode){
+    case 'date-asc': sorted.sort((a,b) => dateVal(a) - dateVal(b)); break;
+    case 'name-asc': sorted.sort((a,b) => a.ign.localeCompare(b.ign)); break;
+    case 'name-desc': sorted.sort((a,b) => b.ign.localeCompare(a.ign)); break;
+    default: sorted.sort((a,b) => dateVal(b) - dateVal(a)); // date-desc
+  }
+  return sorted;
+}
+
 function render(){
   const q = document.getElementById('search').value.trim().toLowerCase();
   const statusFilter = document.getElementById('filter-status').value;
   const typeFilter = document.getElementById('filter-type').value;
+  const sortMode = document.getElementById('sort-by').value;
 
-  const filtered = allCases.filter(c => {
+  let filtered = allCases.filter(c => {
     const matchesTab = c.category === activeTab;
     const matchesQ = !q || c.ign.toLowerCase().includes(q) || (c.steam_id || '').toLowerCase().includes(q);
     const matchesStatus = statusFilter === 'all' || c.status === statusFilter;
@@ -604,22 +711,29 @@ function render(){
     return matchesTab && matchesQ && matchesStatus && matchesType;
   });
 
+  filtered = sortCases(filtered, sortMode);
+
   const list = document.getElementById('cases');
+  const loadMoreRow = document.getElementById('load-more-row');
+  const shown = filtered.slice(0, visibleCount);
+
   document.getElementById('count-line').textContent =
-    `Showing ${filtered.length} of ${allCases.length} case${allCases.length===1?'':'s'}`;
+    `Showing ${shown.length} of ${filtered.length} matching case${filtered.length===1?'':'s'} (${allCases.length} total)`;
 
   if(filtered.length === 0){
     list.innerHTML = '<div class="empty">No cases match this search. Try clearing filters.</div>';
+    loadMoreRow.style.display = 'none';
     return;
   }
 
-  list.innerHTML = filtered.map((c, i) => `
+  list.innerHTML = shown.map((c, i) => `
     <div class="case ${c.category === 'public_figure' ? 'glow-card' : ''}" style="animation-delay:${Math.min(i * 40, 400)}ms">
       <div class="case-id">${c.case_id}</div>
       <div class="case-main">
-        <div class="ign">${escapeHtml(c.ign)}</div>
+        <div class="ign">${highlight(c.ign, q)}</div>
         <div class="meta">
-          ${c.profile_url ? `<a href="${escapeAttr(c.profile_url)}" target="_blank" rel="noopener">${escapeHtml(c.category === 'public_figure' ? (c.steam_id || 'Channel link') : (c.steam_id || 'Steam profile'))}</a>` : `<span>${escapeHtml(c.steam_id || 'No ID on file')}</span>`}
+          ${c.profile_url ? `<a href="${escapeAttr(c.profile_url)}" target="_blank" rel="noopener">${highlight(c.category === 'public_figure' ? (c.steam_id || 'Channel link') : (c.steam_id || 'Steam profile'), q)}</a>` : `<span>${highlight(c.steam_id || 'No ID on file', q)}</span>`}
+          ${c.steam_id ? `<button class="copy-id" data-copy="${escapeAttr(c.steam_id)}" title="Copy SteamID">copy ID</button>` : ''}
           <span class="tag">${escapeHtml(c.cheat_type)}</span>
           <span>Reported ${escapeHtml(c.date_reported)}</span>
         </div>
@@ -630,6 +744,19 @@ function render(){
       </div>
     </div>
   `).join('');
+
+  loadMoreRow.style.display = (visibleCount < filtered.length) ? 'flex' : 'none';
+
+  list.querySelectorAll('.copy-id').forEach(btn => {
+    btn.addEventListener('click', () => {
+      navigator.clipboard.writeText(btn.dataset.copy).then(() => {
+        const original = btn.textContent;
+        btn.textContent = 'copied!';
+        btn.classList.add('copied');
+        setTimeout(() => { btn.textContent = original; btn.classList.remove('copied'); }, 1200);
+      });
+    });
+  });
 }
 
 function escapeHtml(str){
@@ -676,10 +803,14 @@ function switchTab(tab){
 
   document.getElementById('search').value = '';
   document.getElementById('filter-status').value = 'all';
+  visibleCount = PAGE_SIZE;
   updateStats();
   populateTypeFilter();
   render();
 }
+
+document.getElementById('cases').innerHTML =
+  Array.from({length:6}).map(() => '<div class="skeleton-card"></div>').join('');
 
 fetch('data.json')
   .then(r => r.json())
@@ -699,9 +830,16 @@ fetch('credits.json')
   .then(data => { allCredits = data; })
   .catch(err => { console.error('Could not load credits.json', err); });
 
-document.getElementById('search').addEventListener('input', render);
-document.getElementById('filter-status').addEventListener('change', render);
-document.getElementById('filter-type').addEventListener('change', render);
+function resetPageAndRender(){ visibleCount = PAGE_SIZE; render(); }
+
+document.getElementById('search').addEventListener('input', resetPageAndRender);
+document.getElementById('filter-status').addEventListener('change', resetPageAndRender);
+document.getElementById('filter-type').addEventListener('change', resetPageAndRender);
+document.getElementById('sort-by').addEventListener('change', resetPageAndRender);
+document.getElementById('load-more-btn').addEventListener('click', () => {
+  visibleCount += PAGE_SIZE;
+  render();
+});
 document.querySelectorAll('.tab-btn').forEach(btn => {
   btn.addEventListener('click', () => switchTab(btn.dataset.tab));
 });
