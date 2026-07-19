@@ -471,5 +471,16 @@
     "status": "confirmed",
     "date_reported": "2026-07-15",
     "evidence_url": "https://www.youtube.com/watch?v=Cbg9Myb40so"
+  },
+  {
+    "case_id": "CASE-0045",
+    "category": "community",
+    "ign": "zxcvbn",
+    "steam_id": "STEAM_0:1:199098141",
+    "profile_url": "http://steamcommunity.com/profiles/76561198358462011",
+    "cheat_type": "HARD CHEAT | DDOS + CRASHER",
+    "status": "confirmed",
+    "date_reported": "2026-07-19",
+    "evidence_url": ""
   }
 ]
