@@ -482,5 +482,49 @@
     "status": "confirmed",
     "date_reported": "2026-07-19",
     "evidence_url": ""
+  },
+  {
+    "case_id": "CASE-0046",
+    "category": "community",
+    "ign": "ѕтøямвяιηgєя",
+    "steam_id": "STEAM_0:1:177404628",
+    "profile_url": "http://steamcommunity.com/profiles/76561198315074985",
+    "cheat_type": "RAGE CHEATER",
+    "status": "confirmed",
+    "date_reported": "Unknown",
+    "evidence_url": ""
+  },
+  {
+    "case_id": "CASE-0047",
+    "category": "community",
+    "ign": "highzz",
+    "steam_id": "STEAM_0:0:815151879",
+    "profile_url": "http://steamcommunity.com/profiles/76561199590569486",
+    "cheat_type": "AUTOBHOP",
+    "status": "confirmed",
+    "date_reported": "Unknown",
+    "evidence_url": ""
+  },
+  {
+    "case_id": "CASE-0048",
+    "category": "community",
+    "ign": "Mary",
+    "steam_id": "STEAM_0:0:23774332",
+    "profile_url": "http://steamcommunity.com/profiles/76561198007814392",
+    "cheat_type": "BLATANT CHEAT",
+    "status": "confirmed",
+    "date_reported": "Unknown",
+    "evidence_url": ""
+  },
+  {
+    "case_id": "CASE-0049",
+    "category": "community",
+    "ign": "Bruno",
+    "steam_id": "STEAM_0:0:752537586",
+    "profile_url": "http://steamcommunity.com/profiles/76561199465340900",
+    "cheat_type": "RAGE CHEAT",
+    "status": "confirmed",
+    "date_reported": "Unknown",
+    "evidence_url": ""
   }
 ]
