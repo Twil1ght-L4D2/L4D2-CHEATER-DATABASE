@@ -559,5 +559,16 @@
     "status": "confirmed",
     "date_reported": "2026-07-21",
     "evidence_url": "https://youtu.be/oMrKMIjyLP8?si=r1064tVQiN_R1-e6"
+  },
+  {
+    "case_id": "CASE-0053",
+    "category": "community",
+    "ign": "manga",
+    "steam_id": "STEAM_0:0:916459792",
+    "profile_url": "https://steamcommunity.com/profiles/76561199793185312",
+    "cheat_type": "Rapid-fire",
+    "status": "confirmed",
+    "date_reported": "2026-07-21",
+    "evidence_url": "https://www.youtube.com/watch?v=Bux7BB2lQNU"
   }
 ]
