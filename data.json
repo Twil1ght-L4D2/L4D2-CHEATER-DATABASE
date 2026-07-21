@@ -581,5 +581,16 @@
     "status": "confirmed",
     "date_reported": "2026-07-21",
     "evidence_url": "https://www.youtube.com/watch?v=a_7ILbnvbyg"
+  },
+  {
+    "case_id": "CASE-0055",
+    "category": "community",
+    "ign": "WE THE CHAMPIONS",
+    "steam_id": "STEAM_0:1:527064265",
+    "profile_url": "https://steamcommunity.com/profiles/76561199014394259",
+    "cheat_type": "Speed-Hack",
+    "status": "confirmed",
+    "date_reported": "2026-07-21",
+    "evidence_url": "https://www.youtube.com/watch?v=Le0TbdLvmiw"
   }
 ]
