@@ -647,5 +647,71 @@
     "status": "confirmed",
     "date_reported": "2026-07-21",
     "evidence_url": "https://www.youtube.com/watch?v=S3gG7BKXeLI"
+  },
+  {
+    "case_id": "CASE-0061",
+    "category": "community",
+    "ign": "nothing",
+    "steam_id": "STEAM_0:1:794759977",
+    "profile_url": "https://steamcommunity.com/profiles/76561199549785683",
+    "cheat_type": "ESP / Wallhack",
+    "status": "confirmed",
+    "date_reported": "2026-07-21",
+    "evidence_url": "https://www.youtube.com/watch?v=SCU_HKukxEA"
+  },
+  {
+    "case_id": "CASE-0062",
+    "category": "community",
+    "ign": "55555",
+    "steam_id": "STEAM_0:0:611028255",
+    "profile_url": "https://steamcommunity.com/profiles/76561199182322238",
+    "cheat_type": "Aimbot, ESP / Wallhack",
+    "status": "confirmed",
+    "date_reported": "2026-07-21",
+    "evidence_url": "https://www.youtube.com/watch?v=08jQRZ6mKm4"
+  },
+  {
+    "case_id": "CASE-0063",
+    "category": "community",
+    "ign": "55555",
+    "steam_id": "STEAM_0:0:773495029",
+    "profile_url": "https://steamcommunity.com/profiles/76561199507255786",
+    "cheat_type": "Aimbot, ESP / Wallhack",
+    "status": "confirmed",
+    "date_reported": "2026-07-21",
+    "evidence_url": "https://www.youtube.com/watch?v=08jQRZ6mKm4"
+  },
+  {
+    "case_id": "CASE-0064",
+    "category": "community",
+    "ign": ".",
+    "steam_id": "STEAM_0:1:612403070",
+    "profile_url": "https://steamcommunity.com/profiles/76561199185071869",
+    "cheat_type": "Rage Cheat",
+    "status": "confirmed",
+    "date_reported": "2026-07-21",
+    "evidence_url": "https://www.youtube.com/watch?v=PGtMIn7cmnk"
+  },
+  {
+    "case_id": "CASE-0065",
+    "category": "community",
+    "ign": "N",
+    "steam_id": "STEAM_0:1:439785352",
+    "profile_url": "https://steamcommunity.com/profiles/76561198839836433",
+    "cheat_type": "Rage Cheat",
+    "status": "confirmed",
+    "date_reported": "2026-07-21",
+    "evidence_url": "https://www.youtube.com/watch?v=PGtMIn7cmnk"
+  },
+  {
+    "case_id": "CASE-0066",
+    "category": "community",
+    "ign": "tuf",
+    "steam_id": "STEAM_0:0:808426902",
+    "profile_url": "https://steamcommunity.com/profiles/76561199577119532",
+    "cheat_type": "ESP / Wallhack",
+    "status": "confirmed",
+    "date_reported": "2026-07-21",
+    "evidence_url": "https://www.youtube.com/watch?v=wRN0NG6admo"
   }
 ]
