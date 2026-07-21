@@ -592,5 +592,60 @@
     "status": "confirmed",
     "date_reported": "2026-07-21",
     "evidence_url": "https://www.youtube.com/watch?v=Le0TbdLvmiw"
+  },
+  {
+    "case_id": "CASE-0056",
+    "category": "community",
+    "ign": "locote",
+    "steam_id": "STEAM_0:0:558250125",
+    "profile_url": "https://steamcommunity.com/profiles/76561199076765978",
+    "cheat_type": "Aimbot",
+    "status": "confirmed",
+    "date_reported": "2026-07-21",
+    "evidence_url": "https://www.youtube.com/watch?v=NNdz35Zc2lY"
+  },
+  {
+    "case_id": "CASE-0057",
+    "category": "community",
+    "ign": "loco",
+    "steam_id": "STEAM_0:1:781157990",
+    "profile_url": "https://steamcommunity.com/profiles/76561199522581709",
+    "cheat_type": "Aimbot",
+    "status": "confirmed",
+    "date_reported": "2026-07-21",
+    "evidence_url": "https://www.youtube.com/watch?v=NNdz35Zc2lY"
+  },
+  {
+    "case_id": "CASE-0058",
+    "category": "community",
+    "ign": "hukeao",
+    "steam_id": "STEAM_0:1:526367740",
+    "profile_url": "https://steamcommunity.com/profiles/76561199013001209",
+    "cheat_type": "Rage Cheat",
+    "status": "confirmed",
+    "date_reported": "2026-07-21",
+    "evidence_url": "https://www.youtube.com/watch?v=71dYR00VQC8"
+  },
+  {
+    "case_id": "CASE-0059",
+    "category": "community",
+    "ign": "Capitan Chupapi",
+    "steam_id": "STEAM_0:1:781547619",
+    "profile_url": "https://steamcommunity.com/profiles/76561199523360967",
+    "cheat_type": "Rage Cheat",
+    "status": "confirmed",
+    "date_reported": "2026-07-21",
+    "evidence_url": "https://www.youtube.com/watch?v=S3gG7BKXeLI"
+  },
+  {
+    "case_id": "CASE-0060",
+    "category": "community",
+    "ign": "DanaePro1",
+    "steam_id": "STEAM_0:1:613301766",
+    "profile_url": "https://steamcommunity.com/profiles/76561199186869261",
+    "cheat_type": "Rage Cheat",
+    "status": "confirmed",
+    "date_reported": "2026-07-21",
+    "evidence_url": "https://www.youtube.com/watch?v=S3gG7BKXeLI"
   }
 ]
