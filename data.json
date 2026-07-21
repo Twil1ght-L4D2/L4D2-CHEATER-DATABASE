@@ -570,5 +570,16 @@
     "status": "confirmed",
     "date_reported": "2026-07-21",
     "evidence_url": "https://www.youtube.com/watch?v=Bux7BB2lQNU"
+  },
+  {
+    "case_id": "CASE-0054",
+    "category": "community",
+    "ign": "1Train",
+    "steam_id": "STEAM_0:0:707576496",
+    "profile_url": "https://steamcommunity.com/profiles/76561199375418720",
+    "cheat_type": "Speed-Hack",
+    "status": "confirmed",
+    "date_reported": "2026-07-21",
+    "evidence_url": "https://www.youtube.com/watch?v=a_7ILbnvbyg"
   }
 ]
