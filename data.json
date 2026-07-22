@@ -1714,5 +1714,16 @@
     "status": "confirmed",
     "date_reported": "2026-07-22",
     "evidence_url": "https://www.youtube.com/watch?v=m-3rNwB7lD8"
+  },
+  {
+    "case_id": "CASE-0158",
+    "category": "community",
+    "ign": "Skipper",
+    "steam_id": "STEAM_0:1:227119842",
+    "profile_url": "https://steamcommunity.com/profiles/76561198414505413",
+    "cheat_type": "Rage Cheat, Speed-Hack, No Spread",
+    "status": "confirmed",
+    "date_reported": "2026-07-22",
+    "evidence_url": "https://youtu.be/8b8n8bsLmuU"
   }
 ]
