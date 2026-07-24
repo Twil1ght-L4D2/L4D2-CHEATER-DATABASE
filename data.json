@@ -1725,5 +1725,16 @@
     "status": "confirmed",
     "date_reported": "2026-07-22",
     "evidence_url": "https://youtu.be/8b8n8bsLmuU"
+  },
+  {
+    "case_id": "CASE-0159",
+    "category": "community",
+    "ign": "Guts",
+    "steam_id": "STEAM_0:0:793888374",
+    "profile_url": "https://steamcommunity.com/profiles/76561199548042476",
+    "cheat_type": "Auto-Bhop, Other",
+    "status": "suspected",
+    "date_reported": "2026-07-24",
+    "evidence_url": "https://www.youtube.com/watch?v=S6ZOXG_zK5Q"
   }
 ]
