@@ -1747,5 +1747,60 @@
     "status": "confirmed",
     "date_reported": "2026-07-24",
     "evidence_url": "https://youtu.be/ZXbz3Z55Fao?si=0Ec8Eq64P22y4vVh"
+  },
+  {
+    "case_id": "CASE-0161",
+    "category": "community",
+    "ign": "Melancholic Musician",
+    "steam_id": "STEAM_0:1:621729376",
+    "profile_url": "https://steamcommunity.com/profiles/76561199203724481",
+    "cheat_type": "Rapid-fire",
+    "status": "confirmed",
+    "date_reported": "2026-07-27",
+    "evidence_url": ""
+  },
+  {
+    "case_id": "CASE-0162",
+    "category": "community",
+    "ign": "Hawk",
+    "steam_id": "STEAM_0:1:893065915",
+    "profile_url": "https://steamcommunity.com/profiles/76561199746397559",
+    "cheat_type": "Rapid-fire",
+    "status": "confirmed",
+    "date_reported": "2026-07-27",
+    "evidence_url": ""
+  },
+  {
+    "case_id": "CASE-0163",
+    "category": "community",
+    "ign": "organner",
+    "steam_id": "STEAM_0:1:426062235",
+    "profile_url": "https://steamcommunity.com/profiles/76561198812390199",
+    "cheat_type": "Rapid-fire",
+    "status": "confirmed",
+    "date_reported": "2026-07-27",
+    "evidence_url": ""
+  },
+  {
+    "case_id": "CASE-0164",
+    "category": "community",
+    "ign": "็",
+    "steam_id": "STEAM_0:0:425743354",
+    "profile_url": "https://steamcommunity.com/profiles/76561198811752436",
+    "cheat_type": "Rapid-fire",
+    "status": "confirmed",
+    "date_reported": "2026-07-27",
+    "evidence_url": ""
+  },
+  {
+    "case_id": "CASE-0165",
+    "category": "community",
+    "ign": "I don&#x27;t think so.",
+    "steam_id": "STEAM_0:0:157840733",
+    "profile_url": "https://steamcommunity.com/profiles/76561198275947194",
+    "cheat_type": "Rapid-fire",
+    "status": "confirmed",
+    "date_reported": "2026-07-27",
+    "evidence_url": ""
   }
 ]
