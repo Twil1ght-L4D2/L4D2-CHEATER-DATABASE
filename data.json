@@ -1802,5 +1802,16 @@
     "status": "confirmed",
     "date_reported": "2026-07-27",
     "evidence_url": "https://bans.haven-official.com/index.php?p=banlist&searchText=STEAM_0%3A0%3A157840733&server=&time="
+  },
+  {
+    "case_id": "CASE-0166",
+    "category": "community",
+    "ign": "yo",
+    "steam_id": "STEAM_0:0:572152175",
+    "profile_url": "https://steamcommunity.com/profiles/76561199104570078",
+    "cheat_type": "Auto-Bhop",
+    "status": "confirmed",
+    "date_reported": "2026-07-30",
+    "evidence_url": "https://mirumservers.ru/bans/index.php?p=banlist&searchText=STEAM_0%3A0%3A572152175&server=&time=, https://freiheit-servers.ru/bans/index.php?p=banlist&advSearch=STEAM_0:0:572152175&advType=steamid&cks=1"
   }
 ]
