@@ -35,7 +35,6 @@
     overflow-x:hidden;
   }
 
-  /* ambient glow orbs */
   body::before, body::after{
     content:"";
     position:fixed;
@@ -64,7 +63,6 @@
 
   .wrap{max-width:1180px;margin:0 auto;padding:24px 20px 80px; position:relative; z-index:1;}
 
-  /* HEADER */
   header{
     border:1px solid var(--border);
     background:linear-gradient(180deg, rgba(124,58,237,0.08), rgba(20,15,34,0.9));
@@ -123,7 +121,6 @@
   .stat.confirmed .n{color:var(--purple);}
   .stat.suspected .n{color:var(--amber);}
 
-  /* TABS */
   .tabs{
     display:flex; gap:8px; margin-bottom:16px;
     animation:fadeIn 0.6s ease 0.05s both;
@@ -153,7 +150,6 @@
     box-shadow:0 0 14px var(--purple-glow);
   }
 
-  /* CONTROLS */
   .controls{
     display:flex; gap:10px; margin-bottom:16px; flex-wrap:wrap;
     animation:fadeIn 0.6s ease 0.1s both;
@@ -182,21 +178,20 @@
     letter-spacing:0.5px;
   }
 
-  /* 3-COLUMN GRID CASES CARD LAYOUT */
   .cases{
     display:grid;
     grid-template-columns: repeat(3, 1fr);
-    gap:12px;
+    gap:14px;
   }
   .case{
     background:var(--panel);
     border:1px solid var(--border);
     border-radius:8px;
-    padding:14px 16px;
+    padding:16px;
     display:flex;
     flex-direction:column;
     justify-content:space-between;
-    gap:10px;
+    gap:12px;
     transition:border-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
     opacity:0;
     animation:fadeInUp 0.35s ease forwards;
@@ -229,18 +224,20 @@
 
   .case-header{
     display:flex;
-    justify-content:space-between;
+    flex-direction:column;
     align-items:flex-start;
     gap:8px;
+    width:100%;
   }
   .case-header .ign{
     font-family:'Sora', sans-serif;
     font-size:16px;
     font-weight:700;
     letter-spacing:-0.3px;
-    line-height:1.2;
+    line-height:1.25;
     color:#ffffff;
     word-break:break-word;
+    width:100%;
   }
 
   .case-body{
@@ -272,7 +269,7 @@
     justify-content:space-between;
     align-items:center;
     gap:8px;
-    padding-top:8px;
+    padding-top:10px;
     border-top:1px solid rgba(255,255,255,0.05);
   }
 
@@ -281,14 +278,16 @@
     border:1px solid rgba(244, 63, 94, 0.6);
     background:rgba(244, 63, 94, 0.08);
     color:#f43f5e;
-    padding:2px 6px;
+    padding:3px 8px;
     font-family:'JetBrains Mono', monospace;
     font-size:9.5px;
     font-weight:600;
     text-transform:uppercase;
-    letter-spacing:0.6px;
+    letter-spacing:0.5px;
     border-radius:4px;
-    white-space:nowrap;
+    line-height:1.3;
+    white-space:normal;
+    word-break:break-word;
   }
 
   .stamp{
@@ -297,7 +296,7 @@
     font-size:9.5px;
     letter-spacing:0.6px;
     text-transform:uppercase;
-    padding:2px 6px;
+    padding:3px 8px;
     border:1px solid var(--purple);
     color:var(--purple);
     white-space:nowrap;
@@ -307,7 +306,7 @@
 
   .case-links{
     display:flex;
-    gap:6px;
+    gap:8px;
     align-items:center;
     flex-wrap:wrap;
   }
@@ -321,7 +320,6 @@
   }
   .evidence-link:hover{ text-decoration:underline; }
 
-  /* FLOATING ACTION BUTTONS */
   .fab{
     position:fixed;
     bottom:22px;
@@ -404,7 +402,6 @@
     box-shadow:0 0 0 3px rgba(168,85,247,0.25);
   }
 
-  /* CREDITS */
   .credits{
     display:flex; flex-direction:column; gap:8px;
   }
@@ -440,7 +437,6 @@
     animation:fadeIn 0.4s ease both;
   }
 
-  /* LOAD MORE */
   .load-more-row{ display:flex; justify-content:center; margin-top:16px; }
   .load-more-btn{
     font-family:'JetBrains Mono', monospace;
@@ -456,7 +452,6 @@
   }
   .load-more-btn:hover{ color:var(--ink); border-color:var(--purple); border-style:solid; }
 
-  /* SEARCH HIGHLIGHT */
   mark{
     background:rgba(168,85,247,0.28);
     color:var(--ink);
@@ -464,7 +459,6 @@
     padding:0 1px;
   }
 
-  /* COPY ID BUTTON */
   .copy-id{
     font-family:'JetBrains Mono', monospace;
     font-size:9px;
@@ -479,7 +473,6 @@
   .copy-id:hover{ color:var(--purple); border-color:var(--purple); }
   .copy-id.copied{ color:var(--purple); border-color:var(--purple); }
 
-  /* SKELETON LOADING */
   .skeleton-card{
     background:var(--panel);
     border:1px solid var(--border);
@@ -516,12 +509,12 @@
     color:var(--muted);
   }
 
-  /* RESPONSIVE BREAKPOINTS FOR GRID */
-  @media (max-width:900px){
+   RESPONSIVE BREAKPOINTS */
+  @media (max-width:960px){
     .cases{ grid-template-columns: repeat(2, 1fr); }
   }
 
-  @media (max-width:600px){
+  @media (max-width:620px){
     .cases{ grid-template-columns: 1fr; }
     .fab-discord span{ display:none; }
     .fab-discord{ padding:10px; border-radius:50%; }
