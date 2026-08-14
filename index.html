@@ -536,6 +536,7 @@
       <div class="stat"><div class="n" id="stat-total">0</div><div class="l">Total Cases</div></div>
       <div class="stat confirmed"><div class="n" id="stat-confirmed">0</div><div class="l">Confirmed</div></div>
       <div class="stat suspected"><div class="n" id="stat-suspected">0</div><div class="l">Suspected</div></div>
+      <div class="stat"><div class="n" id="stat-visits">—</div><div class="l">Total Visits</div></div>
     </div>
   </header>
 
@@ -908,6 +909,17 @@ musicBtn.addEventListener('click', () => {
     musicBtn.classList.remove('playing');
   }
 });
+
+fetch('https://twil1ght.goatcounter.com/counter/TOTAL.json')
+  .then(r => r.json())
+  .then(d => {
+    document.getElementById('stat-visits').textContent = d.count;
+  })
+  .catch(() => {
+    document.getElementById('stat-visits').textContent = 'N/A';
+  });
 </script>
+
+<script data-goatcounter="https://twil1ght.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 </body>
 </html>
