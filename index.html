@@ -910,7 +910,7 @@ musicBtn.addEventListener('click', () => {
   }
 });
 
-fetch('https://twil1ght.goatcounter.com/counter/TOTAL.json')
+fetch('https://twil1ght.goatcounter.com/counter/TOTAL.json?_=' + Date.now(), { cache: 'no-store' })
   .then(r => r.json())
   .then(d => {
     document.getElementById('stat-visits').textContent = d.count;
