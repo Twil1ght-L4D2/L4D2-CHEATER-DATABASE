@@ -1813,5 +1813,71 @@
     "status": "confirmed",
     "date_reported": "2026-07-30",
     "evidence_url": "https://mirumservers.ru/bans/index.php?p=banlist&searchText=STEAM_0%3A0%3A572152175&server=&time=, https://freiheit-servers.ru/bans/index.php?p=banlist&advSearch=STEAM_0:0:572152175&advType=steamid&cks=1"
+  },
+  {
+    "case_id": "CASE-0167",
+    "category": "community",
+    "ign": "dxkru",
+    "steam_id": "STEAM_0:0:524357817",
+    "profile_url": "https://steamcommunity.com/profiles/76561199008981362",
+    "cheat_type": "Rapid-fire",
+    "status": "confirmed",
+    "date_reported": "2026-08-16",
+    "evidence_url": "https://bans.haven-official.com/index.php?p=banlist&searchText=STEAM_0%3A0%3A524357817"
+  },
+  {
+    "case_id": "CASE-0168",
+    "category": "community",
+    "ign": "lvl 1 whisperer",
+    "steam_id": "STEAM_0:1:625264777",
+    "profile_url": "https://steamcommunity.com/profiles/76561199210795283",
+    "cheat_type": "Rapid-fire",
+    "status": "confirmed",
+    "date_reported": "2026-08-16",
+    "evidence_url": "https://bans.haven-official.com/index.php?p=banlist&searchText=STEAM_0%3A1%3A625264777"
+  },
+  {
+    "case_id": "CASE-0169",
+    "category": "community",
+    "ign": "MinecRaft",
+    "steam_id": "STEAM_0:0:459097381",
+    "profile_url": "https://steamcommunity.com/profiles/76561198878460490",
+    "cheat_type": "Rapid-fire",
+    "status": "confirmed",
+    "date_reported": "2026-08-16",
+    "evidence_url": "https://bans.haven-official.com/index.php?p=banlist&searchText=STEAM_0%3A0%3A459097381"
+  },
+  {
+    "case_id": "CASE-0170",
+    "category": "community",
+    "ign": "67",
+    "steam_id": "STEAM_0:0:444376174",
+    "profile_url": "https://steamcommunity.com/profiles/76561198849018076",
+    "cheat_type": "Rapid-fire",
+    "status": "confirmed",
+    "date_reported": "2026-08-16",
+    "evidence_url": "https://bans.haven-official.com/index.php?p=banlist&searchText=STEAM_0%3A0%3A444376174"
+  },
+  {
+    "case_id": "CASE-0171",
+    "category": "community",
+    "ign": "Capelense",
+    "steam_id": "STEAM_0:1:52321030",
+    "profile_url": "https://steamcommunity.com/profiles/76561198064907789",
+    "cheat_type": "Rapid-fire, Speed-Hack",
+    "status": "confirmed",
+    "date_reported": "2026-08-16",
+    "evidence_url": "https://bans.haven-official.com/index.php?p=banlist&searchText=STEAM_0%3A1%3A52321030"
+  },
+  {
+    "case_id": "CASE-0172",
+    "category": "community",
+    "ign": "Shaggy_smasher",
+    "steam_id": "STEAM_0:1:951398608",
+    "profile_url": "https://steamcommunity.com/profiles/76561199863062945",
+    "cheat_type": "Rapid-fire",
+    "status": "confirmed",
+    "date_reported": "2026-08-16",
+    "evidence_url": "https://bans.haven-official.com/index.php?p=banlist&searchText=STEAM_0%3A1%3A951398608"
   }
 ]
