@@ -1890,5 +1890,16 @@
     "status": "confirmed",
     "date_reported": "2026-08-19",
     "evidence_url": "https://www.youtube.com/watch?v=5Jc20GnxtxU"
+  },
+  {
+    "case_id": "CASE-0174",
+    "category": "public_figure",
+    "ign": "-21",
+    "steam_id": "STEAM_0:1:938312466",
+    "profile_url": "https://steamcommunity.com/profiles/76561199836890661",
+    "cheat_type": "No Spread, Aimbot, Auto-Bhop",
+    "status": "confirmed",
+    "date_reported": "2026-08-19",
+    "evidence_url": "https://www.youtube.com/watch?v=Z9FBFrdvuvM"
   }
 ]
