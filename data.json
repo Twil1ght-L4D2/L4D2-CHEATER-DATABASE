@@ -1879,5 +1879,16 @@
     "status": "confirmed",
     "date_reported": "2026-08-16",
     "evidence_url": "https://bans.haven-official.com/index.php?p=banlist&searchText=STEAM_0%3A1%3A951398608"
+  },
+  {
+    "case_id": "CASE-0173",
+    "category": "public_figure",
+    "ign": "soxlss",
+    "steam_id": "STEAM_0:0:161953329",
+    "profile_url": "https://steamcommunity.com/profiles/76561198284172386",
+    "cheat_type": "No Spread, Aimbot, Auto-Bhop",
+    "status": "confirmed",
+    "date_reported": "2026-08-19",
+    "evidence_url": "https://www.youtube.com/watch?v=5Jc20GnxtxU"
   }
 ]
