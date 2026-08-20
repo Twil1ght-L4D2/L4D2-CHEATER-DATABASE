@@ -150,6 +150,50 @@
     box-shadow:0 0 14px var(--purple-glow);
   }
 
+  .breakdown-card {
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 16px;
+    margin-bottom: 20px;
+    animation: fadeIn 0.6s ease both;
+  }
+  .breakdown-title {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 1.5px;
+    color: var(--muted);
+    text-transform: uppercase;
+    margin-bottom: 12px;
+  }
+  .breakdown-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .breakdown-chip {
+    background: var(--panel-alt);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    padding: 4px 10px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    color: var(--ink);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    transition: border-color 0.2s, background 0.2s;
+  }
+  .breakdown-chip:hover {
+    border-color: var(--purple);
+    background: rgba(168, 85, 247, 0.1);
+  }
+  .breakdown-chip .count {
+    color: var(--purple);
+    font-weight: 600;
+  }
+
   .controls{
     display:flex; gap:10px; margin-bottom:16px; flex-wrap:wrap;
     animation:fadeIn 0.6s ease 0.1s both;
@@ -546,6 +590,11 @@
     <button class="tab-btn" data-tab="credits">Credits</button>
   </div>
 
+  <div class="breakdown-card" id="breakdown-card">
+    <div class="breakdown-title">Cheat Type Distribution</div>
+    <div class="breakdown-grid" id="breakdown-grid"></div>
+  </div>
+
   <div class="controls controls-sticky" id="controls">
     <input type="text" id="search" placeholder="Search by name or ID...">
     <select id="filter-status">
@@ -614,7 +663,6 @@ let activeTab = 'community';
 const PAGE_SIZE = 15;
 let visibleCount = PAGE_SIZE;
 
-// Map variations to standard names
 const TAG_MAP = {
   'autobhop': 'Auto-Bhop',
   'auto-bhop': 'Auto-Bhop',
@@ -641,7 +689,6 @@ const TAG_MAP = {
 
 function parseTags(cheatString) {
   if (!cheatString) return [];
-  // Split by commas, slashes, or plus signs, and ignore parentheticals like (300hrs only)
   const rawParts = cheatString.split(/[,/+|]+/);
   const tags = new Set();
 
@@ -725,6 +772,41 @@ function sortCases(list, mode){
   return sorted;
 }
 
+function renderBreakdown() {
+  const scoped = allCases.filter(c => c.category === activeTab);
+  const counts = {};
+
+  scoped.forEach(c => {
+    parseTags(c.cheat_type).forEach(tag => {
+      counts[tag] = (counts[tag] || 0) + 1;
+    });
+  });
+
+  const sortedTags = Object.entries(counts).sort((a, b) => b[1] - a[1]);
+  const container = document.getElementById('breakdown-grid');
+
+  if (sortedTags.length === 0) {
+    container.innerHTML = '<span style="color:var(--muted); font-size:11px;">No data available</span>';
+    return;
+  }
+
+  container.innerHTML = sortedTags.map(([tag, count]) => `
+    <div class="breakdown-chip" data-tag="${escapeAttr(tag)}">
+      <span>${escapeHtml(tag)}</span>
+      <span class="count">${count}</span>
+    </div>
+  `).join('');
+
+  container.querySelectorAll('.breakdown-chip').forEach(chip => {
+    chip.addEventListener('click', () => {
+      const selectedTag = chip.dataset.tag;
+      const typeSelect = document.getElementById('filter-type');
+      typeSelect.value = selectedTag;
+      resetPageAndRender();
+    });
+  });
+}
+
 function render(){
   const q = document.getElementById('search').value.trim().toLowerCase();
   const statusFilter = document.getElementById('filter-status').value;
@@ -736,7 +818,6 @@ function render(){
     const matchesQ = !q || c.ign.toLowerCase().includes(q) || (c.steam_id || '').toLowerCase().includes(q);
     const matchesStatus = statusFilter === 'all' || c.status === statusFilter;
     
-    // Check if the individual normalized tags include the selected dropdown option
     const parsedTags = parseTags(c.cheat_type);
     const matchesType = typeFilter === 'all' || parsedTags.includes(typeFilter);
     
@@ -814,7 +895,6 @@ function updateStats(){
 function populateTypeFilter(){
   const scoped = allCases.filter(c => c.category === activeTab);
   
-  // Extract and normalize all sub-tags dynamically
   const tagsSet = new Set();
   scoped.forEach(c => {
     parseTags(c.cheat_type).forEach(t => tagsSet.add(t));
@@ -838,6 +918,7 @@ function switchTab(tab){
 
   const isCredits = tab === 'credits';
   document.getElementById('stat-row').style.display = isCredits ? 'none' : 'flex';
+  document.getElementById('breakdown-card').style.display = isCredits ? 'none' : 'block';
   document.getElementById('controls').style.display = isCredits ? 'none' : 'flex';
   document.getElementById('count-line').style.display = isCredits ? 'none' : 'block';
   document.getElementById('cases').style.display = isCredits ? 'none' : 'grid';
@@ -854,6 +935,7 @@ function switchTab(tab){
   visibleCount = PAGE_SIZE;
   updateStats();
   populateTypeFilter();
+  renderBreakdown();
   render();
 }
 
@@ -866,6 +948,7 @@ fetch('data.json')
     allCases = data;
     updateStats();
     populateTypeFilter();
+    renderBreakdown();
     render();
   })
   .catch(err => {
