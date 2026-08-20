@@ -614,6 +614,48 @@ let activeTab = 'community';
 const PAGE_SIZE = 15;
 let visibleCount = PAGE_SIZE;
 
+// Map variations to standard names
+const TAG_MAP = {
+  'autobhop': 'Auto-Bhop',
+  'auto-bhop': 'Auto-Bhop',
+  'esp': 'ESP / Wallhack',
+  'wallhack': 'ESP / Wallhack',
+  'esp / wallhack': 'ESP / Wallhack',
+  'aimbot': 'Aimbot',
+  'silent aimbot': 'Silent Aimbot',
+  'no spread': 'No Spread',
+  'auto shove': 'Auto-Shove',
+  'blatant cheat': 'Blatant Cheat',
+  'cheat on stream': 'Cheat on Stream',
+  'closet cheat': 'Closet Cheat',
+  'admitted to cheating': 'Admitted to Cheating',
+  'lerp': 'Lerp / Interp',
+  'interp': 'Lerp / Interp',
+  'lerp / interp': 'Lerp / Interp',
+  'name stealer': 'Name Stealer',
+  'rage cheat': 'Rage Cheat',
+  'ddos': 'DDoS / Crasher',
+  'crasher': 'DDoS / Crasher',
+  'hard cheat | ddos + crasher': 'DDoS / Crasher'
+};
+
+function parseTags(cheatString) {
+  if (!cheatString) return [];
+  // Split by commas, slashes, or plus signs, and ignore parentheticals like (300hrs only)
+  const rawParts = cheatString.split(/[,/+|]+/);
+  const tags = new Set();
+
+  rawParts.forEach(p => {
+    let cleaned = p.replace(/\s*\([^)]*\)/g, '').trim();
+    if (!cleaned) return;
+    const lower = cleaned.toLowerCase();
+    const normalized = TAG_MAP[lower] || cleaned;
+    tags.add(normalized);
+  });
+
+  return Array.from(tags);
+}
+
 function escapeRegExp(str){ return str.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'); }
 
 function highlight(text, q){
@@ -693,7 +735,11 @@ function render(){
     const matchesTab = c.category === activeTab;
     const matchesQ = !q || c.ign.toLowerCase().includes(q) || (c.steam_id || '').toLowerCase().includes(q);
     const matchesStatus = statusFilter === 'all' || c.status === statusFilter;
-    const matchesType = typeFilter === 'all' || c.cheat_type === typeFilter;
+    
+    // Check if the individual normalized tags include the selected dropdown option
+    const parsedTags = parseTags(c.cheat_type);
+    const matchesType = typeFilter === 'all' || parsedTags.includes(typeFilter);
+    
     return matchesTab && matchesQ && matchesStatus && matchesType;
   });
 
@@ -767,10 +813,17 @@ function updateStats(){
 
 function populateTypeFilter(){
   const scoped = allCases.filter(c => c.category === activeTab);
-  const types = [...new Set(scoped.map(c => c.cheat_type))].sort();
+  
+  // Extract and normalize all sub-tags dynamically
+  const tagsSet = new Set();
+  scoped.forEach(c => {
+    parseTags(c.cheat_type).forEach(t => tagsSet.add(t));
+  });
+
+  const sortedTypes = Array.from(tagsSet).sort();
   const sel = document.getElementById('filter-type');
   sel.innerHTML = '<option value="all">All cheat types</option>';
-  types.forEach(t => {
+  sortedTypes.forEach(t => {
     const opt = document.createElement('option');
     opt.value = t; opt.textContent = t;
     sel.appendChild(opt);
