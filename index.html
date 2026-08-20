@@ -1,1061 +1,251 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>L4D2 Cheater Watch — Case Files</title>
-<link rel="icon" type="image/svg+xml" href="favicon.svg">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-<style>
-  :root{
-    --bg: #0a0713;
-    --panel: #140f22;
-    --panel-alt: #1c1530;
-    --ink: #ece8f9;
-    --muted: #8b83a8;
-    --border: #2a2142;
-    --border-hover: #4c3a7a;
-    --purple: #a855f7;
-    --purple-soft: #7c3aed;
-    --purple-glow: rgba(168,85,247,0.35);
-    --amber: #f0a640;
-    --amber-glow: rgba(240,166,64,0.28);
-  }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cheat Type Filter & Distribution</title>
+  <style>
+    body {
+      background-color: #0c0a12;
+      color: #e2e8f0;
+      font-family: monospace, sans-serif;
+      padding: 20px;
+    }
 
-  *{box-sizing:border-box;}
-  html,body{margin:0;padding:0;}
-  body{
-    background:var(--bg);
-    color:var(--ink);
-    font-family:'Inter', sans-serif;
-    min-height:100vh;
-    line-height:1.4;
-    position:relative;
-    overflow-x:hidden;
-  }
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+    }
 
-  body::before, body::after{
-    content:"";
-    position:fixed;
-    border-radius:50%;
-    filter:blur(90px);
-    opacity:0.35;
-    z-index:0;
-    pointer-events:none;
-    animation:drift 14s ease-in-out infinite;
-  }
-  body::before{
-    width:420px; height:420px;
-    background:var(--purple-soft);
-    top:-120px; left:-100px;
-  }
-  body::after{
-    width:360px; height:360px;
-    background:#5b21b6;
-    bottom:-140px; right:-80px;
-    animation-delay:-7s;
-  }
-  @keyframes drift{
-    0%,100%{ transform:translate(0,0) scale(1); }
-    50%{ transform:translate(30px,-20px) scale(1.08); }
-  }
+    .distribution-card {
+      background: #13111c;
+      border: 1px solid #282438;
+      border-radius: 8px;
+      padding: 16px;
+      margin-bottom: 16px;
+    }
 
-  .wrap{max-width:1180px;margin:0 auto;padding:24px 20px 80px; position:relative; z-index:1;}
+    .card-title {
+      color: #94a3b8;
+      font-size: 0.75rem;
+      letter-spacing: 0.1em;
+      margin-bottom: 12px;
+    }
 
-  header{
-    border:1px solid var(--border);
-    background:linear-gradient(180deg, rgba(124,58,237,0.08), rgba(20,15,34,0.9));
-    backdrop-filter:blur(6px);
-    padding:24px 24px 20px;
-    position:relative;
-    margin-bottom:20px;
-    overflow:hidden;
-    animation:fadeIn 0.6s ease both;
-  }
-  header::after{
-    content:"";
-    position:absolute;
-    top:0; left:-40%;
-    width:40%; height:1px;
-    background:linear-gradient(90deg, transparent, var(--purple), transparent);
-    animation:scan 4.5s linear infinite;
-  }
-  @keyframes scan{
-    0%{ left:-40%; }
-    100%{ left:110%; }
-  }
+    .badges-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
 
-  .eyebrow{
-    font-family:'JetBrains Mono', monospace;
-    font-size:11px;
-    letter-spacing:2.5px;
-    color:var(--purple);
-    text-transform:uppercase;
-    margin-bottom:8px;
-  }
-  h1{
-    font-family:'Sora', sans-serif;
-    font-weight:800;
-    letter-spacing:-0.5px;
-    font-size:clamp(24px, 4vw, 36px);
-    margin:0 0 8px;
-    background:linear-gradient(135deg, #f4f0ff 20%, var(--purple) 90%);
-    -webkit-background-clip:text;
-    background-clip:text;
-    color:transparent;
-  }
-  header p.desc{
-    color:var(--muted);
-    max-width:640px;
-    font-size:13.5px;
-    margin:0;
-    line-height:1.5;
-  }
-  .stat-row{
-    display:flex; gap:28px; margin-top:18px; flex-wrap:wrap;
-  }
-  .stat{ font-family:'JetBrains Mono', monospace; }
-  .stat .n{font-size:20px; font-weight:500; transition:color .2s;}
-  .stat .l{font-size:10px; color:var(--muted); letter-spacing:1.5px; text-transform:uppercase;}
-  .stat.confirmed .n{color:var(--purple);}
-  .stat.suspected .n{color:var(--amber);}
+    .badge {
+      background: #1a1726;
+      border: 1px solid #3b3554;
+      border-radius: 6px;
+      padding: 6px 12px;
+      font-size: 0.85rem;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      user-select: none;
+    }
 
-  .tabs{
-    display:flex; gap:8px; margin-bottom:16px;
-    animation:fadeIn 0.6s ease 0.05s both;
-  }
-  .tab-btn{
-    font-family:'Sora', sans-serif;
-    font-weight:600;
-    font-size:13px;
-    color:var(--muted);
-    background:var(--panel);
-    border:1px solid var(--border);
-    padding:8px 16px;
-    cursor:pointer;
-    border-radius:3px;
-    transition:color .2s, border-color .2s, background .2s;
-  }
-  .tab-btn .tab-sub{
-    font-weight:400;
-    font-size:11px;
-    opacity:0.7;
-  }
-  .tab-btn:hover{ color:var(--ink); border-color:var(--border-hover); }
-  .tab-btn.active{
-    color:var(--ink);
-    border-color:var(--purple);
-    background:linear-gradient(180deg, rgba(168,85,247,0.14), rgba(168,85,247,0.04));
-    box-shadow:0 0 14px var(--purple-glow);
-  }
+    .badge:hover {
+      border-color: #a855f7;
+      background: #252038;
+    }
 
-  .breakdown-card {
-    background: var(--panel);
-    border: 1px solid var(--border);
-    border-radius: 8px;
-    padding: 16px;
-    margin-bottom: 20px;
-    animation: fadeIn 0.6s ease both;
-  }
-  .breakdown-title {
-    font-family: 'JetBrains Mono', monospace;
-    font-size: 11px;
-    letter-spacing: 1.5px;
-    color: var(--muted);
-    text-transform: uppercase;
-    margin-bottom: 12px;
-  }
-  .breakdown-grid {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-  }
-  .breakdown-chip {
-    background: var(--panel-alt);
-    border: 1px solid var(--border);
-    border-radius: 4px;
-    padding: 4px 10px;
-    font-family: 'JetBrains Mono', monospace;
-    font-size: 11px;
-    color: var(--ink);
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    cursor: pointer;
-    transition: border-color 0.2s, background 0.2s;
-  }
-  .breakdown-chip:hover {
-    border-color: var(--purple);
-    background: rgba(168, 85, 247, 0.1);
-  }
-  .breakdown-chip .count {
-    color: var(--purple);
-    font-weight: 600;
-  }
+    .badge.active {
+      background: #a855f7;
+      color: #fff;
+      border-color: #c084fc;
+    }
 
-  .controls{
-    display:flex; gap:10px; margin-bottom:16px; flex-wrap:wrap;
-    animation:fadeIn 0.6s ease 0.1s both;
-  }
-  .controls input[type="text"], .controls select{
-    background:var(--panel);
-    border:1px solid var(--border);
-    color:var(--ink);
-    font-family:'JetBrains Mono', monospace;
-    font-size:12px;
-    padding:8px 12px;
-    outline:none;
-    transition:border-color .2s, box-shadow .2s;
-  }
-  .controls input[type="text"]{flex:1; min-width:200px;}
-  .controls input[type="text"]:focus, .controls select:focus{
-    border-color:var(--purple);
-    box-shadow:0 0 0 3px var(--purple-glow);
-  }
-  .controls select{cursor:pointer;}
-  .count-line{
-    font-family:'JetBrains Mono', monospace;
-    font-size:11px;
-    color:var(--muted);
-    margin:-6px 0 14px;
-    letter-spacing:0.5px;
-  }
+    .badge-count {
+      color: #c084fc;
+      margin-left: 6px;
+      font-weight: bold;
+    }
 
-  .cases{
-    display:grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap:14px;
-  }
-  .case{
-    background:var(--panel);
-    border:1px solid var(--border);
-    border-radius:8px;
-    padding:16px;
-    display:flex;
-    flex-direction:column;
-    justify-content:space-between;
-    gap:12px;
-    transition:border-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
-    opacity:0;
-    animation:fadeInUp 0.35s ease forwards;
-  }
-  .case:hover{
-    border-color:var(--border-hover);
-    transform:translateY(-2px);
-    box-shadow:0 6px 20px rgba(124,58,237,0.12);
-  }
-  .case.glow-card{
-    border-color:var(--purple);
-    box-shadow:0 0 8px var(--purple-glow), inset 0 0 16px rgba(168,85,247,0.05);
-    animation:fadeInUp 0.35s ease forwards, cardGlow 2.8s ease-in-out infinite;
-  }
-  .case.glow-card:hover{
-    box-shadow:0 0 18px var(--purple-glow), 0 6px 20px rgba(124,58,237,0.2);
-  }
-  @keyframes cardGlow{
-    0%,100%{ box-shadow:0 0 6px var(--purple-glow), inset 0 0 12px rgba(168,85,247,0.04); }
-    50%{ box-shadow:0 0 16px var(--purple-glow), inset 0 0 20px rgba(168,85,247,0.09); }
-  }
-  @keyframes fadeInUp{
-    from{ opacity:0; transform:translateY(6px); }
-    to{ opacity:1; transform:translateY(0); }
-  }
-  @keyframes fadeIn{
-    from{ opacity:0; }
-    to{ opacity:1; }
-  }
+    .badge.active .badge-count {
+      color: #fff;
+    }
 
-  .case-header{
-    display:flex;
-    flex-direction:column;
-    align-items:flex-start;
-    gap:6px;
-    width:100%;
-  }
-  .case-header .ign{
-    font-family:'Sora', sans-serif;
-    font-size:16px;
-    font-weight:700;
-    letter-spacing:-0.3px;
-    line-height:1.25;
-    color:#ffffff;
-    word-break:break-word;
-    width:100%;
-  }
+    .controls-row {
+      display: flex;
+      gap: 12px;
+      margin-bottom: 16px;
+    }
 
-  .case-body{
-    display:flex;
-    flex-direction:column;
-    gap:4px;
-    font-family:'JetBrains Mono', monospace;
-    font-size:11.5px;
-    color:var(--muted);
-  }
-  .case-body .case-id{
-    font-size:9.5px;
-    opacity:0.7;
-    margin-bottom:2px;
-  }
-  .case-body .id-row{
-    display:flex;
-    align-items:center;
-    gap:6px;
-    flex-wrap:wrap;
-  }
-  .case-body .id-row .val{
-    color:var(--ink);
-    word-break:break-all;
-  }
+    .search-input, .select-input {
+      background: #13111c;
+      border: 1px solid #282438;
+      color: #e2e8f0;
+      padding: 10px 14px;
+      border-radius: 6px;
+      outline: none;
+    }
 
-  .case-footer{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    gap:8px;
-    padding-top:10px;
-    border-top:1px solid rgba(255,255,255,0.05);
-  }
+    .search-input {
+      flex: 1;
+    }
 
-  .tag{
-    display:inline-block;
-    border:1px solid rgba(244, 63, 94, 0.6);
-    background:rgba(244, 63, 94, 0.08);
-    color:#f43f5e;
-    padding:3px 8px;
-    font-family:'JetBrains Mono', monospace;
-    font-size:9.5px;
-    font-weight:600;
-    text-transform:uppercase;
-    letter-spacing:0.5px;
-    border-radius:4px;
-    line-height:1.35;
-    white-space:normal;
-    word-break:break-word;
-  }
+    .select-input {
+      min-width: 180px;
+    }
 
-  .stamp{
-    font-family:'Sora', sans-serif;
-    font-weight:700;
-    font-size:9.5px;
-    letter-spacing:0.6px;
-    text-transform:uppercase;
-    padding:3px 8px;
-    border:1px solid var(--purple);
-    color:var(--purple);
-    white-space:nowrap;
-    border-radius:3px;
-  }
-  .stamp.suspected{ border-color:var(--amber); color:var(--amber); }
+    .status-counter {
+      color: #94a3b8;
+      font-size: 0.85rem;
+    }
 
-  .case-links{
-    display:flex;
-    gap:8px;
-    align-items:center;
-    flex-wrap:wrap;
-  }
-  .evidence-link{
-    font-family:'JetBrains Mono', monospace;
-    font-size:10.5px;
-    color:var(--purple);
-    text-decoration:none;
-    white-space:nowrap;
-    transition:color .2s;
-  }
-  .evidence-link:hover{ text-decoration:underline; }
+    .results-list {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
 
-  .fab{
-    position:fixed;
-    bottom:22px;
-    z-index:50;
-    display:flex;
-    align-items:center;
-    gap:8px;
-    background:var(--panel);
-    border:1px solid var(--border);
-    color:var(--ink);
-    text-decoration:none;
-    cursor:pointer;
-    box-shadow:0 6px 20px rgba(0,0,0,0.4);
-    transition:border-color .2s, transform .2s, box-shadow .2s;
-    font-family:'Sora', sans-serif;
-    font-size:13px;
-    font-weight:600;
-  }
-  .fab:hover{ transform:translateY(-2px); border-color:var(--purple); box-shadow:0 10px 26px rgba(168,85,247,0.25); }
-
-  .fab-discord{
-    right:22px;
-    padding:10px 16px;
-    border-radius:999px;
-  }
-  .fab-discord svg{ color:var(--purple); flex-shrink:0; }
-
-  .fab-music{
-    left:22px;
-    width:42px; height:42px;
-    border-radius:50%;
-    justify-content:center;
-    padding:0;
-  }
-  .fab-music svg{ color:var(--muted); transition:color .2s; }
-  .fab-music.playing svg{ color:var(--purple); }
-  .fab-music.playing{ animation:cardGlow 2.8s ease-in-out infinite; border-color:var(--purple); }
-
-  .music-controls{
-    position:fixed;
-    left:22px;
-    bottom:72px;
-    z-index:50;
-    display:flex;
-    align-items:center;
-    gap:10px;
-    background:var(--panel);
-    border:1px solid var(--border);
-    border-radius:999px;
-    padding:8px 14px 8px 12px;
-    box-shadow:0 6px 20px rgba(0,0,0,0.4);
-    opacity:0;
-    transform:translateY(6px) scale(.96);
-    pointer-events:none;
-    transition:opacity .2s ease, transform .2s ease;
-  }
-  .music-controls.visible{
-    opacity:1;
-    transform:translateY(0) scale(1);
-    pointer-events:auto;
-  }
-  .music-controls svg{ color:var(--muted); flex-shrink:0; }
-  .music-controls input[type="range"]{
-    -webkit-appearance:none;
-    appearance:none;
-    width:100px;
-    height:4px;
-    border-radius:999px;
-    background:var(--border);
-    outline:none;
-    cursor:pointer;
-  }
-  .music-controls input[type="range"]::-webkit-slider-thumb{
-    -webkit-appearance:none;
-    appearance:none;
-    width:12px; height:12px;
-    border-radius:50%;
-    background:var(--purple);
-    cursor:pointer;
-    box-shadow:0 0 0 3px rgba(168,85,247,0.25);
-  }
-
-  .credits{
-    display:flex; flex-direction:column; gap:8px;
-  }
-  .credit-card{
-    background:var(--panel);
-    border:1px solid var(--border);
-    padding:12px 16px;
-    display:flex;
-    align-items:center;
-    gap:14px;
-    opacity:0;
-    animation:fadeInUp 0.35s ease forwards;
-    transition:border-color .2s ease, transform .2s ease;
-  }
-  .credit-card:hover{
-    border-color:var(--border-hover);
-    transform:translateY(-1px);
-  }
-  .credit-heart{ font-size:18px; flex-shrink:0; }
-  .credit-info .name{ font-family:'Sora', sans-serif; font-weight:600; font-size:15px; }
-  .credit-info .role{ font-family:'JetBrains Mono', monospace; font-size:11px; color:var(--muted); margin-top:1px; }
-  .credit-info a{ color:var(--purple); text-decoration:none; }
-  .credit-info a:hover{ text-decoration:underline; }
-  .credits-intro{ color:var(--muted); font-size:13.5px; margin-bottom:12px; }
-
-  .empty{
-    grid-column: 1 / -1;
-    text-align:center;
-    color:var(--muted);
-    font-family:'JetBrains Mono', monospace;
-    padding:40px 20px;
-    border:1px dashed var(--border);
-    animation:fadeIn 0.4s ease both;
-  }
-
-  .load-more-row{ display:flex; justify-content:center; margin-top:16px; }
-  .load-more-btn{
-    font-family:'JetBrains Mono', monospace;
-    font-size:12px;
-    letter-spacing:0.5px;
-    color:var(--muted);
-    background:var(--panel);
-    border:1px dashed var(--border);
-    padding:10px 18px;
-    cursor:pointer;
-    border-radius:3px;
-    transition:color .2s, border-color .2s;
-  }
-  .load-more-btn:hover{ color:var(--ink); border-color:var(--purple); border-style:solid; }
-
-  mark{
-    background:rgba(168,85,247,0.28);
-    color:var(--ink);
-    border-radius:2px;
-    padding:0 1px;
-  }
-
-  .copy-id{
-    font-family:'JetBrains Mono', monospace;
-    font-size:9px;
-    color:var(--muted);
-    background:none;
-    border:1px solid var(--border);
-    border-radius:3px;
-    padding:0 4px;
-    cursor:pointer;
-    transition:color .2s, border-color .2s;
-  }
-  .copy-id:hover{ color:var(--purple); border-color:var(--purple); }
-  .copy-id.copied{ color:var(--purple); border-color:var(--purple); }
-
-  .skeleton-card{
-    background:var(--panel);
-    border:1px solid var(--border);
-    height:130px;
-    border-radius:8px;
-    position:relative;
-    overflow:hidden;
-  }
-  .skeleton-card::after{
-    content:"";
-    position:absolute; inset:0;
-    background:linear-gradient(90deg, transparent, rgba(168,85,247,0.08), transparent);
-    animation:shimmer 1.4s ease-in-out infinite;
-  }
-  @keyframes shimmer{
-    0%{ transform:translateX(-100%); }
-    100%{ transform:translateX(100%); }
-  }
-
-  .controls-sticky{
-    position:sticky;
-    top:0;
-    z-index:20;
-    background:var(--bg);
-    padding-top:8px;
-    margin-top:-8px;
-  }
-
-  footer{
-    margin-top:32px;
-    padding-top:16px;
-    border-top:1px solid var(--border);
-    font-size:11.5px;
-    color:var(--muted);
-  }
-
-  @media (max-width:960px){
-    .cases{ grid-template-columns: repeat(2, 1fr); }
-  }
-
-  @media (max-width:620px){
-    .cases{ grid-template-columns: 1fr; }
-    .fab-discord span{ display:none; }
-    .fab-discord{ padding:10px; border-radius:50%; }
-  }
-
-  @media (prefers-reduced-motion: reduce){
-    *{ animation-duration:0.01ms !important; animation-iteration-count:1 !important; transition-duration:0.01ms !important; }
-    body::before, body::after{ display:none; }
-  }
-</style>
+    .case-item {
+      background: #13111c;
+      border: 1px solid #282438;
+      padding: 12px;
+      border-radius: 6px;
+      display: flex;
+      justify-content: space-between;
+    }
+  </style>
 </head>
 <body>
-<div class="wrap">
 
-  <header>
-    <div class="eyebrow">Community Report Board — Left 4 Dead 2</div>
-    <h1>Cheater Watch // Case Files</h1>
-    <p class="desc">A community-maintained log of reported cheaters, compiled from in-game encounters and reviewed evidence. Entries marked <strong style="color:var(--purple)">Confirmed</strong> have verified evidence attached. Entries marked <strong style="color:var(--amber)">Suspected</strong> are under review — treat these as reports, not proven fact. The "Known Cheaters" tab tracks publicly documented cases involving content creators.</p>
-    <div class="stat-row" id="stat-row">
-      <div class="stat"><div class="n" id="stat-total">0</div><div class="l">Total Cases</div></div>
-      <div class="stat confirmed"><div class="n" id="stat-confirmed">0</div><div class="l">Confirmed</div></div>
-      <div class="stat suspected"><div class="n" id="stat-suspected">0</div><div class="l">Suspected</div></div>
-      <div class="stat"><div class="n" id="stat-visits">—</div><div class="l">Total Visits</div></div>
-    </div>
-  </header>
-
-  <div class="tabs">
-    <button class="tab-btn active" data-tab="community">Community Reports</button>
-    <button class="tab-btn" data-tab="public_figure">Known Cheaters <span class="tab-sub">(Public Figures)</span></button>
-    <button class="tab-btn" data-tab="credits">Credits</button>
+<div class="container">
+  
+  <div class="distribution-card">
+    <div class="card-title">CHEAT TYPE DISTRIBUTION</div>
+    <div id="badgesContainer" class="badges-wrapper"></div>
   </div>
 
-  <div class="breakdown-card" id="breakdown-card">
-    <div class="breakdown-title">Cheat Type Distribution</div>
-    <div class="breakdown-grid" id="breakdown-grid"></div>
-  </div>
-
-  <div class="controls controls-sticky" id="controls">
-    <input type="text" id="search" placeholder="Search by name or ID...">
-    <select id="filter-status">
-      <option value="all">All statuses</option>
-      <option value="confirmed">Confirmed only</option>
-      <option value="suspected">Suspected only</option>
-    </select>
-    <select id="filter-type">
-      <option value="all">All cheat types</option>
-    </select>
-    <select id="sort-by">
-      <option value="date-desc">Newest first</option>
-      <option value="date-asc">Oldest first</option>
-      <option value="name-asc">Name A → Z</option>
-      <option value="name-desc">Name Z → A</option>
+  <div class="controls-row">
+    <input type="text" id="searchInput" class="search-input" placeholder="Search by name or ID...">
+    
+    <select id="cheatTypeSelect" class="select-input">
+      <option value="ALL">All Cheat Types</option>
     </select>
   </div>
 
-  <div class="count-line" id="count-line"></div>
-
-  <div class="cases" id="cases"></div>
-
-  <div class="load-more-row" id="load-more-row" style="display:none;">
-    <button class="load-more-btn" id="load-more-btn">Open next 15 case files</button>
-  </div>
-
-  <div class="credits" id="credits" style="display:none;"></div>
-
-  <footer>
-    Reports are submitted by community members and reviewed where possible. If you believe an entry is inaccurate,
-    contact the moderators of the source Discord to request a review. This list is provided for community awareness
-    and is not a legal determination of wrongdoing.
-  </footer>
+  <div id="statusCounter" class="status-counter"></div>
+  <div id="resultsList" class="results-list" style="margin-top: 12px;"></div>
 
 </div>
-
-<a href="https://discord.gg/b9AcspkShQ" target="_blank" rel="noopener" class="fab fab-discord" title="Join our Discord">
-  <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-    <path d="M8 12h.01M16 12h.01M7 8c3-1.2 7-1.2 10 0M6 16c3 1.2 9 1.2 12 0M5 8c-1 3-1 7 0 10 1.5 1 3.5 1.5 5 1.5l1-2M19 8c1 3 1 7 0 10-1.5 1-3.5 1.5-5 1.5l-1-2"/>
-  </svg>
-  <span>Discord</span>
-</a>
-
-<button class="fab fab-music" id="music-toggle" title="Toggle background music">
-  <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" id="music-icon">
-    <path d="M9 18V5l12-2v13"/>
-    <circle cx="6" cy="18" r="3"/>
-    <circle cx="18" cy="16" r="3"/>
-  </svg>
-</button>
-
-<div class="music-controls" id="music-controls">
-  <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" id="volume-icon">
-    <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/>
-    <path d="M15.54 8.46a5 5 0 0 1 0 7.07"/>
-  </svg>
-  <input type="range" id="volume-slider" min="0" max="100" step="1" title="Music volume">
-</div>
-
-<audio id="bg-music" preload="none"></audio>
 
 <script>
-let allCases = [];
-let allCredits = [];
-let activeTab = 'community';
-const PAGE_SIZE = 15;
-let visibleCount = PAGE_SIZE;
+  const mockCases = [
+    { case_id: "CASE-001", ign: "xvh", cheat_type: "Aimbot" },
+    { case_id: "CASE-002", ign: "zxcvbn", cheat_type: "Aimbot" },
+    { case_id: "CASE-003", ign: "waller99", cheat_type: "ESP / Wallhack" },
+    { case_id: "CASE-004", ign: "fastboi", cheat_type: "Speedhack" },
+    { case_id: "CASE-005", ign: "bhopgod", cheat_type: "Auto-Bhop" },
+    { case_id: "CASE-006", ign: "laggy", cheat_type: "Lerp / Interp" },
+    { case_id: "CASE-007", ign: "streamboy", cheat_type: "Cheat on Stream" }
+  ];
 
-const TAG_MAP = {
-  'autobhop': 'Auto-Bhop',
-  'auto-bhop': 'Auto-Bhop',
-  'esp': 'ESP / Wallhack',
-  'wallhack': 'ESP / Wallhack',
-  'esp / wallhack': 'ESP / Wallhack',
-  'aimbot': 'Aimbot',
-  'silent aimbot': 'Silent Aimbot',
-  'no spread': 'No Spread',
-  'auto shove': 'Auto-Shove',
-  'blatant cheat': 'Blatant Cheat',
-  'cheat on stream': 'Cheat on Stream',
-  'closet cheat': 'Closet Cheat',
-  'admitted to cheating': 'Admitted to Cheating',
-  'lerp': 'Lerp / Interp',
-  'interp': 'Lerp / Interp',
-  'lerp / interp': 'Lerp / Interp',
-  'name stealer': 'Name Stealer',
-  'rage cheat': 'Rage Cheat',
-  'ddos': 'DDoS / Crasher',
-  'crasher': 'DDoS / Crasher',
-  'hard cheat | ddos + crasher': 'DDoS / Crasher'
-};
+  let activeFilter = "ALL";
+  let searchQuery = "";
 
-function parseTags(cheatString) {
-  if (!cheatString) return [];
-  const rawParts = cheatString.split(/[,/+|]+/);
-  const tags = new Set();
+  const badgesContainer = document.getElementById("badgesContainer");
+  const cheatTypeSelect = document.getElementById("cheatTypeSelect");
+  const searchInput = document.getElementById("searchInput");
+  const resultsList = document.getElementById("resultsList");
+  const statusCounter = document.getElementById("statusCounter");
 
-  rawParts.forEach(p => {
-    let cleaned = p.replace(/\s*\([^)]*\)/g, '').trim();
-    if (!cleaned) return;
-    const lower = cleaned.toLowerCase();
-    const normalized = TAG_MAP[lower] || cleaned;
-    tags.add(normalized);
-  });
+  function init() {
+    const counts = calculateCounts(mockCases);
+    renderBadgesAndOptions(counts);
+    
+    cheatTypeSelect.addEventListener("change", (e) => {
+      activeFilter = e.target.value;
+      updateUI();
+    });
 
-  return Array.from(tags);
-}
+    searchInput.addEventListener("input", (e) => {
+      searchQuery = e.target.value.toLowerCase();
+      renderResults();
+    });
 
-function escapeRegExp(str){ return str.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'); }
-
-function highlight(text, q){
-  const safe = escapeHtml(text);
-  if(!q) return safe;
-  const re = new RegExp(escapeRegExp(q), 'ig');
-  return escapeHtml(text).replace(re, m => `<mark>${m}</mark>`);
-}
-
-function renderCredits(){
-  const container = document.getElementById('credits');
-  if(allCredits.length === 0){
-    container.innerHTML = '<div class="empty">No credits added yet.</div>';
-    return;
+    updateUI();
   }
-  container.innerHTML = `<p class="credits-intro">This board wouldn't exist without the people who send in reports, evidence, and tips. Thank you.</p>` +
-    allCredits.map((p, i) => `
-      <div class="credit-card" style="animation-delay:${Math.min(i * 30, 300)}ms">
-        <div class="credit-heart">💜</div>
-        <div class="credit-info">
-          <div class="name">${p.link ? `<a href="${escapeAttr(p.link)}" target="_blank" rel="noopener">${escapeHtml(p.name)}</a>` : escapeHtml(p.name)}</div>
-          <div class="role">${escapeHtml(p.role || 'Contributor')}</div>
-        </div>
+
+  function calculateCounts(data) {
+    return data.reduce((acc, item) => {
+      acc[item.cheat_type] = (acc[item.cheat_type] || 0) + 1;
+      return acc;
+    }, {});
+  }
+
+  function renderBadgesAndOptions(counts) {
+    const sortedTypes = Object.keys(counts).sort((a, b) => counts[b] - counts[a]);
+
+    badgesContainer.innerHTML = "";
+    
+    const allBadge = createBadge("All Types", mockCases.length, "ALL");
+    badgesContainer.appendChild(allBadge);
+
+    sortedTypes.forEach(type => {
+      const badge = createBadge(type, counts[type], type);
+      badgesContainer.appendChild(badge);
+
+      const option = document.createElement("option");
+      option.value = type;
+      option.textContent = `${type} (${counts[type]})`;
+      cheatTypeSelect.appendChild(option);
+    });
+  }
+
+  function createBadge(label, count, value) {
+    const badge = document.createElement("div");
+    badge.className = "badge";
+    badge.dataset.value = value;
+    badge.innerHTML = `${label} <span class="badge-count">${count}</span>`;
+    
+    badge.addEventListener("click", () => {
+      activeFilter = value;
+      cheatTypeSelect.value = value;
+      updateUI();
+    });
+
+    return badge;
+  }
+
+  function updateUI() {
+    document.querySelectorAll(".badge").forEach(badge => {
+      if (badge.dataset.value === activeFilter) {
+        badge.classList.add("active");
+      } else {
+        badge.classList.remove("active");
+      }
+    });
+
+    renderResults();
+  }
+
+  function renderResults() {
+    const filtered = mockCases.filter(item => {
+      const matchesType = activeFilter === "ALL" || item.cheat_type === activeFilter;
+      const matchesSearch = item.ign.toLowerCase().includes(searchQuery) || 
+                            item.case_id.toLowerCase().includes(searchQuery);
+      return matchesType && matchesSearch;
+    });
+
+    statusCounter.textContent = `Showing ${filtered.length} of ${mockCases.length} total cases`;
+
+    resultsList.innerHTML = filtered.map(item => `
+      <div class="case-item">
+        <span><strong>${item.case_id}</strong> - ${item.ign}</span>
+        <span style="color: #a855f7;">${item.cheat_type}</span>
       </div>
     `).join('');
-}
-
-function renderEvidence(c){
-  let urls = [];
-  if(Array.isArray(c.evidence_urls) && c.evidence_urls.length){
-    urls = c.evidence_urls;
-  } else if(c.evidence_url){
-    urls = c.evidence_url.split(',').map(u => u.trim()).filter(Boolean);
   }
 
-  if(urls.length === 0) return '';
-  
-  return urls.map((u, i) => 
-    `<a class="evidence-link" href="${escapeAttr(u)}" target="_blank" rel="noopener">Evidence ${urls.length > 1 ? (i+1) : ''} ↗</a>`
-  ).join('');
-}
-
-function stampLabel(status){
-  return status === 'confirmed' ? 'Confirmed' : 'Suspected';
-}
-
-function countUp(el, target){
-  const duration = 600;
-  const start = performance.now();
-  function tick(now){
-    const p = Math.min((now - start) / duration, 1);
-    el.textContent = Math.round(target * p);
-    if(p < 1) requestAnimationFrame(tick);
-  }
-  requestAnimationFrame(tick);
-}
-
-function sortCases(list, mode){
-  const sorted = [...list];
-  const dateVal = c => (c.date_reported && c.date_reported !== 'Unknown') ? new Date(c.date_reported).getTime() : -Infinity;
-  switch(mode){
-    case 'date-asc': sorted.sort((a,b) => dateVal(a) - dateVal(b)); break;
-    case 'name-asc': sorted.sort((a,b) => a.ign.localeCompare(b.ign)); break;
-    case 'name-desc': sorted.sort((a,b) => b.ign.localeCompare(a.ign)); break;
-    default: sorted.sort((a,b) => dateVal(b) - dateVal(a));
-  }
-  return sorted;
-}
-
-function renderBreakdown() {
-  const scoped = allCases.filter(c => c.category === activeTab);
-  const counts = {};
-
-  scoped.forEach(c => {
-    parseTags(c.cheat_type).forEach(tag => {
-      counts[tag] = (counts[tag] || 0) + 1;
-    });
-  });
-
-  const sortedTags = Object.entries(counts).sort((a, b) => b[1] - a[1]);
-  const container = document.getElementById('breakdown-grid');
-
-  if (sortedTags.length === 0) {
-    container.innerHTML = '<span style="color:var(--muted); font-size:11px;">No data available</span>';
-    return;
-  }
-
-  container.innerHTML = sortedTags.map(([tag, count]) => `
-    <div class="breakdown-chip" data-tag="${escapeAttr(tag)}">
-      <span>${escapeHtml(tag)}</span>
-      <span class="count">${count}</span>
-    </div>
-  `).join('');
-
-  container.querySelectorAll('.breakdown-chip').forEach(chip => {
-    chip.addEventListener('click', () => {
-      const selectedTag = chip.dataset.tag;
-      const typeSelect = document.getElementById('filter-type');
-      typeSelect.value = selectedTag;
-      resetPageAndRender();
-    });
-  });
-}
-
-function render(){
-  const q = document.getElementById('search').value.trim().toLowerCase();
-  const statusFilter = document.getElementById('filter-status').value;
-  const typeFilter = document.getElementById('filter-type').value;
-  const sortMode = document.getElementById('sort-by').value;
-
-  let filtered = allCases.filter(c => {
-    const matchesTab = c.category === activeTab;
-    const matchesQ = !q || c.ign.toLowerCase().includes(q) || (c.steam_id || '').toLowerCase().includes(q);
-    const matchesStatus = statusFilter === 'all' || c.status === statusFilter;
-    
-    const parsedTags = parseTags(c.cheat_type);
-    const matchesType = typeFilter === 'all' || parsedTags.includes(typeFilter);
-    
-    return matchesTab && matchesQ && matchesStatus && matchesType;
-  });
-
-  filtered = sortCases(filtered, sortMode);
-
-  const list = document.getElementById('cases');
-  const loadMoreRow = document.getElementById('load-more-row');
-  const shown = filtered.slice(0, visibleCount);
-
-  document.getElementById('count-line').textContent =
-    `Showing ${shown.length} of ${filtered.length} matching case${filtered.length===1?'':'s'} (${allCases.length} total)`;
-
-  if(filtered.length === 0){
-    list.innerHTML = '<div class="empty">No cases match this search. Try clearing filters.</div>';
-    loadMoreRow.style.display = 'none';
-    return;
-  }
-
-  list.innerHTML = shown.map((c, i) => `
-    <div class="case ${c.category === 'public_figure' ? 'glow-card' : ''}" style="animation-delay:${Math.min(i * 30, 300)}ms">
-      <div class="case-header">
-        <div class="ign">${highlight(c.ign, q)}</div>
-        <span class="tag">${escapeHtml(c.cheat_type)}</span>
-      </div>
-      
-      <div class="case-body">
-        <div class="case-id">ID: ${c.case_id}</div>
-        <div class="id-row">
-          <span>SteamID64:</span>
-          <span class="val">${highlight(c.steam_id || 'N/A', q)}</span>
-          ${c.steam_id ? `<button class="copy-id" data-copy="${escapeAttr(c.steam_id)}" title="Copy SteamID">copy</button>` : ''}
-        </div>
-        <div>Reported: <span class="val">${escapeHtml(c.date_reported)}</span></div>
-      </div>
-
-      <div class="case-footer">
-        <div class="case-links">
-          ${c.profile_url ? `<a class="evidence-link" href="${escapeAttr(c.profile_url)}" target="_blank" rel="noopener">View Steam Profile ↗</a>` : ''}
-          ${renderEvidence(c)}
-        </div>
-        <div class="stamp ${c.status === 'suspected' ? 'suspected' : ''}">${stampLabel(c.status)}</div>
-      </div>
-    </div>
-  `).join('');
-
-  loadMoreRow.style.display = (visibleCount < filtered.length) ? 'flex' : 'none';
-
-  list.querySelectorAll('.copy-id').forEach(btn => {
-    btn.addEventListener('click', () => {
-      navigator.clipboard.writeText(btn.dataset.copy).then(() => {
-        const original = btn.textContent;
-        btn.textContent = 'copied!';
-        btn.classList.add('copied');
-        setTimeout(() => { btn.textContent = original; btn.classList.remove('copied'); }, 1200);
-      });
-    });
-  });
-}
-
-function escapeHtml(str){
-  return String(str ?? '').replace(/[&<>"']/g, m => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
-}
-function escapeAttr(str){ return escapeHtml(str); }
-
-function updateStats(){
-  const scoped = allCases.filter(c => c.category === activeTab);
-  countUp(document.getElementById('stat-total'), scoped.length);
-  countUp(document.getElementById('stat-confirmed'), scoped.filter(c=>c.status==='confirmed').length);
-  countUp(document.getElementById('stat-suspected'), scoped.filter(c=>c.status==='suspected').length);
-}
-
-function populateTypeFilter(){
-  const scoped = allCases.filter(c => c.category === activeTab);
-  
-  const tagsSet = new Set();
-  scoped.forEach(c => {
-    parseTags(c.cheat_type).forEach(t => tagsSet.add(t));
-  });
-
-  const sortedTypes = Array.from(tagsSet).sort();
-  const sel = document.getElementById('filter-type');
-  sel.innerHTML = '<option value="all">All cheat types</option>';
-  sortedTypes.forEach(t => {
-    const opt = document.createElement('option');
-    opt.value = t; opt.textContent = t;
-    sel.appendChild(opt);
-  });
-}
-
-function switchTab(tab){
-  activeTab = tab;
-  document.querySelectorAll('.tab-btn').forEach(btn => {
-    btn.classList.toggle('active', btn.dataset.tab === tab);
-  });
-
-  const isCredits = tab === 'credits';
-  document.getElementById('stat-row').style.display = isCredits ? 'none' : 'flex';
-  document.getElementById('breakdown-card').style.display = isCredits ? 'none' : 'block';
-  document.getElementById('controls').style.display = isCredits ? 'none' : 'flex';
-  document.getElementById('count-line').style.display = isCredits ? 'none' : 'block';
-  document.getElementById('cases').style.display = isCredits ? 'none' : 'grid';
-  document.getElementById('load-more-row').style.display = 'none';
-  document.getElementById('credits').style.display = isCredits ? 'flex' : 'none';
-
-  if(isCredits){
-    renderCredits();
-    return;
-  }
-
-  document.getElementById('search').value = '';
-  document.getElementById('filter-status').value = 'all';
-  visibleCount = PAGE_SIZE;
-  updateStats();
-  populateTypeFilter();
-  renderBreakdown();
-  render();
-}
-
-document.getElementById('cases').innerHTML =
-  Array.from({length:6}).map(() => '<div class="skeleton-card"></div>').join('');
-
-fetch('data.json')
-  .then(r => r.json())
-  .then(data => {
-    allCases = data;
-    updateStats();
-    populateTypeFilter();
-    renderBreakdown();
-    render();
-  })
-  .catch(err => {
-    document.getElementById('cases').innerHTML = '<div class="empty">Could not load data.json. Make sure it is in the same folder as this page.</div>';
-    console.error(err);
-  });
-
-fetch('credits.json')
-  .then(r => r.json())
-  .then(data => { allCredits = data; })
-  .catch(err => { console.error('Could not load credits.json', err); });
-
-function resetPageAndRender(){ visibleCount = PAGE_SIZE; render(); }
-
-document.getElementById('search').addEventListener('input', resetPageAndRender);
-document.getElementById('filter-status').addEventListener('change', resetPageAndRender);
-document.getElementById('filter-type').addEventListener('change', resetPageAndRender);
-document.getElementById('sort-by').addEventListener('change', resetPageAndRender);
-document.getElementById('load-more-btn').addEventListener('click', () => {
-  visibleCount += PAGE_SIZE;
-  render();
-});
-document.querySelectorAll('.tab-btn').forEach(btn => {
-  btn.addEventListener('click', () => switchTab(btn.dataset.tab));
-});
-
-const musicBtn = document.getElementById('music-toggle');
-const bgMusic = document.getElementById('bg-music');
-const musicControls = document.getElementById('music-controls');
-const volumeSlider = document.getElementById('volume-slider');
-
-const savedVolume = parseFloat(localStorage.getItem('bgMusicVolume'));
-const initialVolume = isNaN(savedVolume) ? 0.12 : savedVolume;
-bgMusic.volume = initialVolume;
-volumeSlider.value = Math.round(initialVolume * 100);
-
-let musicPlaylist = [];
-let currentTrackIndex = 0;
-
-volumeSlider.addEventListener('input', () => {
-  const vol = volumeSlider.value / 100;
-  bgMusic.volume = vol;
-  localStorage.setItem('bgMusicVolume', vol);
-});
-
-let hideControlsTimeout;
-function showMusicControls(){
-  clearTimeout(hideControlsTimeout);
-  musicControls.classList.add('visible');
-  hideControlsTimeout = setTimeout(() => {
-    musicControls.classList.remove('visible');
-  }, 4000);
-}
-musicBtn.addEventListener('mouseenter', showMusicControls);
-musicControls.addEventListener('mouseenter', () => clearTimeout(hideControlsTimeout));
-musicControls.addEventListener('mouseleave', () => {
-  hideControlsTimeout = setTimeout(() => {
-    musicControls.classList.remove('visible');
-  }, 1500);
-});
-
-function loadTrack(index){
-  if(musicPlaylist.length === 0) return;
-  currentTrackIndex = ((index % musicPlaylist.length) + musicPlaylist.length) % musicPlaylist.length;
-  const track = musicPlaylist[currentTrackIndex];
-  bgMusic.src = track.file;
-  musicBtn.title = `Now playing: ${track.title || track.file}`;
-}
-
-fetch('music.json')
-  .then(r => r.json())
-  .then(data => {
-    musicPlaylist = data;
-    if(musicPlaylist.length > 0) loadTrack(0);
-  })
-  .catch(err => console.error('Could not load music.json:', err));
-
-bgMusic.addEventListener('ended', () => {
-  loadTrack(currentTrackIndex + 1);
-  bgMusic.play().catch(err => console.error('Could not play next track:', err));
-});
-
-musicBtn.addEventListener('click', () => {
-  showMusicControls();
-  if(musicPlaylist.length === 0){
-    console.warn('No tracks loaded from music.json yet.');
-    return;
-  }
-  if(bgMusic.paused){
-    bgMusic.play().catch(err => console.error('Could not play music:', err));
-    musicBtn.classList.add('playing');
-  } else {
-    bgMusic.pause();
-    musicBtn.classList.remove('playing');
-  }
-});
-
-fetch('https://twil1ght.goatcounter.com/counter/TOTAL.json?_=' + Date.now(), { cache: 'no-store' })
-  .then(r => r.json())
-  .then(d => {
-    document.getElementById('stat-visits').textContent = d.count;
-  })
-  .catch(() => {
-    document.getElementById('stat-visits').textContent = 'N/A';
-  });
+  init();
 </script>
 
-<script data-goatcounter="https://twil1ght.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 </body>
 </html>
