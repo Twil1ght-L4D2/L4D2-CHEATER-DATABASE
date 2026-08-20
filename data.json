@@ -5,10 +5,10 @@
     "ign": "Novola",
     "steam_id": "STEAM_0:0:707824400",
     "profile_url": "http://steamcommunity.com/profiles/76561199375914528",
-    "cheat_type": "Rapid-fire",
+    "cheat_type": "Rapid-Fire",
     "status": "confirmed",
     "date_reported": "Unknown",
-    "evidence_url": ""
+    "evidence_urls": []
   },
   {
     "case_id": "CASE-0002",
@@ -16,10 +16,10 @@
     "ign": "Senseless",
     "steam_id": "STEAM_0:0:896883950",
     "profile_url": "http://steamcommunity.com/profiles/76561197754033628",
-    "cheat_type": "Rapid-fire",
+    "cheat_type": "Rapid-Fire",
     "status": "confirmed",
     "date_reported": "Unknown",
-    "evidence_url": ""
+    "evidence_urls": []
   },
   {
     "case_id": "CASE-0003",
@@ -27,10 +27,10 @@
     "ign": "champgnepapi",
     "steam_id": "STEAM_0:1:601219294",
     "profile_url": "http://steamcommunity.com/profiles/76561199162704317",
-    "cheat_type": "Rapid-fire",
+    "cheat_type": "Rapid-Fire",
     "status": "confirmed",
     "date_reported": "Unknown",
-    "evidence_url": ""
+    "evidence_urls": []
   },
   {
     "case_id": "CASE-0004",
@@ -38,10 +38,18 @@
     "ign": "Allah_official (V^ alt account)",
     "steam_id": "STEAM_0:0:837520731",
     "profile_url": "https://steamcommunity.com/profiles/76561199635307190/",
-    "cheat_type": "Rage Cheat",
+    "cheat_type": "Aimbot",
     "status": "confirmed",
     "date_reported": "2026-03-14",
-    "evidence_url": "https://raw.githubusercontent.com/Twil1ght-L4D2/L4D2-CHEATER-DATABASE/main/evidence/1.png, https://raw.githubusercontent.com/Twil1ght-L4D2/L4D2-CHEATER-DATABASE/main/evidence/2.png, https://raw.githubusercontent.com/Twil1ght-L4D2/L4D2-CHEATER-DATABASE/main/evidence/3.png, https://raw.githubusercontent.com/Twil1ght-L4D2/L4D2-CHEATER-DATABASE/main/evidence/4.png, https://raw.githubusercontent.com/Twil1ght-L4D2/L4D2-CHEATER-DATABASE/main/evidence/5.png, https://raw.githubusercontent.com/Twil1ght-L4D2/L4D2-CHEATER-DATABASE/main/evidence/6.png, https://raw.githubusercontent.com/Twil1ght-L4D2/L4D2-CHEATER-DATABASE/main/evidence/7.png"
+    "evidence_urls": [
+      "https://raw.githubusercontent.com/Twil1ght-L4D2/L4D2-CHEATER-DATABASE/main/evidence/1.png",
+      "https://raw.githubusercontent.com/Twil1ght-L4D2/L4D2-CHEATER-DATABASE/main/evidence/2.png",
+      "https://raw.githubusercontent.com/Twil1ght-L4D2/L4D2-CHEATER-DATABASE/main/evidence/3.png",
+      "https://raw.githubusercontent.com/Twil1ght-L4D2/L4D2-CHEATER-DATABASE/main/evidence/4.png",
+      "https://raw.githubusercontent.com/Twil1ght-L4D2/L4D2-CHEATER-DATABASE/main/evidence/5.png",
+      "https://raw.githubusercontent.com/Twil1ght-L4D2/L4D2-CHEATER-DATABASE/main/evidence/6.png",
+      "https://raw.githubusercontent.com/Twil1ght-L4D2/L4D2-CHEATER-DATABASE/main/evidence/7.png"
+    ]
   },
   {
     "case_id": "CASE-0005",
@@ -49,10 +57,12 @@
     "ign": "Tristan bb",
     "steam_id": "STEAM_0:1:770444449",
     "profile_url": "https://steamcommunity.com/profiles/76561199501154627/",
-    "cheat_type": "Speedhack, Rapid-fire",
+    "cheat_type": "Speedhack",
     "status": "confirmed",
     "date_reported": "2025-12-21",
-    "evidence_url": "https://youtu.be/QZPEXjcwCQ0"
+    "evidence_urls": [
+      "https://youtu.be/QZPEXjcwCQ0"
+    ]
   },
   {
     "case_id": "CASE-0006",
@@ -60,10 +70,12 @@
     "ign": "Nekros",
     "steam_id": "STEAM_0:1:90799711",
     "profile_url": "http://steamcommunity.com/profiles/76561198141865151",
-    "cheat_type": "No spread, Autobhop, ESP",
+    "cheat_type": "Auto-Bhop",
     "status": "confirmed",
     "date_reported": "Unknown",
-    "evidence_url": "https://www.youtube.com/watch?v=1LeEFhOc5Z8"
+    "evidence_urls": [
+      "https://www.youtube.com/watch?v=1LeEFhOc5Z8"
+    ]
   },
   {
     "case_id": "CASE-0007",
@@ -71,10 +83,12 @@
     "ign": "Marley Rae",
     "steam_id": "STEAM_0:1:509163281",
     "profile_url": "http://steamcommunity.com/profiles/76561198978592291",
-    "cheat_type": "No spread, Autobhop, ESP, Aimbot (rage), No recoil",
+    "cheat_type": "Auto-Bhop",
     "status": "confirmed",
     "date_reported": "Unknown",
-    "evidence_url": "https://youtu.be/2WudHqCC4WU"
+    "evidence_urls": [
+      "https://youtu.be/2WudHqCC4WU"
+    ]
   },
   {
     "case_id": "CASE-0008",
@@ -82,10 +96,12 @@
     "ign": "νέγος (profile alias, alt of portalbirdhead)",
     "steam_id": "STEAM_0:1:782812110",
     "profile_url": "https://steamcommunity.com/profiles/76561199525889949",
-    "cheat_type": "Speedhack, DDoS, Aimbot, Other rage cheat",
+    "cheat_type": "Speedhack",
     "status": "confirmed",
     "date_reported": "Unknown",
-    "evidence_url": "https://youtu.be/AO5sLZgRsns"
+    "evidence_urls": [
+      "https://youtu.be/AO5sLZgRsns"
+    ]
   },
   {
     "case_id": "CASE-0009",
@@ -93,10 +109,12 @@
     "ign": "R2SR2",
     "steam_id": "STEAM_0:1:646341057",
     "profile_url": "https://steamcommunity.com/profiles/76561199252947843",
-    "cheat_type": "Auto shove, Aimbot, No spread",
+    "cheat_type": "Aimbot",
     "status": "confirmed",
     "date_reported": "Unknown",
-    "evidence_url": "https://youtu.be/AO5sLZgRsns"
+    "evidence_urls": [
+      "https://youtu.be/AO5sLZgRsns"
+    ]
   },
   {
     "case_id": "CASE-0010",
@@ -104,10 +122,10 @@
     "ign": "9x0.vpk",
     "steam_id": "STEAM_0:1:415368133",
     "profile_url": "https://steamcommunity.com/profiles/76561198791001995/",
-    "cheat_type": "Autobhop (300hrs only)",
+    "cheat_type": "Auto-Bhop",
     "status": "confirmed",
     "date_reported": "Unknown",
-    "evidence_url": ""
+    "evidence_urls": []
   },
   {
     "case_id": "CASE-0011",
@@ -115,10 +133,12 @@
     "ign": "Zephiar",
     "steam_id": "STEAM_0:0:636964465",
     "profile_url": "https://steamcommunity.com/id/Zephiar",
-    "cheat_type": "Rapid-fire (God mode)",
+    "cheat_type": "Rapid-Fire (God Mode)",
     "status": "confirmed",
     "date_reported": "Unknown",
-    "evidence_url": "https://youtu.be/_SjjNKUwgdA"
+    "evidence_urls": [
+      "https://youtu.be/_SjjNKUwgdA"
+    ]
   },
   {
     "case_id": "CASE-0012",
@@ -126,10 +146,12 @@
     "ign": "、1ヰさ〉 (stylized tag)",
     "steam_id": "STEAM_0:1:193699681",
     "profile_url": "https://steamcommunity.com/profiles/76561198347665091/",
-    "cheat_type": "Rapid-fire (God mode), No spread, Aimbot",
+    "cheat_type": "Aimbot",
     "status": "confirmed",
     "date_reported": "Unknown",
-    "evidence_url": "https://youtu.be/qgZix_xeO4g"
+    "evidence_urls": [
+      "https://youtu.be/qgZix_xeO4g"
+    ]
   },
   {
     "case_id": "CASE-0013",
@@ -137,10 +159,12 @@
     "ign": "Roman",
     "steam_id": "STEAM_0:0:926264330",
     "profile_url": "https://steamcommunity.com/profiles/7656119812794388",
-    "cheat_type": "Closet cheat",
+    "cheat_type": "Closet Cheat",
     "status": "confirmed",
     "date_reported": "2025-12-22",
-    "evidence_url": "https://youtu.be/i1DKgt2KXA4"
+    "evidence_urls": [
+      "https://youtu.be/i1DKgt2KXA4"
+    ]
   },
   {
     "case_id": "CASE-0014",
@@ -148,10 +172,10 @@
     "ign": "Aika (Cool Cheater creator :p)",
     "steam_id": "STEAM_0:0:772189727",
     "profile_url": "https://steamcommunity.com/profiles/76561199504645182/",
-    "cheat_type": "Cheat development / distribution",
+    "cheat_type": "Cheat Development / Distribution",
     "status": "confirmed",
     "date_reported": "2025-12-23",
-    "evidence_url": ""
+    "evidence_urls": []
   },
   {
     "case_id": "CASE-0015",
@@ -162,7 +186,7 @@
     "cheat_type": "Speedhack",
     "status": "confirmed",
     "date_reported": "2025-12-23",
-    "evidence_url": ""
+    "evidence_urls": []
   },
   {
     "case_id": "CASE-0016",
@@ -170,10 +194,12 @@
     "ign": "C H E R R Y [MAIN]",
     "steam_id": "STEAM_0:0:628149190",
     "profile_url": "https://steamcommunity.com/profiles/76561199216564108/",
-    "cheat_type": "No spread, Autobhop",
+    "cheat_type": "Auto-Bhop",
     "status": "confirmed",
     "date_reported": "Unknown",
-    "evidence_url": "https://www.youtube.com/post/UgkxqXjo3cIESo7O-GBs27cHUDZkcyqMS0GV"
+    "evidence_urls": [
+      "https://www.youtube.com/post/UgkxqXjo3cIESo7O-GBs27cHUDZkcyqMS0GV"
+    ]
   },
   {
     "case_id": "CASE-0017",
@@ -181,10 +207,10 @@
     "ign": "zz",
     "steam_id": "STEAM_0:0:579857456",
     "profile_url": "https://steamcommunity.com/profiles/76561199119980640/",
-    "cheat_type": "Rage Cheat",
+    "cheat_type": "Aimbot",
     "status": "suspected",
     "date_reported": "Unknown",
-    "evidence_url": ""
+    "evidence_urls": []
   },
   {
     "case_id": "CASE-0018",
@@ -192,10 +218,12 @@
     "ign": "Louis (Prob alt)",
     "steam_id": "STEAM_0:0:884068870",
     "profile_url": "https://steamcommunity.com/profiles/76561199728403468/",
-    "cheat_type": "No spread, No recoil, Silent aimbot, Autobhop, Speedhack",
+    "cheat_type": "Auto-Bhop",
     "status": "confirmed",
     "date_reported": "2025-12-23",
-    "evidence_url": "https://youtu.be/C5dHR-r5OQQ"
+    "evidence_urls": [
+      "https://youtu.be/C5dHR-r5OQQ"
+    ]
   },
   {
     "case_id": "CASE-0019",
@@ -203,10 +231,12 @@
     "ign": "... (no name given)",
     "steam_id": "STEAM_0:0:397528511",
     "profile_url": "https://steamcommunity.com/profiles/76561198755322750/",
-    "cheat_type": "Speedhack, Name stealer",
+    "cheat_type": "Speedhack",
     "status": "confirmed",
     "date_reported": "2025-12-23",
-    "evidence_url": "https://youtu.be/AMFA9MbwmlQ"
+    "evidence_urls": [
+      "https://youtu.be/AMFA9MbwmlQ"
+    ]
   },
   {
     "case_id": "CASE-0020",
@@ -214,10 +244,12 @@
     "ign": "xvh",
     "steam_id": "STEAM_0:1:199098141",
     "profile_url": "https://steamcommunity.com/profiles/76561198358462011/",
-    "cheat_type": "Autobhop, Name stealer",
+    "cheat_type": "Auto-Bhop",
     "status": "confirmed",
     "date_reported": "2025-12-24",
-    "evidence_url": "https://youtu.be/cCeVoOH_g9g"
+    "evidence_urls": [
+      "https://youtu.be/cCeVoOH_g9g"
+    ]
   },
   {
     "case_id": "CASE-0021",
@@ -225,10 +257,10 @@
     "ign": "人机哥",
     "steam_id": "STEAM_0:0:694383749",
     "profile_url": "https://steamcommunity.com/profiles/76561199349033226/",
-    "cheat_type": "Autobhop, ESP, Silent aimbot",
+    "cheat_type": "Auto-Bhop",
     "status": "confirmed",
     "date_reported": "2025-12-28",
-    "evidence_url": ""
+    "evidence_urls": []
   },
   {
     "case_id": "CASE-0022",
@@ -236,10 +268,10 @@
     "ign": "DAYANA uwu",
     "steam_id": "STEAM_0:1:920467409",
     "profile_url": "https://steamcommunity.com/profiles/76561199801200547/",
-    "cheat_type": "Rage Cheat",
+    "cheat_type": "Aimbot",
     "status": "confirmed",
     "date_reported": "2026-03-26",
-    "evidence_url": ""
+    "evidence_urls": []
   },
   {
     "case_id": "CASE-0023",
@@ -247,10 +279,10 @@
     "ign": "._.",
     "steam_id": "STEAM_0:1:945188001",
     "profile_url": "https://steamcommunity.com/profiles/76561199850641731/",
-    "cheat_type": "Rage Cheat, DDoS",
+    "cheat_type": "Aimbot",
     "status": "confirmed",
     "date_reported": "2026-03-29",
-    "evidence_url": ""
+    "evidence_urls": []
   },
   {
     "case_id": "CASE-0024",
@@ -258,10 +290,12 @@
     "ign": "RCE Exploit",
     "steam_id": "STEAM_0:0:845039385",
     "profile_url": "https://steamcommunity.com/profiles/76561199650344498/",
-    "cheat_type": "Autobhop, No spread, Rage Cheat",
+    "cheat_type": "Auto-Bhop",
     "status": "confirmed",
     "date_reported": "2026-04-05",
-    "evidence_url": "https://youtu.be/PRM4P4fr9MI"
+    "evidence_urls": [
+      "https://youtu.be/PRM4P4fr9MI"
+    ]
   },
   {
     "case_id": "CASE-0025",
@@ -269,10 +303,12 @@
     "ign": "Dasha (RCE Exploit's friend)",
     "steam_id": "STEAM_0:1:489366249",
     "profile_url": "https://steamcommunity.com/profiles/7656118938998227/",
-    "cheat_type": "Teaming, Rage Cheat",
+    "cheat_type": "Aimbot",
     "status": "confirmed",
     "date_reported": "2026-04-05",
-    "evidence_url": "https://youtu.be/QhoxhpX76-g"
+    "evidence_urls": [
+      "https://youtu.be/QhoxhpX76-g"
+    ]
   },
   {
     "case_id": "CASE-0026",
@@ -280,10 +316,10 @@
     "ign": "Uchiha Itachi",
     "steam_id": "STEAM_0:0:62238199",
     "profile_url": "https://steamcommunity.com/profiles/76561198084742126/",
-    "cheat_type": "Rage Cheat, Rapid-fire",
+    "cheat_type": "Aimbot",
     "status": "confirmed",
     "date_reported": "2026-04-10",
-    "evidence_url": ""
+    "evidence_urls": []
   },
   {
     "case_id": "CASE-0027",
@@ -291,10 +327,10 @@
     "ign": "INVISIBLE NAME",
     "steam_id": "STEAM_0:1:381362480",
     "profile_url": "https://steamcommunity.com/profiles/76561198722990689/",
-    "cheat_type": "Rage Cheat, Rapid-fire",
+    "cheat_type": "Aimbot",
     "status": "confirmed",
     "date_reported": "2026-04-10",
-    "evidence_url": ""
+    "evidence_urls": []
   },
   {
     "case_id": "CASE-0028",
@@ -302,10 +338,12 @@
     "ign": "POKY",
     "steam_id": "STEAM_0:0:538816393",
     "profile_url": "https://steamcommunity.com/profiles/76561199037898514/",
-    "cheat_type": "Rage Cheat",
+    "cheat_type": "Aimbot",
     "status": "confirmed",
     "date_reported": "2026-07-04",
-    "evidence_url": "https://youtu.be/QhoxhpX76-g"
+    "evidence_urls": [
+      "https://youtu.be/QhoxhpX76-g"
+    ]
   },
   {
     "case_id": "CASE-0029",
@@ -313,10 +351,12 @@
     "ign": "CWMYHB1 (Poky's Friend)",
     "steam_id": "STEAM_0:1:70916668",
     "profile_url": "https://steamcommunity.com/profiles/76561198102099065/",
-    "cheat_type": "Rage Cheat",
+    "cheat_type": "Aimbot",
     "status": "confirmed",
     "date_reported": "2026-07-04",
-    "evidence_url": "https://youtu.be/QhoxhpX76-g"
+    "evidence_urls": [
+      "https://youtu.be/QhoxhpX76-g"
+    ]
   },
   {
     "case_id": "CASE-0030",
@@ -324,10 +364,10 @@
     "ign": "Uchiha Ghost",
     "steam_id": "STEAM_0:0:799559716",
     "profile_url": "https://steamcommunity.com/profiles/76561199559385160/",
-    "cheat_type": "Kick Exploit, Name stealer",
+    "cheat_type": "Kick Exploit, Name Stealer",
     "status": "confirmed",
     "date_reported": "2026-07-04",
-    "evidence_url": ""
+    "evidence_urls": []
   },
   {
     "case_id": "CASE-0031",
@@ -335,10 +375,12 @@
     "ign": "Rosemary",
     "steam_id": "STEAM_0:0:798316216",
     "profile_url": "http://steamcommunity.com/profiles/76561199556898160",
-    "cheat_type": "Aimbot, Autobhop, ESP",
+    "cheat_type": "Auto-Bhop",
     "status": "confirmed",
     "date_reported": "Unknown",
-    "evidence_url": "https://www.youtube.com/watch?v=rIY5k1M4u7k"
+    "evidence_urls": [
+      "https://www.youtube.com/watch?v=rIY5k1M4u7k"
+    ]
   },
   {
     "case_id": "CASE-0032",
@@ -346,10 +388,12 @@
     "ign": "NIGHTINSIDE",
     "steam_id": "STEAM_0:1:597042284",
     "profile_url": "http://steamcommunity.com/profiles/76561199154350297",
-    "cheat_type": "ESP, Aimbot",
+    "cheat_type": "Aimbot",
     "status": "confirmed",
     "date_reported": "Unknown",
-    "evidence_url": "https://www.youtube.com/watch?v=gXHQpjpl6t8"
+    "evidence_urls": [
+      "https://www.youtube.com/watch?v=gXHQpjpl6t8"
+    ]
   },
   {
     "case_id": "CASE-0033",
@@ -357,10 +401,10 @@
     "ign": "fagngamafia",
     "steam_id": "STEAM_0:0:140507108",
     "profile_url": "https://steamcommunity.com/profiles/76561198241279944/",
-    "cheat_type": "Rapid-fire",
+    "cheat_type": "Rapid-Fire",
     "status": "confirmed",
     "date_reported": "2026-04-20",
-    "evidence_url": ""
+    "evidence_urls": []
   },
   {
     "case_id": "CASE-0034",
@@ -368,10 +412,10 @@
     "ign": "barcode",
     "steam_id": "STEAM_0:0:937318917",
     "profile_url": "https://steamcommunity.com/profiles/76561199834903562/",
-    "cheat_type": "Rapid-fire",
+    "cheat_type": "Rapid-Fire",
     "status": "confirmed",
     "date_reported": "2026-04-20",
-    "evidence_url": ""
+    "evidence_urls": []
   },
   {
     "case_id": "CASE-0035",
@@ -379,10 +423,12 @@
     "ign": "b4ttouxai",
     "steam_id": "STEAM_0:0:730192307",
     "profile_url": "http://steamcommunity.com/profiles/76561199420650342",
-    "cheat_type": "Rapid-fire, Speedhack",
+    "cheat_type": "Speedhack",
     "status": "confirmed",
     "date_reported": "2026-07-10",
-    "evidence_url": "https://www.youtube.com/watch?v=IA0HVDtVgTU"
+    "evidence_urls": [
+      "https://www.youtube.com/watch?v=IA0HVDtVgTU"
+    ]
   },
   {
     "case_id": "CASE-0036",
@@ -390,10 +436,12 @@
     "ign": "Meow",
     "steam_id": "STEAM_0:0:41995631",
     "profile_url": "https://steamcommunity.com/profiles/76561198044256990",
-    "cheat_type": "No spread, Aimbot, Autobhop",
+    "cheat_type": "Auto-Bhop",
     "status": "confirmed",
     "date_reported": "2026-07-10",
-    "evidence_url": "https://www.youtube.com/watch?v=F4IcpEMi6pw"
+    "evidence_urls": [
+      "https://www.youtube.com/watch?v=F4IcpEMi6pw"
+    ]
   },
   {
     "case_id": "CASE-0037",
@@ -401,10 +449,12 @@
     "ign": "ddd",
     "steam_id": "STEAM_0:1:860282654",
     "profile_url": "http://steamcommunity.com/profiles/76561196808310370",
-    "cheat_type": "Rapid-fire, Lag Exploit",
+    "cheat_type": "Rapid-Fire, Lag Exploit",
     "status": "confirmed",
     "date_reported": "2026-07-10",
-    "evidence_url": "https://www.youtube.com/watch?v=mxKIMNeSAUQ"
+    "evidence_urls": [
+      "https://www.youtube.com/watch?v=mxKIMNeSAUQ"
+    ]
   },
   {
     "case_id": "CASE-0038",
@@ -415,7 +465,9 @@
     "cheat_type": "Aimbot",
     "status": "confirmed",
     "date_reported": "2026-07-10",
-    "evidence_url": "https://www.youtube.com/watch?v=o3Vpz-65l7A"
+    "evidence_urls": [
+      "https://www.youtube.com/watch?v=o3Vpz-65l7A"
+    ]
   },
   {
     "case_id": "CASE-0039",
@@ -423,10 +475,10 @@
     "ign": "Valentine Gaming",
     "steam_id": "STEAM_0:1:48856812",
     "profile_url": "http://steamcommunity.com/profiles/76561198057979353",
-    "cheat_type": "Admitted to Cheating",
+    "cheat_type": "Admitted To Cheating",
     "status": "confirmed",
     "date_reported": "2026-07-10",
-    "evidence_url": ""
+    "evidence_urls": []
   },
   {
     "case_id": "CASE-0041",
@@ -434,10 +486,10 @@
     "ign": "Samishi",
     "steam_id": "STEAM_0:0:405546307",
     "profile_url": "http://steamcommunity.com/profiles/76561198771358342",
-    "cheat_type": "Rage Cheat",
+    "cheat_type": "Aimbot",
     "status": "confirmed",
     "date_reported": "2026-07-15",
-    "evidence_url": ""
+    "evidence_urls": []
   },
   {
     "case_id": "CASE-0042",
@@ -445,10 +497,10 @@
     "ign": "diarrhearfarts",
     "steam_id": "STEAM_0:0:943693298",
     "profile_url": "http://steamcommunity.com/profiles/76561199847652324",
-    "cheat_type": "Rapid-fire",
+    "cheat_type": "Rapid-Fire",
     "status": "confirmed",
     "date_reported": "2026-07-15",
-    "evidence_url": ""
+    "evidence_urls": []
   },
   {
     "case_id": "CASE-0043",
@@ -459,7 +511,9 @@
     "cheat_type": "Aimbot",
     "status": "confirmed",
     "date_reported": "2026-07-15",
-    "evidence_url": "https://youtu.be/CjTwS3KrojY"
+    "evidence_urls": [
+      "https://youtu.be/CjTwS3KrojY"
+    ]
   },
   {
     "case_id": "CASE-0044",
@@ -467,10 +521,12 @@
     "ign": "Ricky",
     "steam_id": "STEAM_0:1:884775677",
     "profile_url": "https://steamcommunity.com/profiles/76561199729817083/",
-    "cheat_type": "Cheat on Stream",
+    "cheat_type": "Cheat On Stream",
     "status": "confirmed",
     "date_reported": "2026-07-15",
-    "evidence_url": "https://www.youtube.com/watch?v=Cbg9Myb40so"
+    "evidence_urls": [
+      "https://www.youtube.com/watch?v=Cbg9Myb40so"
+    ]
   },
   {
     "case_id": "CASE-0045",
@@ -478,10 +534,11 @@
     "ign": "zxcvbn",
     "steam_id": "STEAM_0:1:199098141",
     "profile_url": "http://steamcommunity.com/profiles/76561198358462011",
-    "cheat_type": "HARD CHEAT | DDOS + CRASHER",
+    "cheat_type": "Hard Cheat | Ddos + Crasher",
     "status": "confirmed",
     "date_reported": "2026-07-19",
-    "evidence_url": ""
+    "evidence_urls": [],
+    "_flag_duplicate": "Duplicate of CASE-0020"
   },
   {
     "case_id": "CASE-0046",
@@ -489,10 +546,12 @@
     "ign": "Storm",
     "steam_id": "STEAM_0:1:177404628",
     "profile_url": "http://steamcommunity.com/profiles/76561198315074985",
-    "cheat_type": "RAGE CHEATER",
+    "cheat_type": "Aimbot",
     "status": "confirmed",
     "date_reported": "Unknown",
-    "evidence_url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3579814255"
+    "evidence_urls": [
+      "https://steamcommunity.com/sharedfiles/filedetails/?id=3579814255"
+    ]
   },
   {
     "case_id": "CASE-0047",
@@ -500,10 +559,10 @@
     "ign": "highzz",
     "steam_id": "STEAM_0:0:815151879",
     "profile_url": "http://steamcommunity.com/profiles/76561199590569486",
-    "cheat_type": "AUTOBHOP",
+    "cheat_type": "Auto-Bhop",
     "status": "confirmed",
     "date_reported": "Unknown",
-    "evidence_url": ""
+    "evidence_urls": []
   },
   {
     "case_id": "CASE-0048",
@@ -511,10 +570,10 @@
     "ign": "Mary",
     "steam_id": "STEAM_0:0:23774332",
     "profile_url": "http://steamcommunity.com/profiles/76561198007814392",
-    "cheat_type": "BLATANT CHEAT",
+    "cheat_type": "Blatant Cheat",
     "status": "confirmed",
     "date_reported": "Unknown",
-    "evidence_url": ""
+    "evidence_urls": []
   },
   {
     "case_id": "CASE-0049",
@@ -522,10 +581,10 @@
     "ign": "Bruno",
     "steam_id": "STEAM_0:0:752537586",
     "profile_url": "http://steamcommunity.com/profiles/76561199465340900",
-    "cheat_type": "RAGE CHEAT",
+    "cheat_type": "Aimbot",
     "status": "confirmed",
     "date_reported": "Unknown",
-    "evidence_url": ""
+    "evidence_urls": []
   },
   {
     "case_id": "CASE-0050",
@@ -536,7 +595,9 @@
     "cheat_type": "Aimbot",
     "status": "confirmed",
     "date_reported": "2025-11-22",
-    "evidence_url": "https://www.youtube.com/watch?v=OgPm9YxnCyE"
+    "evidence_urls": [
+      "https://www.youtube.com/watch?v=OgPm9YxnCyE"
+    ]
   },
   {
     "case_id": "CASE-0051",
@@ -547,7 +608,9 @@
     "cheat_type": "Aimbot",
     "status": "confirmed",
     "date_reported": "2025-11-22",
-    "evidence_url": "https://www.youtube.com/watch?v=OgPm9YxnCyE"
+    "evidence_urls": [
+      "https://www.youtube.com/watch?v=OgPm9YxnCyE"
+    ]
   },
   {
     "case_id": "CASE-0052",
@@ -555,10 +618,12 @@
     "ign": "soy Coreano",
     "steam_id": "STEAM_0:0:888473674",
     "profile_url": "http://steamcommunity.com/profiles/76561199737213076",
-    "cheat_type": "Rage Cheat, Speed-Hack, Rapid-Fire, No Spread",
+    "cheat_type": "Speedhack",
     "status": "confirmed",
     "date_reported": "2026-07-21",
-    "evidence_url": "https://youtu.be/oMrKMIjyLP8?si=r1064tVQiN_R1-e6"
+    "evidence_urls": [
+      "https://youtu.be/oMrKMIjyLP8?si=r1064tVQiN_R1-e6"
+    ]
   },
   {
     "case_id": "CASE-0053",
@@ -566,10 +631,12 @@
     "ign": "manga",
     "steam_id": "STEAM_0:0:916459792",
     "profile_url": "https://steamcommunity.com/profiles/76561199793185312",
-    "cheat_type": "Rapid-fire",
+    "cheat_type": "Rapid-Fire",
     "status": "confirmed",
     "date_reported": "2026-07-21",
-    "evidence_url": "https://www.youtube.com/watch?v=Bux7BB2lQNU"
+    "evidence_urls": [
+      "https://www.youtube.com/watch?v=Bux7BB2lQNU"
+    ]
   },
   {
     "case_id": "CASE-0054",
@@ -577,10 +644,12 @@
     "ign": "1Train",
     "steam_id": "STEAM_0:0:707576496",
     "profile_url": "https://steamcommunity.com/profiles/76561199375418720",
-    "cheat_type": "Speed-Hack",
+    "cheat_type": "Speedhack",
     "status": "confirmed",
     "date_reported": "2026-07-21",
-    "evidence_url": "https://www.youtube.com/watch?v=a_7ILbnvbyg"
+    "evidence_urls": [
+      "https://www.youtube.com/watch?v=a_7ILbnvbyg"
+    ]
   },
   {
     "case_id": "CASE-0055",
@@ -588,10 +657,12 @@
     "ign": "WE THE CHAMPIONS",
     "steam_id": "STEAM_0:1:527064265",
     "profile_url": "https://steamcommunity.com/profiles/76561199014394259",
-    "cheat_type": "Speed-Hack",
+    "cheat_type": "Speedhack",
     "status": "confirmed",
     "date_reported": "2026-07-21",
-    "evidence_url": "https://www.youtube.com/watch?v=Le0TbdLvmiw"
+    "evidence_urls": [
+      "https://www.youtube.com/watch?v=Le0TbdLvmiw"
+    ]
   },
   {
     "case_id": "CASE-0056",
@@ -602,7 +673,9 @@
     "cheat_type": "Aimbot",
     "status": "confirmed",
     "date_reported": "2026-07-21",
-    "evidence_url": "https://www.youtube.com/watch?v=NNdz35Zc2lY"
+    "evidence_urls": [
+      "https://www.youtube.com/watch?v=NNdz35Zc2lY"
+    ]
   },
   {
     "case_id": "CASE-0057",
@@ -613,7 +686,9 @@
     "cheat_type": "Aimbot",
     "status": "confirmed",
     "date_reported": "2026-07-21",
-    "evidence_url": "https://www.youtube.com/watch?v=NNdz35Zc2lY"
+    "evidence_urls": [
+      "https://www.youtube.com/watch?v=NNdz35Zc2lY"
+    ]
   },
   {
     "case_id": "CASE-0058",
@@ -621,10 +696,12 @@
     "ign": "hukeao",
     "steam_id": "STEAM_0:1:526367740",
     "profile_url": "https://steamcommunity.com/profiles/76561199013001209",
-    "cheat_type": "Rage Cheat",
+    "cheat_type": "Aimbot",
     "status": "confirmed",
     "date_reported": "2026-07-21",
-    "evidence_url": "https://www.youtube.com/watch?v=71dYR00VQC8"
+    "evidence_urls": [
+      "https://www.youtube.com/watch?v=71dYR00VQC8"
+    ]
   },
   {
     "case_id": "CASE-0059",
@@ -632,10 +709,12 @@
     "ign": "Capitan Chupapi",
     "steam_id": "STEAM_0:1:781547619",
     "profile_url": "https://steamcommunity.com/profiles/76561199523360967",
-    "cheat_type": "Rage Cheat",
+    "cheat_type": "Aimbot",
     "status": "confirmed",
     "date_reported": "2026-07-21",
-    "evidence_url": "https://www.youtube.com/watch?v=S3gG7BKXeLI"
+    "evidence_urls": [
+      "https://www.youtube.com/watch?v=S3gG7BKXeLI"
+    ]
   },
   {
     "case_id": "CASE-0060",
@@ -643,10 +722,12 @@
     "ign": "DanaePro1",
     "steam_id": "STEAM_0:1:613301766",
     "profile_url": "https://steamcommunity.com/profiles/76561199186869261",
-    "cheat_type": "Rage Cheat",
+    "cheat_type": "Aimbot",
     "status": "confirmed",
     "date_reported": "2026-07-21",
-    "evidence_url": "https://www.youtube.com/watch?v=S3gG7BKXeLI"
+    "evidence_urls": [
+      "https://www.youtube.com/watch?v=S3gG7BKXeLI"
+    ]
   },
   {
     "case_id": "CASE-0061",
@@ -654,10 +735,12 @@
     "ign": "nothing",
     "steam_id": "STEAM_0:1:794759977",
     "profile_url": "https://steamcommunity.com/profiles/76561199549785683",
-    "cheat_type": "ESP / Wallhack",
+    "cheat_type": "Esp / Wallhack",
     "status": "confirmed",
     "date_reported": "2026-07-21",
-    "evidence_url": "https://www.youtube.com/watch?v=SCU_HKukxEA"
+    "evidence_urls": [
+      "https://www.youtube.com/watch?v=SCU_HKukxEA"
+    ]
   },
   {
     "case_id": "CASE-0062",
@@ -665,10 +748,12 @@
     "ign": "55555",
     "steam_id": "STEAM_0:0:611028255",
     "profile_url": "https://steamcommunity.com/profiles/76561199182322238",
-    "cheat_type": "Aimbot, ESP / Wallhack",
+    "cheat_type": "Aimbot",
     "status": "confirmed",
     "date_reported": "2026-07-21",
-    "evidence_url": "https://www.youtube.com/watch?v=08jQRZ6mKm4"
+    "evidence_urls": [
+      "https://www.youtube.com/watch?v=08jQRZ6mKm4"
+    ]
   },
   {
     "case_id": "CASE-0063",
@@ -676,10 +761,12 @@
     "ign": "55555",
     "steam_id": "STEAM_0:0:773495029",
     "profile_url": "https://steamcommunity.com/profiles/76561199507255786",
-    "cheat_type": "Aimbot, ESP / Wallhack",
+    "cheat_type": "Aimbot",
     "status": "confirmed",
     "date_reported": "2026-07-21",
-    "evidence_url": "https://www.youtube.com/watch?v=08jQRZ6mKm4"
+    "evidence_urls": [
+      "https://www.youtube.com/watch?v=08jQRZ6mKm4"
+    ]
   },
   {
     "case_id": "CASE-0064",
@@ -687,10 +774,12 @@
     "ign": ".",
     "steam_id": "STEAM_0:1:612403070",
     "profile_url": "https://steamcommunity.com/profiles/76561199185071869",
-    "cheat_type": "Rage Cheat",
+    "cheat_type": "Aimbot",
     "status": "confirmed",
     "date_reported": "2026-07-21",
-    "evidence_url": "https://www.youtube.com/watch?v=PGtMIn7cmnk"
+    "evidence_urls": [
+      "https://www.youtube.com/watch?v=PGtMIn7cmnk"
+    ]
   },
   {
     "case_id": "CASE-0065",
@@ -698,10 +787,12 @@
     "ign": "N",
     "steam_id": "STEAM_0:1:439785352",
     "profile_url": "https://steamcommunity.com/profiles/76561198839836433",
-    "cheat_type": "Rage Cheat",
+    "cheat_type": "Aimbot",
     "status": "confirmed",
     "date_reported": "2026-07-21",
-    "evidence_url": "https://www.youtube.com/watch?v=PGtMIn7cmnk"
+    "evidence_urls": [
+      "https://www.youtube.com/watch?v=PGtMIn7cmnk"
+    ]
   },
   {
     "case_id": "CASE-0066",
@@ -709,10 +800,12 @@
     "ign": "tuf",
     "steam_id": "STEAM_0:0:808426902",
     "profile_url": "https://steamcommunity.com/profiles/76561199577119532",
-    "cheat_type": "ESP / Wallhack",
+    "cheat_type": "Esp / Wallhack",
     "status": "confirmed",
     "date_reported": "2026-07-21",
-    "evidence_url": "https://www.youtube.com/watch?v=wRN0NG6admo"
+    "evidence_urls": [
+      "https://www.youtube.com/watch?v=wRN0NG6admo"
+    ]
   },
   {
     "case_id": "CASE-0067",
@@ -720,10 +813,12 @@
     "ign": "righi",
     "steam_id": "STEAM_0:0:752551887",
     "profile_url": "https://steamcommunity.com/profiles/76561199465369502",
-    "cheat_type": "Aimbot, ESP / Wallhack",
+    "cheat_type": "Aimbot",
     "status": "confirmed",
     "date_reported": "2026-07-21",
-    "evidence_url": "https://www.youtube.com/watch?v=8qtM66jLzcQ"
+    "evidence_urls": [
+      "https://www.youtube.com/watch?v=8qtM66jLzcQ"
+    ]
   },
   {
     "case_id": "CASE-0068",
@@ -731,10 +826,12 @@
     "ign": "seven2407",
     "steam_id": "STEAM_0:0:506873888",
     "profile_url": "https://steamcommunity.com/profiles/76561198974013504",
-    "cheat_type": "Speed-Hack",
+    "cheat_type": "Speedhack",
     "status": "confirmed",
     "date_reported": "2026-07-21",
-    "evidence_url": "https://www.youtube.com/watch?v=wNHuWjeJjGg"
+    "evidence_urls": [
+      "https://www.youtube.com/watch?v=wNHuWjeJjGg"
+    ]
   },
   {
     "case_id": "CASE-0069",
@@ -742,10 +839,12 @@
     "ign": "Tesla 2.0",
     "steam_id": "STEAM_0:1:642532497",
     "profile_url": "https://steamcommunity.com/profiles/76561199245330723",
-    "cheat_type": "Speed-Hack",
+    "cheat_type": "Speedhack",
     "status": "confirmed",
     "date_reported": "2026-07-21",
-    "evidence_url": "https://www.youtube.com/watch?v=wNHuWjeJjGg"
+    "evidence_urls": [
+      "https://www.youtube.com/watch?v=wNHuWjeJjGg"
+    ]
   },
   {
     "case_id": "CASE-0070",
@@ -753,10 +852,12 @@
     "ign": "МОЛОЧНЫЙ",
     "steam_id": "STEAM_0:1:816423037",
     "profile_url": "https://steamcommunity.com/profiles/76561199593111803",
-    "cheat_type": "ESP / Wallhack",
+    "cheat_type": "Esp / Wallhack",
     "status": "confirmed",
     "date_reported": "2026-07-21",
-    "evidence_url": "https://www.youtube.com/watch?v=ktDZ3AZw4vo"
+    "evidence_urls": [
+      "https://www.youtube.com/watch?v=ktDZ3AZw4vo"
+    ]
   },
   {
     "case_id": "CASE-0071",
@@ -764,10 +865,12 @@
     "ign": "sayonara.",
     "steam_id": "STEAM_0:1:807203962",
     "profile_url": "https://steamcommunity.com/profiles/76561199574673653",
-    "cheat_type": "ESP / Wallhack",
+    "cheat_type": "Esp / Wallhack",
     "status": "confirmed",
     "date_reported": "2026-07-21",
-    "evidence_url": "https://www.youtube.com/watch?v=XOyQioVT_gw"
+    "evidence_urls": [
+      "https://www.youtube.com/watch?v=XOyQioVT_gw"
+    ]
   },
   {
     "case_id": "CASE-0072",
@@ -775,10 +878,12 @@
     "ign": "Pedro Pony",
     "steam_id": "STEAM_0:1:742712062",
     "profile_url": "https://steamcommunity.com/profiles/76561199445689853",
-    "cheat_type": "ESP / Wallhack",
+    "cheat_type": "Esp / Wallhack",
     "status": "suspected",
     "date_reported": "2026-07-21",
-    "evidence_url": "https://www.youtube.com/watch?v=00JdfrkkKvw"
+    "evidence_urls": [
+      "https://www.youtube.com/watch?v=00JdfrkkKvw"
+    ]
   },
   {
     "case_id": "CASE-0073",
@@ -789,7 +894,9 @@
     "cheat_type": "Aimbot",
     "status": "confirmed",
     "date_reported": "2026-07-21",
-    "evidence_url": "https://www.youtube.com/watch?v=HOAhUYhl1Dk"
+    "evidence_urls": [
+      "https://www.youtube.com/watch?v=HOAhUYhl1Dk"
+    ]
   },
   {
     "case_id": "CASE-0074",
@@ -797,10 +904,12 @@
     "ign": "Kurumi",
     "steam_id": "STEAM_0:1:239202592",
     "profile_url": "https://steamcommunity.com/profiles/76561198438670913",
-    "cheat_type": "ESP / Wallhack",
+    "cheat_type": "Esp / Wallhack",
     "status": "confirmed",
     "date_reported": "2026-07-21",
-    "evidence_url": "https://www.youtube.com/watch?v=jh_D0vk25Ns"
+    "evidence_urls": [
+      "https://www.youtube.com/watch?v=jh_D0vk25Ns"
+    ]
   },
   {
     "case_id": "CASE-0075",
@@ -808,10 +917,12 @@
     "ign": "Lucía",
     "steam_id": "STEAM_0:1:715882632",
     "profile_url": "https://steamcommunity.com/profiles/76561199392030993",
-    "cheat_type": "ESP / Wallhack",
+    "cheat_type": "Esp / Wallhack",
     "status": "confirmed",
     "date_reported": "2026-07-21",
-    "evidence_url": "https://www.youtube.com/watch?v=jh_D0vk25Ns"
+    "evidence_urls": [
+      "https://www.youtube.com/watch?v=jh_D0vk25Ns"
+    ]
   },
   {
     "case_id": "CASE-0076",
@@ -822,7 +933,9 @@
     "cheat_type": "Aimbot",
     "status": "confirmed",
     "date_reported": "2026-07-21",
-    "evidence_url": "https://www.youtube.com/watch?v=DtP8FxEcgrU"
+    "evidence_urls": [
+      "https://www.youtube.com/watch?v=DtP8FxEcgrU"
+    ]
   },
   {
     "case_id": "CASE-0077",
@@ -833,7 +946,9 @@
     "cheat_type": "Aimbot",
     "status": "confirmed",
     "date_reported": "2026-07-21",
-    "evidence_url": "https://www.youtube.com/watch?v=DtP8FxEcgrU"
+    "evidence_urls": [
+      "https://www.youtube.com/watch?v=DtP8FxEcgrU"
+    ]
   },
   {
     "case_id": "CASE-0078",
@@ -844,7 +959,9 @@
     "cheat_type": "Aimbot",
     "status": "confirmed",
     "date_reported": "2026-07-21",
-    "evidence_url": "https://www.youtube.com/watch?v=DtP8FxEcgrU"
+    "evidence_urls": [
+      "https://www.youtube.com/watch?v=DtP8FxEcgrU"
+    ]
   },
   {
     "case_id": "CASE-0079",
@@ -852,10 +969,12 @@
     "ign": "Hela.",
     "steam_id": "STEAM_0:0:612275638",
     "profile_url": "https://steamcommunity.com/profiles/76561199184817004",
-    "cheat_type": "Aimbot, ESP / Wallhack",
+    "cheat_type": "Aimbot",
     "status": "confirmed",
     "date_reported": "2026-07-21",
-    "evidence_url": "https://www.youtube.com/watch?v=-0I-fBxmJq4"
+    "evidence_urls": [
+      "https://www.youtube.com/watch?v=-0I-fBxmJq4"
+    ]
   },
   {
     "case_id": "CASE-0080",
@@ -863,10 +982,12 @@
     "ign": "Ren",
     "steam_id": "STEAM_0:1:40973293",
     "profile_url": "https://steamcommunity.com/profiles/76561198042212315",
-    "cheat_type": "Speed-Hack",
+    "cheat_type": "Speedhack",
     "status": "confirmed",
     "date_reported": "2026-07-21",
-    "evidence_url": "https://www.youtube.com/watch?v=c0dcv8v0wXw"
+    "evidence_urls": [
+      "https://www.youtube.com/watch?v=c0dcv8v0wXw"
+    ]
   },
   {
     "case_id": "CASE-0081",
@@ -874,10 +995,12 @@
     "ign": "ezgamezlife.",
     "steam_id": "STEAM_0:0:566404062",
     "profile_url": "https://steamcommunity.com/profiles/76561199093073852",
-    "cheat_type": "Speed-Hack",
+    "cheat_type": "Speedhack",
     "status": "confirmed",
     "date_reported": "2026-07-21",
-    "evidence_url": "https://www.youtube.com/watch?v=c0dcv8v0wXw"
+    "evidence_urls": [
+      "https://www.youtube.com/watch?v=c0dcv8v0wXw"
+    ]
   },
   {
     "case_id": "CASE-0082",
@@ -885,10 +1008,12 @@
     "ign": "yy",
     "steam_id": "STEAM_0:0:763782894",
     "profile_url": "https://steamcommunity.com/profiles/76561199487831516",
-    "cheat_type": "Speed-Hack",
+    "cheat_type": "Speedhack",
     "status": "confirmed",
     "date_reported": "2026-07-21",
-    "evidence_url": "https://www.youtube.com/watch?v=9_CjrjvPuQg"
+    "evidence_urls": [
+      "https://www.youtube.com/watch?v=9_CjrjvPuQg"
+    ]
   },
   {
     "case_id": "CASE-0083",
@@ -896,10 +1021,13 @@
     "ign": "perritopanzonenelbillar1",
     "steam_id": "STEAM_0:1:440841011",
     "profile_url": "https://steamcommunity.com/profiles/76561198841947751",
-    "cheat_type": "Rage Cheat",
+    "cheat_type": "Aimbot",
     "status": "confirmed",
     "date_reported": "2026-07-21",
-    "evidence_url": "https://www.twitch.tv/yoarzzz/clip/HonorableSparklingMarjoramJebaited-Xba5dD3vTBUFWKVK, https://www.youtube.com/watch?v=2Rkg0AjU5C4"
+    "evidence_urls": [
+      "https://www.twitch.tv/yoarzzz/clip/HonorableSparklingMarjoramJebaited-Xba5dD3vTBUFWKVK",
+      "https://www.youtube.com/watch?v=2Rkg0AjU5C4"
+    ]
   },
   {
     "case_id": "CASE-0084",
@@ -907,10 +1035,14 @@
     "ign": "Peloncalato",
     "steam_id": "STEAM_0:1:668956529",
     "profile_url": "https://steamcommunity.com/profiles/76561199298178787",
-    "cheat_type": "ESP / Wallhack, Lerp / Interp",
+    "cheat_type": "Esp / Wallhack, Lerp / Interp",
     "status": "confirmed",
     "date_reported": "2026-07-21",
-    "evidence_url": "https://www.youtube.com/watch?v=nA79H4Xlgyw, https://www.youtube.com/watch?v=HgMgCuaicus, https://www.youtube.com/watch?v=9eC0YDNDMCs"
+    "evidence_urls": [
+      "https://www.youtube.com/watch?v=nA79H4Xlgyw",
+      "https://www.youtube.com/watch?v=HgMgCuaicus",
+      "https://www.youtube.com/watch?v=9eC0YDNDMCs"
+    ]
   },
   {
     "case_id": "CASE-0085",
@@ -918,10 +1050,14 @@
     "ign": "hannama",
     "steam_id": "STEAM_0:0:738768048",
     "profile_url": "https://steamcommunity.com/profiles/76561199437801824",
-    "cheat_type": "ESP / Wallhack, Lerp / Interp",
+    "cheat_type": "Esp / Wallhack, Lerp / Interp",
     "status": "confirmed",
     "date_reported": "2026-07-21",
-    "evidence_url": "https://www.youtube.com/watch?v=nA79H4Xlgyw, https://www.youtube.com/watch?v=HgMgCuaicus, https://www.youtube.com/watch?v=9eC0YDNDMCs"
+    "evidence_urls": [
+      "https://www.youtube.com/watch?v=nA79H4Xlgyw",
+      "https://www.youtube.com/watch?v=HgMgCuaicus",
+      "https://www.youtube.com/watch?v=9eC0YDNDMCs"
+    ]
   },
   {
     "case_id": "CASE-0086",
@@ -932,7 +1068,9 @@
     "cheat_type": "Aimbot",
     "status": "confirmed",
     "date_reported": "2026-07-21",
-    "evidence_url": "https://www.youtube.com/watch?v=93sVMZxWNjE"
+    "evidence_urls": [
+      "https://www.youtube.com/watch?v=93sVMZxWNjE"
+    ]
   },
   {
     "case_id": "CASE-0087",
@@ -943,7 +1081,9 @@
     "cheat_type": "Aimbot",
     "status": "confirmed",
     "date_reported": "2026-07-21",
-    "evidence_url": "https://www.youtube.com/watch?v=93sVMZxWNjE"
+    "evidence_urls": [
+      "https://www.youtube.com/watch?v=93sVMZxWNjE"
+    ]
   },
   {
     "case_id": "CASE-0088",
@@ -951,10 +1091,12 @@
     "ign": "pariah",
     "steam_id": "STEAM_0:1:763450087",
     "profile_url": "https://steamcommunity.com/profiles/76561199487165903",
-    "cheat_type": "Rage Cheat, Speed-Hack",
+    "cheat_type": "Speedhack",
     "status": "confirmed",
     "date_reported": "2026-07-21",
-    "evidence_url": "https://www.youtube.com/watch?v=pUZOvkz093M"
+    "evidence_urls": [
+      "https://www.youtube.com/watch?v=pUZOvkz093M"
+    ]
   },
   {
     "case_id": "CASE-0089",
@@ -962,10 +1104,12 @@
     "ign": "Press w to win",
     "steam_id": "STEAM_0:1:643136926",
     "profile_url": "https://steamcommunity.com/profiles/76561199246539581",
-    "cheat_type": "Rage Cheat, Speed-Hack",
+    "cheat_type": "Speedhack",
     "status": "confirmed",
     "date_reported": "2026-07-21",
-    "evidence_url": "https://www.youtube.com/watch?v=pUZOvkz093M"
+    "evidence_urls": [
+      "https://www.youtube.com/watch?v=pUZOvkz093M"
+    ]
   },
   {
     "case_id": "CASE-0090",
@@ -973,10 +1117,12 @@
     "ign": "엘리엇",
     "steam_id": "STEAM_0:1:662351798",
     "profile_url": "https://steamcommunity.com/profiles/76561199284969325",
-    "cheat_type": "Aimbot, ESP / Wallhack",
+    "cheat_type": "Aimbot",
     "status": "confirmed",
     "date_reported": "2026-07-21",
-    "evidence_url": "https://www.youtube.com/watch?v=fXpIBgszZLg"
+    "evidence_urls": [
+      "https://www.youtube.com/watch?v=fXpIBgszZLg"
+    ]
   },
   {
     "case_id": "CASE-0091",
@@ -984,10 +1130,12 @@
     "ign": "Kim.",
     "steam_id": "STEAM_0:0:753699272",
     "profile_url": "https://steamcommunity.com/profiles/76561199467664272",
-    "cheat_type": "Aimbot, ESP / Wallhack",
+    "cheat_type": "Aimbot",
     "status": "confirmed",
     "date_reported": "2026-07-21",
-    "evidence_url": "https://www.youtube.com/watch?v=fXpIBgszZLg"
+    "evidence_urls": [
+      "https://www.youtube.com/watch?v=fXpIBgszZLg"
+    ]
   },
   {
     "case_id": "CASE-0092",
@@ -995,10 +1143,12 @@
     "ign": "issie.",
     "steam_id": "STEAM_0:0:774183658",
     "profile_url": "https://steamcommunity.com/profiles/76561199508633044",
-    "cheat_type": "Aimbot, ESP / Wallhack",
+    "cheat_type": "Aimbot",
     "status": "confirmed",
     "date_reported": "2026-07-21",
-    "evidence_url": "https://www.youtube.com/watch?v=fXpIBgszZLg"
+    "evidence_urls": [
+      "https://www.youtube.com/watch?v=fXpIBgszZLg"
+    ]
   },
   {
     "case_id": "CASE-0093",
@@ -1006,10 +1156,12 @@
     "ign": "E_Galatine",
     "steam_id": "STEAM_0:0:612916145",
     "profile_url": "https://steamcommunity.com/profiles/76561199186098018",
-    "cheat_type": "Aimbot, ESP / Wallhack",
+    "cheat_type": "Aimbot",
     "status": "confirmed",
     "date_reported": "2026-07-21",
-    "evidence_url": "https://www.youtube.com/watch?v=udnPS_5t_xs"
+    "evidence_urls": [
+      "https://www.youtube.com/watch?v=udnPS_5t_xs"
+    ]
   },
   {
     "case_id": "CASE-0094",
@@ -1017,10 +1169,12 @@
     "ign": "Scorpion",
     "steam_id": "STEAM_0:1:215109916",
     "profile_url": "https://steamcommunity.com/profiles/76561198390485561",
-    "cheat_type": "ESP / Wallhack",
+    "cheat_type": "Esp / Wallhack",
     "status": "confirmed",
     "date_reported": "2026-07-22",
-    "evidence_url": "https://www.youtube.com/watch?v=xwYuM49hXCk"
+    "evidence_urls": [
+      "https://www.youtube.com/watch?v=xwYuM49hXCk"
+    ]
   },
   {
     "case_id": "CASE-0095",
@@ -1028,10 +1182,12 @@
     "ign": "Charles Oliveira Da Silva",
     "steam_id": "STEAM_0:0:672283132",
     "profile_url": "https://steamcommunity.com/profiles/76561199304831992",
-    "cheat_type": "ESP / Wallhack",
+    "cheat_type": "Esp / Wallhack",
     "status": "confirmed",
     "date_reported": "2026-07-22",
-    "evidence_url": "https://www.youtube.com/watch?v=HJMK2QBVZ-8"
+    "evidence_urls": [
+      "https://www.youtube.com/watch?v=HJMK2QBVZ-8"
+    ]
   },
   {
     "case_id": "CASE-0096",
@@ -1039,10 +1195,12 @@
     "ign": "AleXaღ",
     "steam_id": "STEAM_0:0:196663854",
     "profile_url": "https://steamcommunity.com/profiles/76561198353593436",
-    "cheat_type": "Aimbot, ESP / Wallhack",
+    "cheat_type": "Aimbot",
     "status": "confirmed",
     "date_reported": "2026-07-22",
-    "evidence_url": "https://www.youtube.com/watch?v=P2-81rnos54"
+    "evidence_urls": [
+      "https://www.youtube.com/watch?v=P2-81rnos54"
+    ]
   },
   {
     "case_id": "CASE-0097",
@@ -1050,10 +1208,12 @@
     "ign": "K",
     "steam_id": "STEAM_0:1:510009508",
     "profile_url": "https://steamcommunity.com/profiles/76561198980284745",
-    "cheat_type": "Aimbot, ESP / Wallhack",
+    "cheat_type": "Aimbot",
     "status": "confirmed",
     "date_reported": "2026-07-22",
-    "evidence_url": "https://www.youtube.com/watch?v=P2-81rnos54"
+    "evidence_urls": [
+      "https://www.youtube.com/watch?v=P2-81rnos54"
+    ]
   },
   {
     "case_id": "CASE-0098",
@@ -1061,10 +1221,12 @@
     "ign": "feels",
     "steam_id": "STEAM_0:0:200129148",
     "profile_url": "https://steamcommunity.com/profiles/76561198360524024",
-    "cheat_type": "Aimbot, ESP / Wallhack",
+    "cheat_type": "Aimbot",
     "status": "confirmed",
     "date_reported": "2026-07-22",
-    "evidence_url": "https://www.youtube.com/watch?v=P2-81rnos54"
+    "evidence_urls": [
+      "https://www.youtube.com/watch?v=P2-81rnos54"
+    ]
   },
   {
     "case_id": "CASE-0099",
@@ -1075,7 +1237,9 @@
     "cheat_type": "No Spread",
     "status": "confirmed",
     "date_reported": "2026-07-22",
-    "evidence_url": "https://www.youtube.com/watch?v=FLwvSYqILfk"
+    "evidence_urls": [
+      "https://www.youtube.com/watch?v=FLwvSYqILfk"
+    ]
   },
   {
     "case_id": "CASE-0100",
@@ -1086,7 +1250,9 @@
     "cheat_type": "No Spread",
     "status": "confirmed",
     "date_reported": "2026-07-22",
-    "evidence_url": "https://www.youtube.com/watch?v=FLwvSYqILfk"
+    "evidence_urls": [
+      "https://www.youtube.com/watch?v=FLwvSYqILfk"
+    ]
   },
   {
     "case_id": "CASE-0101",
@@ -1094,10 +1260,12 @@
     "ign": "..",
     "steam_id": "STEAM_0:0:763727695",
     "profile_url": "https://steamcommunity.com/profiles/76561199487721118",
-    "cheat_type": "ESP / Wallhack",
+    "cheat_type": "Esp / Wallhack",
     "status": "confirmed",
     "date_reported": "2026-07-22",
-    "evidence_url": "https://www.youtube.com/watch?v=h4c5pRTGfiw"
+    "evidence_urls": [
+      "https://www.youtube.com/watch?v=h4c5pRTGfiw"
+    ]
   },
   {
     "case_id": "CASE-0102",
@@ -1105,10 +1273,12 @@
     "ign": "hola bebe",
     "steam_id": "STEAM_0:1:565724715",
     "profile_url": "https://steamcommunity.com/profiles/76561199091715159",
-    "cheat_type": "Rage Cheat",
+    "cheat_type": "Aimbot",
     "status": "confirmed",
     "date_reported": "2026-07-22",
-    "evidence_url": "https://www.youtube.com/watch?v=MlX_p1YQS_8"
+    "evidence_urls": [
+      "https://www.youtube.com/watch?v=MlX_p1YQS_8"
+    ]
   },
   {
     "case_id": "CASE-0103",
@@ -1116,10 +1286,12 @@
     "ign": "sss",
     "steam_id": "STEAM_0:1:631892468",
     "profile_url": "https://steamcommunity.com/profiles/76561199224050665",
-    "cheat_type": "ESP / Wallhack",
+    "cheat_type": "Esp / Wallhack",
     "status": "confirmed",
     "date_reported": "2026-07-22",
-    "evidence_url": "https://www.youtube.com/watch?v=5FZwOmA70eQ"
+    "evidence_urls": [
+      "https://www.youtube.com/watch?v=5FZwOmA70eQ"
+    ]
   },
   {
     "case_id": "CASE-0104",
@@ -1127,10 +1299,12 @@
     "ign": "邪恶",
     "steam_id": "STEAM_0:0:712600933",
     "profile_url": "https://steamcommunity.com/profiles/76561199385467594",
-    "cheat_type": "Aimbot, ESP / Wallhack",
+    "cheat_type": "Aimbot",
     "status": "confirmed",
     "date_reported": "2026-07-22",
-    "evidence_url": "https://www.youtube.com/watch?v=VHi95nXXHno"
+    "evidence_urls": [
+      "https://www.youtube.com/watch?v=VHi95nXXHno"
+    ]
   },
   {
     "case_id": "CASE-0105",
@@ -1138,10 +1312,12 @@
     "ign": "Yam",
     "steam_id": "STEAM_0:1:606428625",
     "profile_url": "https://steamcommunity.com/profiles/76561199173122979",
-    "cheat_type": "Aimbot, ESP / Wallhack",
+    "cheat_type": "Aimbot",
     "status": "confirmed",
     "date_reported": "2026-07-22",
-    "evidence_url": "https://www.youtube.com/watch?v=PXQszu6qOYM"
+    "evidence_urls": [
+      "https://www.youtube.com/watch?v=PXQszu6qOYM"
+    ]
   },
   {
     "case_id": "CASE-0106",
@@ -1149,10 +1325,13 @@
     "ign": "nourish",
     "steam_id": "STEAM_0:0:638194254",
     "profile_url": "https://steamcommunity.com/profiles/76561199236654236",
-    "cheat_type": "Aimbot, ESP / Wallhack",
+    "cheat_type": "Aimbot",
     "status": "confirmed",
     "date_reported": "2026-07-22",
-    "evidence_url": "https://www.youtube.com/watch?v=CFryQumckqo, https://www.youtube.com/watch?v=ynje3Ps1www"
+    "evidence_urls": [
+      "https://www.youtube.com/watch?v=CFryQumckqo",
+      "https://www.youtube.com/watch?v=ynje3Ps1www"
+    ]
   },
   {
     "case_id": "CASE-0107",
@@ -1160,10 +1339,12 @@
     "ign": "federsito",
     "steam_id": "STEAM_0:0:698672408",
     "profile_url": "https://steamcommunity.com/profiles/76561199357610544",
-    "cheat_type": "Rage Cheat",
+    "cheat_type": "Aimbot",
     "status": "confirmed",
     "date_reported": "2026-07-22",
-    "evidence_url": "https://www.youtube.com/watch?v=-_Ml2o5ZxOY"
+    "evidence_urls": [
+      "https://www.youtube.com/watch?v=-_Ml2o5ZxOY"
+    ]
   },
   {
     "case_id": "CASE-0108",
@@ -1171,10 +1352,12 @@
     "ign": "Su-ho",
     "steam_id": "STEAM_0:0:728789515",
     "profile_url": "https://steamcommunity.com/profiles/76561199417844758",
-    "cheat_type": "ESP / Wallhack",
+    "cheat_type": "Esp / Wallhack",
     "status": "suspected",
     "date_reported": "2026-07-22",
-    "evidence_url": "https://www.youtube.com/watch?v=wU_cP6OqR5g"
+    "evidence_urls": [
+      "https://www.youtube.com/watch?v=wU_cP6OqR5g"
+    ]
   },
   {
     "case_id": "CASE-0109",
@@ -1182,10 +1365,12 @@
     "ign": "rΛzor.",
     "steam_id": "STEAM_0:1:591668629",
     "profile_url": "https://steamcommunity.com/profiles/76561199143602987",
-    "cheat_type": "ESP / Wallhack",
+    "cheat_type": "Esp / Wallhack",
     "status": "suspected",
     "date_reported": "2026-07-22",
-    "evidence_url": "https://www.youtube.com/watch?v=wU_cP6OqR5g"
+    "evidence_urls": [
+      "https://www.youtube.com/watch?v=wU_cP6OqR5g"
+    ]
   },
   {
     "case_id": "CASE-0110",
@@ -1196,7 +1381,9 @@
     "cheat_type": "Aimbot",
     "status": "confirmed",
     "date_reported": "2026-07-22",
-    "evidence_url": "https://www.youtube.com/watch?v=4VcLLoKEAz8"
+    "evidence_urls": [
+      "https://www.youtube.com/watch?v=4VcLLoKEAz8"
+    ]
   },
   {
     "case_id": "CASE-0111",
@@ -1204,10 +1391,12 @@
     "ign": "Julio",
     "steam_id": "STEAM_0:0:180012871",
     "profile_url": "https://steamcommunity.com/profiles/76561198320291470",
-    "cheat_type": "Speed-Hack",
+    "cheat_type": "Speedhack",
     "status": "confirmed",
     "date_reported": "2026-07-22",
-    "evidence_url": "https://www.youtube.com/watch?v=QAJ-SoYnZII"
+    "evidence_urls": [
+      "https://www.youtube.com/watch?v=QAJ-SoYnZII"
+    ]
   },
   {
     "case_id": "CASE-0112",
@@ -1215,21 +1404,25 @@
     "ign": "DIEGUIÑO",
     "steam_id": "STEAM_0:0:739116798",
     "profile_url": "https://steamcommunity.com/profiles/76561199438499324",
-    "cheat_type": "Rage Cheat, Aimbot",
+    "cheat_type": "Aimbot",
     "status": "confirmed",
     "date_reported": "2026-07-22",
-    "evidence_url": "https://www.youtube.com/watch?v=voYsQ-4Tucw"
+    "evidence_urls": [
+      "https://www.youtube.com/watch?v=voYsQ-4Tucw"
+    ]
   },
   {
     "case_id": "CASE-0113",
     "category": "community",
-    "ign": "Sthep&amp;lt;3",
+    "ign": "Sthep<3",
     "steam_id": "STEAM_0:0:562151160",
     "profile_url": "https://steamcommunity.com/profiles/76561199084568048",
-    "cheat_type": "Aimbot, ESP / Wallhack",
+    "cheat_type": "Aimbot",
     "status": "confirmed",
     "date_reported": "2026-07-22",
-    "evidence_url": "https://www.youtube.com/watch?v=3HlwczfA4mw"
+    "evidence_urls": [
+      "https://www.youtube.com/watch?v=3HlwczfA4mw"
+    ]
   },
   {
     "case_id": "CASE-0114",
@@ -1237,10 +1430,12 @@
     "ign": "lyn",
     "steam_id": "STEAM_0:1:794466774",
     "profile_url": "https://steamcommunity.com/profiles/76561199549199277",
-    "cheat_type": "ESP / Wallhack",
+    "cheat_type": "Esp / Wallhack",
     "status": "confirmed",
     "date_reported": "2026-07-22",
-    "evidence_url": "https://www.youtube.com/watch?v=qoevO0SArNk"
+    "evidence_urls": [
+      "https://www.youtube.com/watch?v=qoevO0SArNk"
+    ]
   },
   {
     "case_id": "CASE-0115",
@@ -1248,10 +1443,12 @@
     "ign": "Kathe xd",
     "steam_id": "STEAM_0:1:590035322",
     "profile_url": "https://steamcommunity.com/profiles/76561199140336373",
-    "cheat_type": "ESP / Wallhack",
+    "cheat_type": "Esp / Wallhack",
     "status": "confirmed",
     "date_reported": "2026-07-22",
-    "evidence_url": "https://www.youtube.com/watch?v=qoevO0SArNk"
+    "evidence_urls": [
+      "https://www.youtube.com/watch?v=qoevO0SArNk"
+    ]
   },
   {
     "case_id": "CASE-0116",
@@ -1262,7 +1459,9 @@
     "cheat_type": "Aimbot",
     "status": "confirmed",
     "date_reported": "2026-07-22",
-    "evidence_url": "https://www.youtube.com/watch?v=qkDWg-31Nuk"
+    "evidence_urls": [
+      "https://www.youtube.com/watch?v=qkDWg-31Nuk"
+    ]
   },
   {
     "case_id": "CASE-0117",
@@ -1270,10 +1469,12 @@
     "ign": "Vladimir Putin",
     "steam_id": "STEAM_0:0:715055340",
     "profile_url": "https://steamcommunity.com/profiles/76561199390376408",
-    "cheat_type": "Aimbot, ESP / Wallhack",
+    "cheat_type": "Aimbot",
     "status": "confirmed",
     "date_reported": "2026-07-22",
-    "evidence_url": "https://www.youtube.com/watch?v=tsOyGJxIdwQ"
+    "evidence_urls": [
+      "https://www.youtube.com/watch?v=tsOyGJxIdwQ"
+    ]
   },
   {
     "case_id": "CASE-0118",
@@ -1284,7 +1485,9 @@
     "cheat_type": "Aimbot",
     "status": "confirmed",
     "date_reported": "2026-07-22",
-    "evidence_url": "https://www.youtube.com/watch?v=hyapl3-bjys"
+    "evidence_urls": [
+      "https://www.youtube.com/watch?v=hyapl3-bjys"
+    ]
   },
   {
     "case_id": "CASE-0119",
@@ -1295,7 +1498,9 @@
     "cheat_type": "Aimbot",
     "status": "confirmed",
     "date_reported": "2026-07-22",
-    "evidence_url": "https://www.youtube.com/watch?v=rDObMurkC2M"
+    "evidence_urls": [
+      "https://www.youtube.com/watch?v=rDObMurkC2M"
+    ]
   },
   {
     "case_id": "CASE-0120",
@@ -1303,10 +1508,12 @@
     "ign": "luciFer",
     "steam_id": "STEAM_0:1:526037430",
     "profile_url": "https://steamcommunity.com/profiles/76561199012340589",
-    "cheat_type": "ESP / Wallhack",
+    "cheat_type": "Esp / Wallhack",
     "status": "confirmed",
     "date_reported": "2026-07-22",
-    "evidence_url": "https://www.youtube.com/watch?v=rqa-siXtQ5E"
+    "evidence_urls": [
+      "https://www.youtube.com/watch?v=rqa-siXtQ5E"
+    ]
   },
   {
     "case_id": "CASE-0121",
@@ -1314,10 +1521,12 @@
     "ign": "wish ϟ",
     "steam_id": "STEAM_0:0:566951013",
     "profile_url": "https://steamcommunity.com/profiles/76561199094167754",
-    "cheat_type": "ESP / Wallhack",
+    "cheat_type": "Esp / Wallhack",
     "status": "confirmed",
     "date_reported": "2026-07-22",
-    "evidence_url": "https://www.youtube.com/watch?v=rqa-siXtQ5E"
+    "evidence_urls": [
+      "https://www.youtube.com/watch?v=rqa-siXtQ5E"
+    ]
   },
   {
     "case_id": "CASE-0122",
@@ -1325,10 +1534,12 @@
     "ign": "Корњача",
     "steam_id": "STEAM_0:1:752733309",
     "profile_url": "https://steamcommunity.com/profiles/76561199465732347",
-    "cheat_type": "ESP / Wallhack",
+    "cheat_type": "Esp / Wallhack",
     "status": "confirmed",
     "date_reported": "2026-07-22",
-    "evidence_url": "https://www.youtube.com/watch?v=mYyWaXI9jpg"
+    "evidence_urls": [
+      "https://www.youtube.com/watch?v=mYyWaXI9jpg"
+    ]
   },
   {
     "case_id": "CASE-0123",
@@ -1336,10 +1547,12 @@
     "ign": "◘•™Shøøký™•◘",
     "steam_id": "STEAM_0:0:632225915",
     "profile_url": "https://steamcommunity.com/profiles/76561199224717558",
-    "cheat_type": "ESP / Wallhack",
+    "cheat_type": "Esp / Wallhack",
     "status": "confirmed",
     "date_reported": "2026-07-22",
-    "evidence_url": "https://www.youtube.com/watch?v=mYyWaXI9jpg"
+    "evidence_urls": [
+      "https://www.youtube.com/watch?v=mYyWaXI9jpg"
+    ]
   },
   {
     "case_id": "CASE-0124",
@@ -1347,10 +1560,12 @@
     "ign": "pio pio",
     "steam_id": "STEAM_0:0:796206216",
     "profile_url": "https://steamcommunity.com/profiles/76561199552678160",
-    "cheat_type": "ESP / Wallhack",
+    "cheat_type": "Esp / Wallhack",
     "status": "confirmed",
     "date_reported": "2026-07-22",
-    "evidence_url": "https://www.youtube.com/watch?v=LiSxb_unfl8"
+    "evidence_urls": [
+      "https://www.youtube.com/watch?v=LiSxb_unfl8"
+    ]
   },
   {
     "case_id": "CASE-0125",
@@ -1358,10 +1573,12 @@
     "ign": "Quimir",
     "steam_id": "STEAM_0:1:96414475",
     "profile_url": "https://steamcommunity.com/profiles/76561198153094679",
-    "cheat_type": "No Spread, Aimbot, ESP / Wallhack",
+    "cheat_type": "Aimbot",
     "status": "confirmed",
     "date_reported": "2026-07-22",
-    "evidence_url": "https://www.youtube.com/watch?v=ahlowKPyStQ"
+    "evidence_urls": [
+      "https://www.youtube.com/watch?v=ahlowKPyStQ"
+    ]
   },
   {
     "case_id": "CASE-0126",
@@ -1369,10 +1586,12 @@
     "ign": "76561199471859810",
     "steam_id": "STEAM_0:0:755797041",
     "profile_url": "https://steamcommunity.com/profiles/76561199471859810",
-    "cheat_type": "No Spread, Aimbot, ESP / Wallhack",
+    "cheat_type": "Aimbot",
     "status": "confirmed",
     "date_reported": "2026-07-22",
-    "evidence_url": "https://www.youtube.com/watch?v=ahlowKPyStQ"
+    "evidence_urls": [
+      "https://www.youtube.com/watch?v=ahlowKPyStQ"
+    ]
   },
   {
     "case_id": "CASE-0127",
@@ -1383,7 +1602,9 @@
     "cheat_type": "Aimbot",
     "status": "confirmed",
     "date_reported": "2026-07-22",
-    "evidence_url": "https://www.youtube.com/watch?v=G5ksSKIbKnc"
+    "evidence_urls": [
+      "https://www.youtube.com/watch?v=G5ksSKIbKnc"
+    ]
   },
   {
     "case_id": "CASE-0128",
@@ -1394,7 +1615,9 @@
     "cheat_type": "Aimbot",
     "status": "confirmed",
     "date_reported": "2026-07-22",
-    "evidence_url": "https://www.youtube.com/watch?v=dAEUQL3-GSo"
+    "evidence_urls": [
+      "https://www.youtube.com/watch?v=dAEUQL3-GSo"
+    ]
   },
   {
     "case_id": "CASE-0129",
@@ -1405,7 +1628,9 @@
     "cheat_type": "Aimbot",
     "status": "confirmed",
     "date_reported": "2026-07-22",
-    "evidence_url": "https://www.youtube.com/watch?v=CBWnQS5obO4"
+    "evidence_urls": [
+      "https://www.youtube.com/watch?v=CBWnQS5obO4"
+    ]
   },
   {
     "case_id": "CASE-0130",
@@ -1416,7 +1641,9 @@
     "cheat_type": "Aimbot",
     "status": "confirmed",
     "date_reported": "2026-07-22",
-    "evidence_url": "https://www.youtube.com/watch?v=WNQHtW39INw"
+    "evidence_urls": [
+      "https://www.youtube.com/watch?v=WNQHtW39INw"
+    ]
   },
   {
     "case_id": "CASE-0131",
@@ -1427,7 +1654,9 @@
     "cheat_type": "Aimbot",
     "status": "confirmed",
     "date_reported": "2026-07-22",
-    "evidence_url": "https://www.youtube.com/watch?v=LprRIj37oIc"
+    "evidence_urls": [
+      "https://www.youtube.com/watch?v=LprRIj37oIc"
+    ]
   },
   {
     "case_id": "CASE-0132",
@@ -1438,7 +1667,9 @@
     "cheat_type": "Aimbot",
     "status": "confirmed",
     "date_reported": "2026-07-22",
-    "evidence_url": "https://www.youtube.com/watch?v=LprRIj37oIc"
+    "evidence_urls": [
+      "https://www.youtube.com/watch?v=LprRIj37oIc"
+    ]
   },
   {
     "case_id": "CASE-0133",
@@ -1449,7 +1680,9 @@
     "cheat_type": "Aimbot",
     "status": "confirmed",
     "date_reported": "2026-07-22",
-    "evidence_url": "https://www.youtube.com/watch?v=LprRIj37oIc"
+    "evidence_urls": [
+      "https://www.youtube.com/watch?v=LprRIj37oIc"
+    ]
   },
   {
     "case_id": "CASE-0134",
@@ -1457,10 +1690,12 @@
     "ign": "ee",
     "steam_id": "STEAM_0:0:629909896",
     "profile_url": "https://steamcommunity.com/profiles/76561199220085520",
-    "cheat_type": "ESP / Wallhack",
+    "cheat_type": "Esp / Wallhack",
     "status": "confirmed",
     "date_reported": "2026-07-22",
-    "evidence_url": "https://www.youtube.com/watch?v=o4fKPLwQgVc"
+    "evidence_urls": [
+      "https://www.youtube.com/watch?v=o4fKPLwQgVc"
+    ]
   },
   {
     "case_id": "CASE-0135",
@@ -1468,10 +1703,12 @@
     "ign": "PedritoTuTerror",
     "steam_id": "STEAM_0:0:803529278",
     "profile_url": "https://steamcommunity.com/profiles/76561199567324284",
-    "cheat_type": "ESP / Wallhack",
+    "cheat_type": "Esp / Wallhack",
     "status": "confirmed",
     "date_reported": "2026-07-22",
-    "evidence_url": "https://www.youtube.com/watch?v=o4fKPLwQgVc"
+    "evidence_urls": [
+      "https://www.youtube.com/watch?v=o4fKPLwQgVc"
+    ]
   },
   {
     "case_id": "CASE-0136",
@@ -1479,10 +1716,12 @@
     "ign": "haN ♥♥♥♥",
     "steam_id": "STEAM_0:0:643006891",
     "profile_url": "https://steamcommunity.com/profiles/76561199246279510",
-    "cheat_type": "ESP / Wallhack",
+    "cheat_type": "Esp / Wallhack",
     "status": "confirmed",
     "date_reported": "2026-07-22",
-    "evidence_url": "https://www.youtube.com/watch?v=noVnrQiG0oA"
+    "evidence_urls": [
+      "https://www.youtube.com/watch?v=noVnrQiG0oA"
+    ]
   },
   {
     "case_id": "CASE-0137",
@@ -1490,10 +1729,12 @@
     "ign": "nertile",
     "steam_id": "STEAM_0:1:799689378",
     "profile_url": "https://steamcommunity.com/profiles/76561199559644485",
-    "cheat_type": "ESP / Wallhack",
+    "cheat_type": "Esp / Wallhack",
     "status": "confirmed",
     "date_reported": "2026-07-22",
-    "evidence_url": "https://www.youtube.com/watch?v=noVnrQiG0oA"
+    "evidence_urls": [
+      "https://www.youtube.com/watch?v=noVnrQiG0oA"
+    ]
   },
   {
     "case_id": "CASE-0138",
@@ -1501,10 +1742,12 @@
     "ign": "Yukka",
     "steam_id": "STEAM_0:0:78982026",
     "profile_url": "https://steamcommunity.com/profiles/76561198118229780",
-    "cheat_type": "ESP / Wallhack",
+    "cheat_type": "Esp / Wallhack",
     "status": "confirmed",
     "date_reported": "2026-07-22",
-    "evidence_url": "https://www.youtube.com/watch?v=MZ3Q6fmV00M"
+    "evidence_urls": [
+      "https://www.youtube.com/watch?v=MZ3Q6fmV00M"
+    ]
   },
   {
     "case_id": "CASE-0139",
@@ -1512,10 +1755,12 @@
     "ign": "joaquin gamer",
     "steam_id": "STEAM_0:0:703436291",
     "profile_url": "https://steamcommunity.com/profiles/76561199367138310",
-    "cheat_type": "ESP / Wallhack",
+    "cheat_type": "Esp / Wallhack",
     "status": "confirmed",
     "date_reported": "2026-07-22",
-    "evidence_url": "https://www.youtube.com/watch?v=EMIyrASEHTE"
+    "evidence_urls": [
+      "https://www.youtube.com/watch?v=EMIyrASEHTE"
+    ]
   },
   {
     "case_id": "CASE-0140",
@@ -1523,10 +1768,12 @@
     "ign": "m.mf",
     "steam_id": "STEAM_0:1:695313221",
     "profile_url": "https://steamcommunity.com/profiles/76561199350892171",
-    "cheat_type": "ESP / Wallhack",
+    "cheat_type": "Esp / Wallhack",
     "status": "confirmed",
     "date_reported": "2026-07-22",
-    "evidence_url": "https://www.youtube.com/watch?v=EMIyrASEHTE"
+    "evidence_urls": [
+      "https://www.youtube.com/watch?v=EMIyrASEHTE"
+    ]
   },
   {
     "case_id": "CASE-0141",
@@ -1534,10 +1781,12 @@
     "ign": "11:11",
     "steam_id": "STEAM_0:0:244882537",
     "profile_url": "https://steamcommunity.com/profiles/76561198450030802",
-    "cheat_type": "Aimbot, ESP / Wallhack",
+    "cheat_type": "Aimbot",
     "status": "confirmed",
     "date_reported": "2026-07-22",
-    "evidence_url": "https://www.youtube.com/watch?v=YyPArdm6lwQ"
+    "evidence_urls": [
+      "https://www.youtube.com/watch?v=YyPArdm6lwQ"
+    ]
   },
   {
     "case_id": "CASE-0142",
@@ -1545,10 +1794,12 @@
     "ign": "Maggie",
     "steam_id": "STEAM_0:0:566654560",
     "profile_url": "https://steamcommunity.com/profiles/76561199093574848",
-    "cheat_type": "Aimbot, ESP / Wallhack",
+    "cheat_type": "Aimbot",
     "status": "confirmed",
     "date_reported": "2026-07-22",
-    "evidence_url": "https://www.youtube.com/watch?v=YyPArdm6lwQ"
+    "evidence_urls": [
+      "https://www.youtube.com/watch?v=YyPArdm6lwQ"
+    ]
   },
   {
     "case_id": "CASE-0143",
@@ -1556,10 +1807,12 @@
     "ign": "KCHA DISCAPACITADOS",
     "steam_id": "STEAM_0:0:721834169",
     "profile_url": "https://steamcommunity.com/profiles/76561199403934066",
-    "cheat_type": "ESP / Wallhack",
+    "cheat_type": "Esp / Wallhack",
     "status": "confirmed",
     "date_reported": "2026-07-22",
-    "evidence_url": "https://www.youtube.com/watch?v=IghqQjTPRGQ"
+    "evidence_urls": [
+      "https://www.youtube.com/watch?v=IghqQjTPRGQ"
+    ]
   },
   {
     "case_id": "CASE-0144",
@@ -1567,10 +1820,12 @@
     "ign": "Leveling",
     "steam_id": "STEAM_0:0:796206101",
     "profile_url": "https://steamcommunity.com/profiles/76561199552677930",
-    "cheat_type": "ESP / Wallhack",
+    "cheat_type": "Esp / Wallhack",
     "status": "confirmed",
     "date_reported": "2026-07-22",
-    "evidence_url": "https://www.youtube.com/watch?v=IghqQjTPRGQ"
+    "evidence_urls": [
+      "https://www.youtube.com/watch?v=IghqQjTPRGQ"
+    ]
   },
   {
     "case_id": "CASE-0145",
@@ -1578,10 +1833,12 @@
     "ign": "Jude Bellingham",
     "steam_id": "STEAM_0:1:776821461",
     "profile_url": "https://steamcommunity.com/profiles/76561199513908651",
-    "cheat_type": "ESP / Wallhack",
+    "cheat_type": "Esp / Wallhack",
     "status": "confirmed",
     "date_reported": "2026-07-22",
-    "evidence_url": "https://www.youtube.com/watch?v=IghqQjTPRGQ"
+    "evidence_urls": [
+      "https://www.youtube.com/watch?v=IghqQjTPRGQ"
+    ]
   },
   {
     "case_id": "CASE-0146",
@@ -1589,21 +1846,25 @@
     "ign": "ross",
     "steam_id": "STEAM_0:0:628401750",
     "profile_url": "https://steamcommunity.com/profiles/76561199217069228",
-    "cheat_type": "ESP / Wallhack",
+    "cheat_type": "Esp / Wallhack",
     "status": "confirmed",
     "date_reported": "2026-07-22",
-    "evidence_url": "https://www.youtube.com/watch?v=IghqQjTPRGQ"
+    "evidence_urls": [
+      "https://www.youtube.com/watch?v=IghqQjTPRGQ"
+    ]
   },
   {
     "case_id": "CASE-0147",
     "category": "community",
-    "ign": "&amp;lt;0&amp;gt;[]&amp;lt;0&amp;gt;",
+    "ign": "<0>[]<0>",
     "steam_id": "STEAM_0:0:521030051",
     "profile_url": "https://steamcommunity.com/profiles/76561199002325830",
-    "cheat_type": "Rage Cheat, Speed-Hack",
+    "cheat_type": "Speedhack",
     "status": "confirmed",
     "date_reported": "2026-07-22",
-    "evidence_url": "https://www.youtube.com/watch?v=tFjHjF852ik"
+    "evidence_urls": [
+      "https://www.youtube.com/watch?v=tFjHjF852ik"
+    ]
   },
   {
     "case_id": "CASE-0148",
@@ -1614,7 +1875,9 @@
     "cheat_type": "Aimbot",
     "status": "confirmed",
     "date_reported": "2026-07-22",
-    "evidence_url": "https://www.youtube.com/watch?v=9eMkSFqq3Yc"
+    "evidence_urls": [
+      "https://www.youtube.com/watch?v=9eMkSFqq3Yc"
+    ]
   },
   {
     "case_id": "CASE-0149",
@@ -1622,10 +1885,12 @@
     "ign": "wwn",
     "steam_id": "STEAM_0:0:193644805",
     "profile_url": "https://steamcommunity.com/profiles/76561198347555338",
-    "cheat_type": "Rage Cheat, Speed-Hack",
+    "cheat_type": "Speedhack",
     "status": "confirmed",
     "date_reported": "2026-07-22",
-    "evidence_url": "https://www.youtube.com/watch?v=uBow5VhCcR8"
+    "evidence_urls": [
+      "https://www.youtube.com/watch?v=uBow5VhCcR8"
+    ]
   },
   {
     "case_id": "CASE-0150",
@@ -1636,7 +1901,9 @@
     "cheat_type": "Aimbot",
     "status": "confirmed",
     "date_reported": "2026-07-22",
-    "evidence_url": "https://www.youtube.com/watch?v=qqXK64gDicw"
+    "evidence_urls": [
+      "https://www.youtube.com/watch?v=qqXK64gDicw"
+    ]
   },
   {
     "case_id": "CASE-0151",
@@ -1644,10 +1911,12 @@
     "ign": "обманщик",
     "steam_id": "STEAM_0:0:799858173",
     "profile_url": "https://steamcommunity.com/profiles/76561199559982074",
-    "cheat_type": "Rage Cheat, Speed-Hack, Aimbot",
+    "cheat_type": "Speedhack",
     "status": "confirmed",
     "date_reported": "2026-07-22",
-    "evidence_url": "https://www.youtube.com/watch?v=feuYVZNgaQ0"
+    "evidence_urls": [
+      "https://www.youtube.com/watch?v=feuYVZNgaQ0"
+    ]
   },
   {
     "case_id": "CASE-0152",
@@ -1658,7 +1927,9 @@
     "cheat_type": "Aimbot",
     "status": "confirmed",
     "date_reported": "2026-07-22",
-    "evidence_url": "https://www.youtube.com/watch?v=IdgWvmUk2Lc"
+    "evidence_urls": [
+      "https://www.youtube.com/watch?v=IdgWvmUk2Lc"
+    ]
   },
   {
     "case_id": "CASE-0153",
@@ -1666,10 +1937,12 @@
     "ign": "UltraChamoy",
     "steam_id": "STEAM_0:0:763284680",
     "profile_url": "https://steamcommunity.com/profiles/76561199486835088",
-    "cheat_type": "Aimbot, ESP / Wallhack",
+    "cheat_type": "Aimbot",
     "status": "confirmed",
     "date_reported": "2026-07-22",
-    "evidence_url": "https://www.youtube.com/watch?v=G3vrnGzxymE"
+    "evidence_urls": [
+      "https://www.youtube.com/watch?v=G3vrnGzxymE"
+    ]
   },
   {
     "case_id": "CASE-0154",
@@ -1677,10 +1950,12 @@
     "ign": "aqua",
     "steam_id": "STEAM_0:0:179975657",
     "profile_url": "https://steamcommunity.com/profiles/76561198320217042",
-    "cheat_type": "Aimbot, ESP / Wallhack",
+    "cheat_type": "Aimbot",
     "status": "confirmed",
     "date_reported": "2026-07-22",
-    "evidence_url": "https://www.youtube.com/watch?v=a7niwMumIaQ"
+    "evidence_urls": [
+      "https://www.youtube.com/watch?v=a7niwMumIaQ"
+    ]
   },
   {
     "case_id": "CASE-0155",
@@ -1688,10 +1963,12 @@
     "ign": "nirth",
     "steam_id": "STEAM_0:0:764864041",
     "profile_url": "https://steamcommunity.com/profiles/76561199489993810",
-    "cheat_type": "Rage Cheat, Speed-Hack",
+    "cheat_type": "Speedhack",
     "status": "confirmed",
     "date_reported": "2026-07-22",
-    "evidence_url": "https://www.youtube.com/watch?v=015wk22oiyA"
+    "evidence_urls": [
+      "https://www.youtube.com/watch?v=015wk22oiyA"
+    ]
   },
   {
     "case_id": "CASE-0156",
@@ -1702,7 +1979,9 @@
     "cheat_type": "Aimbot",
     "status": "confirmed",
     "date_reported": "2026-07-22",
-    "evidence_url": "https://www.youtube.com/watch?v=mCPWn80SM9s"
+    "evidence_urls": [
+      "https://www.youtube.com/watch?v=mCPWn80SM9s"
+    ]
   },
   {
     "case_id": "CASE-0157",
@@ -1710,10 +1989,12 @@
     "ign": "si fedeas te fedeo",
     "steam_id": "STEAM_0:0:628899594",
     "profile_url": "https://steamcommunity.com/profiles/76561199218064916",
-    "cheat_type": "Rage Cheat, Speed-Hack",
+    "cheat_type": "Speedhack",
     "status": "confirmed",
     "date_reported": "2026-07-22",
-    "evidence_url": "https://www.youtube.com/watch?v=m-3rNwB7lD8"
+    "evidence_urls": [
+      "https://www.youtube.com/watch?v=m-3rNwB7lD8"
+    ]
   },
   {
     "case_id": "CASE-0158",
@@ -1721,10 +2002,12 @@
     "ign": "Skipper",
     "steam_id": "STEAM_0:1:227119842",
     "profile_url": "https://steamcommunity.com/profiles/76561198414505413",
-    "cheat_type": "Rage Cheat, Speed-Hack, No Spread",
+    "cheat_type": "Speedhack",
     "status": "confirmed",
     "date_reported": "2026-07-22",
-    "evidence_url": "https://youtu.be/8b8n8bsLmuU"
+    "evidence_urls": [
+      "https://youtu.be/8b8n8bsLmuU"
+    ]
   },
   {
     "case_id": "CASE-0159",
@@ -1732,10 +2015,12 @@
     "ign": "Guts",
     "steam_id": "STEAM_0:0:793888374",
     "profile_url": "https://steamcommunity.com/profiles/76561199548042476",
-    "cheat_type": "Auto-Bhop, Other",
+    "cheat_type": "Auto-Bhop",
     "status": "confirmed",
     "date_reported": "2026-07-24",
-    "evidence_url": "https://www.youtube.com/watch?v=S6ZOXG_zK5Q"
+    "evidence_urls": [
+      "https://www.youtube.com/watch?v=S6ZOXG_zK5Q"
+    ]
   },
   {
     "case_id": "CASE-0160",
@@ -1743,10 +2028,12 @@
     "ign": "джейн",
     "steam_id": "STEAM_0:1:544375236",
     "profile_url": "https://steamcommunity.com/profiles/76561199049016201",
-    "cheat_type": "Rapid-fire, Rage Cheat",
+    "cheat_type": "Aimbot",
     "status": "confirmed",
     "date_reported": "2026-07-24",
-    "evidence_url": "https://youtu.be/ZXbz3Z55Fao?si=0Ec8Eq64P22y4vVh"
+    "evidence_urls": [
+      "https://youtu.be/ZXbz3Z55Fao?si=0Ec8Eq64P22y4vVh"
+    ]
   },
   {
     "case_id": "CASE-0161",
@@ -1754,10 +2041,12 @@
     "ign": "Melancholic Musician",
     "steam_id": "STEAM_0:1:621729376",
     "profile_url": "https://steamcommunity.com/profiles/76561199203724481",
-    "cheat_type": "Rapid-fire",
+    "cheat_type": "Rapid-Fire",
     "status": "confirmed",
     "date_reported": "2026-07-27",
-    "evidence_url": "https://bans.haven-official.com/index.php?p=banlist&searchText=STEAM_0%3A1%3A621729376&server=&time="
+    "evidence_urls": [
+      "https://bans.haven-official.com/index.php?p=banlist&searchText=STEAM_0%3A1%3A621729376&server=&time="
+    ]
   },
   {
     "case_id": "CASE-0162",
@@ -1765,10 +2054,12 @@
     "ign": "Hawk",
     "steam_id": "STEAM_0:1:893065915",
     "profile_url": "https://steamcommunity.com/profiles/76561199746397559",
-    "cheat_type": "Rapid-fire",
+    "cheat_type": "Rapid-Fire",
     "status": "confirmed",
     "date_reported": "2026-07-27",
-    "evidence_url": "https://bans.haven-official.com/index.php?p=banlist&searchText=STEAM_0%3A1%3A893065915&server=&time="
+    "evidence_urls": [
+      "https://bans.haven-official.com/index.php?p=banlist&searchText=STEAM_0%3A1%3A893065915&server=&time="
+    ]
   },
   {
     "case_id": "CASE-0163",
@@ -1776,10 +2067,12 @@
     "ign": "organner",
     "steam_id": "STEAM_0:1:426062235",
     "profile_url": "https://steamcommunity.com/profiles/76561198812390199",
-    "cheat_type": "Rapid-fire",
+    "cheat_type": "Rapid-Fire",
     "status": "confirmed",
     "date_reported": "2026-07-27",
-    "evidence_url": "https://bans.haven-official.com/index.php?p=banlist&searchText=STEAM_0%3A1%3A426062235&server=&time="
+    "evidence_urls": [
+      "https://bans.haven-official.com/index.php?p=banlist&searchText=STEAM_0%3A1%3A426062235&server=&time="
+    ]
   },
   {
     "case_id": "CASE-0164",
@@ -1787,21 +2080,25 @@
     "ign": "็",
     "steam_id": "STEAM_0:0:425743354",
     "profile_url": "https://steamcommunity.com/profiles/76561198811752436",
-    "cheat_type": "Rapid-fire",
+    "cheat_type": "Rapid-Fire",
     "status": "confirmed",
     "date_reported": "2026-07-27",
-    "evidence_url": "https://bans.haven-official.com/index.php?p=banlist&searchText=STEAM_0%3A0%3A425743354&server=&time="
+    "evidence_urls": [
+      "https://bans.haven-official.com/index.php?p=banlist&searchText=STEAM_0%3A0%3A425743354&server=&time="
+    ]
   },
   {
     "case_id": "CASE-0165",
     "category": "community",
-    "ign": "I don&#x27;t think so.",
+    "ign": "I don't think so.",
     "steam_id": "STEAM_0:0:157840733",
     "profile_url": "https://steamcommunity.com/profiles/76561198275947194",
-    "cheat_type": "Rapid-fire",
+    "cheat_type": "Rapid-Fire",
     "status": "confirmed",
     "date_reported": "2026-07-27",
-    "evidence_url": "https://bans.haven-official.com/index.php?p=banlist&searchText=STEAM_0%3A0%3A157840733&server=&time="
+    "evidence_urls": [
+      "https://bans.haven-official.com/index.php?p=banlist&searchText=STEAM_0%3A0%3A157840733&server=&time="
+    ]
   },
   {
     "case_id": "CASE-0166",
@@ -1812,7 +2109,10 @@
     "cheat_type": "Auto-Bhop",
     "status": "confirmed",
     "date_reported": "2026-07-30",
-    "evidence_url": "https://mirumservers.ru/bans/index.php?p=banlist&searchText=STEAM_0%3A0%3A572152175&server=&time=, https://freiheit-servers.ru/bans/index.php?p=banlist&advSearch=STEAM_0:0:572152175&advType=steamid&cks=1"
+    "evidence_urls": [
+      "https://mirumservers.ru/bans/index.php?p=banlist&searchText=STEAM_0%3A0%3A572152175&server=&time=",
+      "https://freiheit-servers.ru/bans/index.php?p=banlist&advSearch=STEAM_0:0:572152175&advType=steamid&cks=1"
+    ]
   },
   {
     "case_id": "CASE-0167",
@@ -1820,10 +2120,12 @@
     "ign": "dxkru",
     "steam_id": "STEAM_0:0:524357817",
     "profile_url": "https://steamcommunity.com/profiles/76561199008981362",
-    "cheat_type": "Rapid-fire",
+    "cheat_type": "Rapid-Fire",
     "status": "confirmed",
     "date_reported": "2026-08-16",
-    "evidence_url": "https://bans.haven-official.com/index.php?p=banlist&searchText=STEAM_0%3A0%3A524357817"
+    "evidence_urls": [
+      "https://bans.haven-official.com/index.php?p=banlist&searchText=STEAM_0%3A0%3A524357817"
+    ]
   },
   {
     "case_id": "CASE-0168",
@@ -1831,10 +2133,12 @@
     "ign": "lvl 1 whisperer",
     "steam_id": "STEAM_0:1:625264777",
     "profile_url": "https://steamcommunity.com/profiles/76561199210795283",
-    "cheat_type": "Rapid-fire",
+    "cheat_type": "Rapid-Fire",
     "status": "confirmed",
     "date_reported": "2026-08-16",
-    "evidence_url": "https://bans.haven-official.com/index.php?p=banlist&searchText=STEAM_0%3A1%3A625264777"
+    "evidence_urls": [
+      "https://bans.haven-official.com/index.php?p=banlist&searchText=STEAM_0%3A1%3A625264777"
+    ]
   },
   {
     "case_id": "CASE-0169",
@@ -1842,10 +2146,12 @@
     "ign": "MinecRaft",
     "steam_id": "STEAM_0:0:459097381",
     "profile_url": "https://steamcommunity.com/profiles/76561198878460490",
-    "cheat_type": "Rapid-fire",
+    "cheat_type": "Rapid-Fire",
     "status": "confirmed",
     "date_reported": "2026-08-16",
-    "evidence_url": "https://bans.haven-official.com/index.php?p=banlist&searchText=STEAM_0%3A0%3A459097381"
+    "evidence_urls": [
+      "https://bans.haven-official.com/index.php?p=banlist&searchText=STEAM_0%3A0%3A459097381"
+    ]
   },
   {
     "case_id": "CASE-0170",
@@ -1853,10 +2159,12 @@
     "ign": "67",
     "steam_id": "STEAM_0:0:444376174",
     "profile_url": "https://steamcommunity.com/profiles/76561198849018076",
-    "cheat_type": "Rapid-fire",
+    "cheat_type": "Rapid-Fire",
     "status": "confirmed",
     "date_reported": "2026-08-16",
-    "evidence_url": "https://bans.haven-official.com/index.php?p=banlist&searchText=STEAM_0%3A0%3A444376174"
+    "evidence_urls": [
+      "https://bans.haven-official.com/index.php?p=banlist&searchText=STEAM_0%3A0%3A444376174"
+    ]
   },
   {
     "case_id": "CASE-0171",
@@ -1864,10 +2172,12 @@
     "ign": "Capelense",
     "steam_id": "STEAM_0:1:52321030",
     "profile_url": "https://steamcommunity.com/profiles/76561198064907789",
-    "cheat_type": "Rapid-fire, Speed-Hack",
+    "cheat_type": "Speedhack",
     "status": "confirmed",
     "date_reported": "2026-08-16",
-    "evidence_url": "https://bans.haven-official.com/index.php?p=banlist&searchText=STEAM_0%3A1%3A52321030"
+    "evidence_urls": [
+      "https://bans.haven-official.com/index.php?p=banlist&searchText=STEAM_0%3A1%3A52321030"
+    ]
   },
   {
     "case_id": "CASE-0172",
@@ -1875,10 +2185,12 @@
     "ign": "Shaggy_smasher",
     "steam_id": "STEAM_0:1:951398608",
     "profile_url": "https://steamcommunity.com/profiles/76561199863062945",
-    "cheat_type": "Rapid-fire",
+    "cheat_type": "Rapid-Fire",
     "status": "confirmed",
     "date_reported": "2026-08-16",
-    "evidence_url": "https://bans.haven-official.com/index.php?p=banlist&searchText=STEAM_0%3A1%3A951398608"
+    "evidence_urls": [
+      "https://bans.haven-official.com/index.php?p=banlist&searchText=STEAM_0%3A1%3A951398608"
+    ]
   },
   {
     "case_id": "CASE-0173",
@@ -1886,10 +2198,12 @@
     "ign": "soxlss",
     "steam_id": "STEAM_0:0:161953329",
     "profile_url": "https://steamcommunity.com/profiles/76561198284172386",
-    "cheat_type": "No Spread, Aimbot, Auto-Bhop",
+    "cheat_type": "Auto-Bhop",
     "status": "confirmed",
     "date_reported": "2026-08-19",
-    "evidence_url": "https://www.youtube.com/watch?v=5Jc20GnxtxU"
+    "evidence_urls": [
+      "https://www.youtube.com/watch?v=5Jc20GnxtxU"
+    ]
   },
   {
     "case_id": "CASE-0174",
@@ -1897,9 +2211,11 @@
     "ign": "Zywoo",
     "steam_id": "STEAM_0:1:938312466",
     "profile_url": "https://steamcommunity.com/profiles/76561199836890661",
-    "cheat_type": "No Spread, Aimbot, Auto-Bhop",
+    "cheat_type": "Auto-Bhop",
     "status": "confirmed",
     "date_reported": "2026-08-19",
-    "evidence_url": "https://www.youtube.com/watch?v=Z9FBFrdvuvM"
+    "evidence_urls": [
+      "https://www.youtube.com/watch?v=Z9FBFrdvuvM"
+    ]
   }
 ]
