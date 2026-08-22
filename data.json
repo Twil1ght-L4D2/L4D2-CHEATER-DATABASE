@@ -1901,5 +1901,16 @@
     "status": "confirmed",
     "date_reported": "2026-08-19",
     "evidence_url": "https://www.youtube.com/watch?v=Z9FBFrdvuvM"
+  },
+  {
+    "case_id": "CASE-0175",
+    "category": "community",
+    "ign": "arilunaa212",
+    "steam_id": "STEAM_0:1:739604735",
+    "profile_url": "https://steamcommunity.com/profiles/76561199439475199",
+    "cheat_type": "Rage Cheat",
+    "status": "confirmed",
+    "date_reported": "2026-08-22",
+    "evidence_url": "https://www.youtube.com/watch?v=cJNHprusORw"
   }
 ]
