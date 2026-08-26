@@ -1912,5 +1912,16 @@
     "status": "confirmed",
     "date_reported": "2026-08-22",
     "evidence_url": "https://www.youtube.com/watch?v=cJNHprusORw"
+  },
+  {
+    "case_id": "CASE-0176",
+    "category": "community",
+    "ign": "leninpilled",
+    "steam_id": "STEAM_0:1:34164144",
+    "profile_url": "https://steamcommunity.com/profiles/76561198028594017",
+    "cheat_type": "Rapid-fire",
+    "status": "confirmed",
+    "date_reported": "2026-08-26",
+    "evidence_url": "https://bans.haven-official.com/index.php?p=banlist&searchText=76561198028594017&server=&time="
   }
 ]
