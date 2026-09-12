@@ -1978,5 +1978,16 @@
     "status": "confirmed",
     "date_reported": "2026-09-06",
     "evidence_url": ""
+  },
+  {
+    "case_id": "CASE-0182",
+    "category": "community",
+    "ign": "The_goat",
+    "steam_id": "STEAM_0:0:796056483",
+    "profile_url": "https://steamcommunity.com/profiles/76561199552378694",
+    "cheat_type": "Speed-Hack",
+    "status": "confirmed",
+    "date_reported": "2026-09-12",
+    "evidence_url": ""
   }
 ]
