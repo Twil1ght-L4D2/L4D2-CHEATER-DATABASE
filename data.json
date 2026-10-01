@@ -2022,5 +2022,16 @@
     "status": "confirmed",
     "date_reported": "2026-10-01",
     "evidence_url": ""
+  },
+  {
+    "case_id": "CASE-0186",
+    "category": "community",
+    "ign": "JennaOrteGASRackk",
+    "steam_id": "STEAM_0:0:665990961",
+    "profile_url": "http://steamcommunity.com/profiles/76561199292247650",
+    "cheat_type": "Rage-Cheat",
+    "status": "confirmed",
+    "date_reported": "2026-10-01",
+    "evidence_url": ""
   }
 ]
