@@ -2011,5 +2011,16 @@
     "status": "confirmed",
     "date_reported": "2026-09-18",
     "evidence_url": ""
+  },
+  {
+    "case_id": "CASE-0185",
+    "category": "community",
+    "ign": "ArTuRo",
+    "steam_id": "STEAM_0:0:779160908",
+    "profile_url": "http://steamcommunity.com/profiles/76561199518587544",
+    "cheat_type": "Rage-Cheat",
+    "status": "confirmed",
+    "date_reported": "2026-10-01",
+    "evidence_url": ""
   }
 ]
