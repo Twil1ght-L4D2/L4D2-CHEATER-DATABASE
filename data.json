@@ -2033,5 +2033,16 @@
     "status": "confirmed",
     "date_reported": "2026-10-01",
     "evidence_url": ""
+  },
+  {
+    "case_id": "CASE-0187",
+    "category": "community",
+    "ign": "xantares",
+    "steam_id": "STEAM_0:0:845473975",
+    "profile_url": "https://steamcommunity.com/profiles/76561199651213678",
+    "cheat_type": "Rage-Cheat",
+    "status": "confirmed",
+    "date_reported": "2026-10-02",
+    "evidence_url": ""
   }
 ]
