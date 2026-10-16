@@ -2044,5 +2044,27 @@
     "status": "confirmed",
     "date_reported": "2026-10-02",
     "evidence_url": ""
+  },
+  {
+    "case_id": "CASE-0188",
+    "category": "community",
+    "ign": "xd",
+    "steam_id": "STEAM_0:1:463530465",
+    "profile_url": "https://steamcommunity.com/profiles/76561198887326659",
+    "cheat_type": "Rage-Cheat",
+    "status": "confirmed",
+    "date_reported": "2026-10-16",
+    "evidence_url": "https://raw.githubusercontent.com/Twil1ght-L4D2/L4D2-CHEATER-DATABASE/refs/heads/main/evidence/xd.png"
+  },
+  {
+    "case_id": "CASE-0189",
+    "category": "community",
+    "ign": "iluvscripts",
+    "steam_id": "STEAM_0:0:526647255",
+    "profile_url": "http://steamcommunity.com/profiles/76561199013560238",
+    "cheat_type": "Rage-Cheat",
+    "status": "confirmed",
+    "date_reported": "2026-10-16",
+    "evidence_url": ""
   }
 ]
