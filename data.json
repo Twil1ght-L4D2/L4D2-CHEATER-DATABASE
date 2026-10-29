@@ -2066,5 +2066,16 @@
     "status": "confirmed",
     "date_reported": "2026-10-16",
     "evidence_url": ""
+  },
+  {
+    "case_id": "CASE-0190",
+    "category": "community",
+    "ign": "Fallout",
+    "steam_id": "STEAM_0:1:63440961",
+    "profile_url": "http://steamcommunity.com/profiles/76561198087147651",
+    "cheat_type": "PSilent",
+    "status": "confirmed",
+    "date_reported": "2026-10-26",
+    "evidence_url": ""
   }
 ]
